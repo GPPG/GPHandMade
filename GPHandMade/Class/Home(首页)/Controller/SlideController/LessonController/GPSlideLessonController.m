@@ -115,7 +115,7 @@ static NSString * const GPAppraiseCell = @"AppraiseCell";
     params[@"id"] = self.handID;
     __weak typeof(self) weakSelf = self;
     // 2.请求数据
-    [GPHttpTool get:@"http://m.shougongke.com/index.php" params:params success:^(id responseObj) {
+    [GPHttpTool get:HomeBaseURl params:params success:^(id responseObj) {
         // 获得课程模型,并添加轮播图
         weakSelf.lessonData = [GPLessonData mj_objectWithKeyValues:responseObj[@"data"]];
         [weakSelf lessonTechData];

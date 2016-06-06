@@ -27,7 +27,7 @@
     // 添加label
     UILabel *label = [[UILabel alloc] init];
     label.textColor = [UIColor colorWithRed:1.0 green:0.5 blue:0.0 alpha:1.0];
-    label.font = [UIFont boldSystemFontOfSize:16];
+    label.font = [UIFont boldSystemFontOfSize:12];
     label.textAlignment = NSTextAlignmentCenter;
     [self addSubview:label];
     self.label = label;
@@ -43,7 +43,7 @@
     [super placeSubviews];
     
     self.label.frame = self.bounds;
-    self.loading.center = CGPointMake(SCREEN_WIDTH * 0.3, self.mj_h * 0.5);
+    self.loading.center = CGPointMake(SCREEN_WIDTH * 0.2, self.mj_h * 0.5);
 }
 
 #pragma mark 监听控件的刷新状态

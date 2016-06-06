@@ -22,8 +22,6 @@
     [self setupView];
     [self addAllChildVc];
 }
-#pragma mark - 数据处理
-
 #pragma mark - 初始化子控件
 - (void)setupView
 {
@@ -45,7 +43,6 @@
 }
 - (void)addAllChildVc
 {
-    
     GPWebViewController *webVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPWebViewController class]) bundle:nil].instantiateInitialViewController;
     webVc.title = @"活动介绍";
     webVc.slide = self.slide;
@@ -53,10 +50,12 @@
     
     GPEventNewController *newVc = [[GPEventNewController alloc]init];
     newVc.title = @"最新作品";
+    newVc.slide = self.slide;
     [self addChildViewController:newVc];
     
     GPEventVoteController *voteVc = [[GPEventVoteController alloc]init];
     voteVc.title = @"投票最多";
+    voteVc.slide = self.slide;
     [self addChildViewController:voteVc];
     
 }

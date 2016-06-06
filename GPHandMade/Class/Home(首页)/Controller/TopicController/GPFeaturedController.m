@@ -175,7 +175,7 @@ static NSString * const GPSectionHead = @"HotSectionCell";
     [self.dataNavigationArray removeAllObjects];
     [self.dataAdvanceArray removeAllObjects];
     // 2.发起请求
-    [GPHttpTool get:@"http://m.shougongke.com/index.php" params:params success:^(id responseObj) {
+    [GPHttpTool get:HomeBaseURl params:params success:^(id responseObj) {
         [SVProgressHUD dismiss];
         // 字典转模型
         self.data = [GPData mj_objectWithKeyValues:responseObj[@"data"]];

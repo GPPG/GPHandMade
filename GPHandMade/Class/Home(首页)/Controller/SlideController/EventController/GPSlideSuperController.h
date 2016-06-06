@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class GPslide;
 @interface GPSlideSuperController : UICollectionViewController
-
+@property (nonatomic, strong) GPslide *slide;
+- (NSString *)paramA;
 @end

@@ -7,7 +7,5 @@
 //
 
 #import "GPSlideSuperController.h"
-
 @interface GPEventVoteController : GPSlideSuperController
-
 @end

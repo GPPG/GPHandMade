@@ -214,7 +214,7 @@ static NSString * const GPShopCell = @"shopCell";
         __weak typeof(self) weakSelf = self;
        
         // 2.发起请求
-        [GPHttpTool get:@"http://m.shougongke.com/index.php" params:params success:^(id responseObj) {
+        [GPHttpTool get:HomeBaseURl params:params success:^(id responseObj) {
             if (i == 0) {
                 [SVProgressHUD dismiss];
                 weakSelf.nDataS = [GPSlideShopData mj_objectArrayWithKeyValuesArray:responseObj[@"data"]];
@@ -260,7 +260,7 @@ static NSString * const GPShopCell = @"shopCell";
         __weak typeof(self) weakSelf = self;
         
         // 2.发起请求
-        [GPHttpTool get:@"http://m.shougongke.com/index.php" params:params success:^(id responseObj) {
+        [GPHttpTool get:HomeBaseURl params:params success:^(id responseObj) {
             if (i == 0) {
                 NSArray *moreNewArray = [GPSlideShopData mj_objectArrayWithKeyValuesArray:responseObj[@"data"]];
                 

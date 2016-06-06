@@ -45,7 +45,11 @@
  */
 
 #define ClickPhoto @"ClickPhoto"
+/**
+ *  Get
+ */
 
+#define HomeBaseURl @"http://m.shougongke.com/index.php"
 /**
  *  颜色
  */
