@@ -10,7 +10,6 @@
 #import "GPslide.h"
 
 @interface GPWebViewController()<UIWebViewDelegate>
-@property (weak, nonatomic) IBOutlet UIWebView *loadWebView;
 
 @end
 @implementation GPWebViewController
@@ -39,6 +38,10 @@
         
         NSString *urlString = slide.hand_id;
         [self loadSlidDataType:urlString title:@"专题详情"];
+    }else if ([slide.itemtype isEqualToString:@"event"]){
+        NSString *urlString = [NSString stringWithFormat: @"http://m.shougongke.com/index.php?c=Competition&cid=%@",slide.hand_id];
+        [self loadSlidDataType:urlString title:nil];
+
     }
 }
 - (void)loadSlidDataType:(NSString *)urlString title:(NSString *)title

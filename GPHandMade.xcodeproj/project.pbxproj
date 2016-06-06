@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		58CC0E0C6DA2CFD3D6C01045 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0365791F1F4DC0A104E49C7 /* libPods.a */; };
+		AC0EA2D51D051A130041D14E /* GPSlideEventController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2D21D051A130041D14E /* GPSlideEventController.m */; };
+		AC0EA2D61D051A130041D14E /* GPSlideSuperController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2D41D051A130041D14E /* GPSlideSuperController.m */; };
+		AC0EA2D91D051A750041D14E /* GPEventNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2D81D051A750041D14E /* GPEventNewController.m */; };
+		AC0EA2DC1D051A890041D14E /* GPEventVoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2DB1D051A890041D14E /* GPEventVoteController.m */; };
 		AC2925761D015B0400726E51 /* GPAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925751D015B0400726E51 /* GPAutoFooter.m */; };
 		AC2925811D02A8BA00726E51 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925791D02A8BA00726E51 /* UIView+Frame.m */; };
 		AC2925821D02A8BA00726E51 /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC29257B1D02A8BA00726E51 /* YZDisplayTitleLabel.m */; };
@@ -119,6 +123,14 @@
 
 /* Begin PBXFileReference section */
 		22784EE1E27D1BD08E7B4447 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0EA2D11D051A130041D14E /* GPSlideEventController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSlideEventController.h; sourceTree = "<group>"; };
+		AC0EA2D21D051A130041D14E /* GPSlideEventController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSlideEventController.m; sourceTree = "<group>"; };
+		AC0EA2D31D051A130041D14E /* GPSlideSuperController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSlideSuperController.h; sourceTree = "<group>"; };
+		AC0EA2D41D051A130041D14E /* GPSlideSuperController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSlideSuperController.m; sourceTree = "<group>"; };
+		AC0EA2D71D051A750041D14E /* GPEventNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPEventNewController.h; sourceTree = "<group>"; };
+		AC0EA2D81D051A750041D14E /* GPEventNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEventNewController.m; sourceTree = "<group>"; };
+		AC0EA2DA1D051A890041D14E /* GPEventVoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPEventVoteController.h; sourceTree = "<group>"; };
+		AC0EA2DB1D051A890041D14E /* GPEventVoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEventVoteController.m; sourceTree = "<group>"; };
 		AC2925741D015B0400726E51 /* GPAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAutoFooter.h; sourceTree = "<group>"; };
 		AC2925751D015B0400726E51 /* GPAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAutoFooter.m; sourceTree = "<group>"; };
 		AC2925781D02A8BA00726E51 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -327,6 +339,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC0EA2DD1D051A920041D14E /* EventTopicController */ = {
+			isa = PBXGroup;
+			children = (
+				AC0EA2D31D051A130041D14E /* GPSlideSuperController.h */,
+				AC0EA2D41D051A130041D14E /* GPSlideSuperController.m */,
+				AC0EA2D71D051A750041D14E /* GPEventNewController.h */,
+				AC0EA2D81D051A750041D14E /* GPEventNewController.m */,
+				AC0EA2DA1D051A890041D14E /* GPEventVoteController.h */,
+				AC0EA2DB1D051A890041D14E /* GPEventVoteController.m */,
+			);
+			name = EventTopicController;
+			sourceTree = "<group>";
+		};
 		AC2925771D02A8BA00726E51 /* YZDisplayViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +399,9 @@
 			children = (
 				AC29258F1D02ADC300726E51 /* GPSlideViewController.h */,
 				AC2925901D02ADC300726E51 /* GPSlideViewController.m */,
+				AC0EA2D11D051A130041D14E /* GPSlideEventController.h */,
+				AC0EA2D21D051A130041D14E /* GPSlideEventController.m */,
+				AC0EA2DD1D051A920041D14E /* EventTopicController */,
 			);
 			path = EventController;
 			sourceTree = "<group>";
@@ -587,8 +615,8 @@
 			children = (
 				AC2925A51D02B1F200726E51 /* GPHomController.h */,
 				AC2925A61D02B1F200726E51 /* GPHomController.m */,
-				AC29258D1D02ADC300726E51 /* SlideController */,
 				AC2925851D02AD6D00726E51 /* TopicController */,
+				AC29258D1D02ADC300726E51 /* SlideController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1285,6 +1313,7 @@
 				AC7A9CE41CF04F17001A9550 /* GPWebViewController.m in Sources */,
 				AC2925981D02AF7A00726E51 /* GPSuperTopicController.m in Sources */,
 				AC2925A41D02B0E500726E51 /* GPEventController.m in Sources */,
+				AC0EA2D91D051A750041D14E /* GPEventNewController.m in Sources */,
 				AC4E72C81CE18A6300E92406 /* GPTabBarController.m in Sources */,
 				AC2925821D02A8BA00726E51 /* YZDisplayTitleLabel.m in Sources */,
 				ACB2E0F81CFAA65200D3F5EA /* GPAdViewController.m in Sources */,
@@ -1302,6 +1331,7 @@
 				AC561F901D050FEB00919703 /* UIView+SDExtension.m in Sources */,
 				AC4E72D71CE18CCD00E92406 /* GPMyTableViewController.m in Sources */,
 				AC2925C11D0431F600726E51 /* GPSlideHeadView.m in Sources */,
+				AC0EA2D51D051A130041D14E /* GPSlideEventController.m in Sources */,
 				AC561F8B1D050FEB00919703 /* TAAnimatedDotView.m in Sources */,
 				ACD585451CFBE45400F7942D /* GPFooterClassCell.m in Sources */,
 				AC2925811D02A8BA00726E51 /* UIView+Frame.m in Sources */,
@@ -1310,6 +1340,7 @@
 				AC2925BA1D02CFE200726E51 /* GPAdvanceCell.m in Sources */,
 				ACC048051CEDAA53004E8C74 /* GPCompetitionData.m in Sources */,
 				ACEABAE11CFFCA650024FC67 /* SDBrowserImageView.m in Sources */,
+				AC0EA2D61D051A130041D14E /* GPSlideSuperController.m in Sources */,
 				AC2925AD1D02C08400726E51 /* GPNavigationData.m in Sources */,
 				AC2925951D02ADC300726E51 /* GPSlideLessonController.m in Sources */,
 				AC5AAE511CF5F69100EDBF99 /* CALayer+GPExtension.m in Sources */,
@@ -1336,6 +1367,7 @@
 				AC2925841D02A8BA00726E51 /* YZFlowLayout.m in Sources */,
 				ACC048021CEDAA3A004E8C74 /* GPDynamicData.m in Sources */,
 				AC2925A11D02B0D900726E51 /* GPDaRenController.m in Sources */,
+				AC0EA2DC1D051A890041D14E /* GPEventVoteController.m in Sources */,
 				ACD585511CFC3ECA00F7942D /* GPLessonHeadView.m in Sources */,
 				AC4E72641CE1831B00E92406 /* main.m in Sources */,
 				ACEABAE21CFFCA650024FC67 /* SDPhotoBrowser.m in Sources */,

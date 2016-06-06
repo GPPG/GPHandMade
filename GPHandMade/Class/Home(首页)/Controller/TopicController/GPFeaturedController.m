@@ -33,6 +33,7 @@
 #import "GPAdvanceDtata.h"
 #import "GPSlideHeadView.h"
 #import "GPSectionHeadView.h"
+#import "GPSlideEventController.h"
 
 
 @interface GPFeaturedController ()<SDCycleScrollViewDelegate>
@@ -238,7 +239,7 @@ static NSString * const GPSectionHead = @"HotSectionCell";
         webVC.slide = slide;
         [self.navigationController pushViewController:webVC animated:YES];
     }else if([slide.itemtype isEqualToString: @"event"]){
-        GPSlideViewController *slideVC = [[GPSlideViewController alloc]init];
+        GPSlideEventController *slideVC = [[GPSlideEventController alloc]init];
         slideVC.slide = slide;
         [self.navigationController pushViewController:slideVC animated:YES];
     }else if ([slide.itemtype isEqualToString:@"web_out"]){

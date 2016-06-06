@@ -26,4 +26,9 @@
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, GPTabBarH, 0);
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 @end
