@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contentCell" rowHeight="54" id="KGk-i7-Jjw" customClass="GPContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQj-RW-Zce" userLabel="内容">
+                        <rect key="frame" x="10" y="10" width="310" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WQj-RW-Zce" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EPx-0d-PAG"/>
+                    <constraint firstAttribute="bottom" secondItem="WQj-RW-Zce" secondAttribute="bottom" constant="10" id="K6S-If-41d"/>
+                    <constraint firstAttribute="trailing" secondItem="WQj-RW-Zce" secondAttribute="trailing" constant="10" id="aKv-ao-vWD"/>
+                    <constraint firstItem="WQj-RW-Zce" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="z8g-BO-u8D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ContenLabel" destination="WQj-RW-Zce" id="e17-7R-mFT"/>
+            </connections>
+            <point key="canvasLocation" x="464" y="307"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  pp
+//
+//  Created by dandan on 16/4/28.
+//  Copyright 2016年 dandan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__ //  #ifdef __OBJC__ 和 #endif中的内容只会出现在OC源文件中
+#import "Define.h"
+#import "UIView+GPExtension.h"
+#import "CALayer+GPExtension.h"
+/**
+ *  自定义输出
+ */
+#ifdef DEBUG // 调试
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(...) // 发布
+#endif
+
+#endif
+
+#endif /* PrefixHeader_pch */

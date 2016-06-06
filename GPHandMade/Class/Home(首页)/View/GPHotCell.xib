@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotCell" id="ErT-dt-gcp" customClass="GPHotCell">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gYk-fS-zfG">
+                        <rect key="frame" x="0.0" y="0.0" width="370" height="149"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOF-w0-lEv">
+                        <rect key="frame" x="10" y="124.5" width="360" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="AOF-w0-lEv" secondAttribute="bottom" constant="10" id="59c-oQ-l1a"/>
+                <constraint firstItem="gYk-fS-zfG" firstAttribute="leading" secondItem="ErT-dt-gcp" secondAttribute="leading" id="7cX-aM-cNv"/>
+                <constraint firstItem="gYk-fS-zfG" firstAttribute="top" secondItem="ErT-dt-gcp" secondAttribute="top" id="CT4-Ex-1lt"/>
+                <constraint firstAttribute="bottom" secondItem="gYk-fS-zfG" secondAttribute="bottom" id="Prb-ZA-Cbc"/>
+                <constraint firstAttribute="trailing" secondItem="AOF-w0-lEv" secondAttribute="trailing" id="egq-h8-sUL"/>
+                <constraint firstAttribute="trailing" secondItem="gYk-fS-zfG" secondAttribute="trailing" id="fgH-Bf-muj"/>
+                <constraint firstItem="AOF-w0-lEv" firstAttribute="leading" secondItem="ErT-dt-gcp" secondAttribute="leading" constant="10" id="uHJ-Aq-dsW"/>
+            </constraints>
+            <size key="customSize" width="370" height="149"/>
+            <connections>
+                <outlet property="BgImageView" destination="gYk-fS-zfG" id="Kr1-zQ-ECp"/>
+                <outlet property="SubTitle" destination="AOF-w0-lEv" id="Rb0-ZB-t5h"/>
+            </connections>
+            <point key="canvasLocation" x="722" y="509.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

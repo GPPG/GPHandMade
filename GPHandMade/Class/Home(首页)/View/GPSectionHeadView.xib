@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotSectionCell" id="U6b-Vx-4bR" customClass="GPSectionHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门专题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejZ-fs-Yi7">
+                    <rect key="frame" x="136" y="17.5" width="48" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neE-k4-Lmn">
+                    <rect key="frame" x="0.0" y="24" width="126" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="DPh-Af-o9H"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAQ-0B-U5V">
+                    <rect key="frame" x="194" y="24.5" width="126" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="rF7-5I-fRK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ejZ-fs-Yi7" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="2hR-Yf-mxJ"/>
+                <constraint firstItem="tAQ-0B-U5V" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="9V5-L7-ek4"/>
+                <constraint firstItem="neE-k4-Lmn" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Lnk-Ko-004"/>
+                <constraint firstItem="ejZ-fs-Yi7" firstAttribute="leading" secondItem="neE-k4-Lmn" secondAttribute="trailing" constant="10" id="ORA-Qc-nIf"/>
+                <constraint firstItem="neE-k4-Lmn" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="hGM-Ba-T7f"/>
+                <constraint firstAttribute="trailing" secondItem="tAQ-0B-U5V" secondAttribute="trailing" id="hgP-Yn-BlX"/>
+                <constraint firstItem="ejZ-fs-Yi7" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="thu-gQ-DLU"/>
+                <constraint firstItem="tAQ-0B-U5V" firstAttribute="leading" secondItem="ejZ-fs-Yi7" secondAttribute="trailing" constant="10" id="x0v-OV-JyE"/>
+            </constraints>
+            <point key="canvasLocation" x="462" y="303"/>
+        </collectionReusableView>
+    </objects>
+</document>

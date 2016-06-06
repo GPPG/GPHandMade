@@ -1,0 +1,52 @@
+//
+//  GPWebViewController.m
+//  GPHandMade
+//
+//  Created by dandan on 16/5/21.
+//  Copyright © 2016年 dandan. All rights reserved.
+//
+
+#import "GPWebViewController.h"
+#import "GPslide.h"
+
+@interface GPWebViewController()<UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *loadWebView;
+
+@end
+@implementation GPWebViewController
+
+
+-(void)viewDidLoad{
+    [super viewDidLoad];
+
+    [self configNav];
+    
+}
+- (void)configNav
+{
+    
+    self.loadWebView.scalesPageToFit = YES;
+    self.loadWebView.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)setSlide:(GPslide *)slide
+{
+    _slide = slide;
+    if ([slide.itemtype isEqualToString:@"class_special"]) {
+         NSString *urlString = [NSString stringWithFormat: @"http://www.shougongke.com/index.php?m=HandClass&a=%@&spec_id=%@",slide.itemtype,slide.hand_id];
+        [self loadSlidDataType:urlString title:@"课堂专题"];
+    }else if ([slide.itemtype isEqualToString:@"topic_detail_h5"]){
+        
+        NSString *urlString = slide.hand_id;
+        [self loadSlidDataType:urlString title:@"专题详情"];
+    }
+}
+- (void)loadSlidDataType:(NSString *)urlString title:(NSString *)title
+{
+    NSURL *url = [NSURL URLWithString:urlString];
+    [self.view addSubview:self.loadWebView];
+    [self.loadWebView loadRequest:[NSURLRequest requestWithURL:url]];
+    self.navigationItem.title = title;
+    
+}
+@end
