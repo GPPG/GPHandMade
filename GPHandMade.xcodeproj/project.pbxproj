@@ -17,7 +17,6 @@
 		AC2925821D02A8BA00726E51 /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC29257B1D02A8BA00726E51 /* YZDisplayTitleLabel.m */; };
 		AC2925831D02A8BA00726E51 /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC29257D1D02A8BA00726E51 /* YZDisplayViewController.m */; };
 		AC2925841D02A8BA00726E51 /* YZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925801D02A8BA00726E51 /* YZFlowLayout.m */; };
-		AC2925941D02ADC300726E51 /* GPSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925901D02ADC300726E51 /* GPSlideViewController.m */; };
 		AC2925951D02ADC300726E51 /* GPSlideLessonController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925931D02ADC300726E51 /* GPSlideLessonController.m */; };
 		AC2925981D02AF7A00726E51 /* GPSuperTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925971D02AF7A00726E51 /* GPSuperTopicController.m */; };
 		AC29259B1D02B0A400726E51 /* GPFeaturedController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC29259A1D02B0A400726E51 /* GPFeaturedController.m */; };
@@ -142,8 +141,6 @@
 		AC29257E1D02A8BA00726E51 /* YZDisplayViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewHeader.h; sourceTree = "<group>"; };
 		AC29257F1D02A8BA00726E51 /* YZFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZFlowLayout.h; sourceTree = "<group>"; };
 		AC2925801D02A8BA00726E51 /* YZFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZFlowLayout.m; sourceTree = "<group>"; };
-		AC29258F1D02ADC300726E51 /* GPSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSlideViewController.h; sourceTree = "<group>"; };
-		AC2925901D02ADC300726E51 /* GPSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSlideViewController.m; sourceTree = "<group>"; };
 		AC2925921D02ADC300726E51 /* GPSlideLessonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSlideLessonController.h; sourceTree = "<group>"; };
 		AC2925931D02ADC300726E51 /* GPSlideLessonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSlideLessonController.m; sourceTree = "<group>"; };
 		AC2925961D02AF7A00726E51 /* GPSuperTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSuperTopicController.h; sourceTree = "<group>"; };
@@ -397,8 +394,6 @@
 		AC29258E1D02ADC300726E51 /* EventController */ = {
 			isa = PBXGroup;
 			children = (
-				AC29258F1D02ADC300726E51 /* GPSlideViewController.h */,
-				AC2925901D02ADC300726E51 /* GPSlideViewController.m */,
 				AC0EA2D11D051A130041D14E /* GPSlideEventController.h */,
 				AC0EA2D21D051A130041D14E /* GPSlideEventController.m */,
 				AC0EA2DD1D051A920041D14E /* EventTopicController */,
@@ -1359,7 +1354,6 @@
 				ACB2E0EF1CF8278A00D3F5EA /* GPNewFeatureController.m in Sources */,
 				ACDE67171CED61F500FC47DD /* GPHttpTool.m in Sources */,
 				ACB2E0F31CF827AC00D3F5EA /* GPNewFeatureCell.m in Sources */,
-				AC2925941D02ADC300726E51 /* GPSlideViewController.m in Sources */,
 				ACC048091CEDBC14004E8C74 /* GPLookCell.m in Sources */,
 				AC5AAE401CF54A3700EDBF99 /* GPSubTitleCell.m in Sources */,
 				AC29259E1D02B0C800726E51 /* GPFocusController.m in Sources */,

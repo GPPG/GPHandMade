@@ -23,7 +23,6 @@
 #import "GPRecommendCell.h"
 #import "GPHotData.h"
 #import "GPWebViewController.h"
-#import "GPSlideViewController.h"
 #import "GPSlideLessonController.h"
 #import "MJRefresh.h"
 #import "GPJianDaoHeader.h"

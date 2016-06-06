@@ -99,9 +99,6 @@ static NSString * const GPShopCell = @"shopCell";
 
 - (void)loadNewData
 {
-    [SVProgressHUD showWithStatus:@"正在加载数据"];
-    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
     // 1.添加参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"c"] = @"Competition";
@@ -115,7 +112,6 @@ static NSString * const GPShopCell = @"shopCell";
     // 2.发起请求
     [GPHttpTool get:HomeBaseURl params:params success:^(id responseObj) {
         
-        [SVProgressHUD dismiss];
         weakSelf.DataS = [GPSlideShopData mj_objectArrayWithKeyValuesArray:responseObj[@"data"]];
         GPSlideShopData *eventData = [weakSelf.DataS lastObject];
         self.lastId = eventData.last_id;
@@ -123,7 +119,6 @@ static NSString * const GPShopCell = @"shopCell";
         [weakSelf.collectionView.mj_header endRefreshing];
     } failure:^(NSError *error) {
         NSLog(@"%@",error);
-        [SVProgressHUD showErrorWithStatus:@"失败了,赶紧跑"];
     }];
     
 }
