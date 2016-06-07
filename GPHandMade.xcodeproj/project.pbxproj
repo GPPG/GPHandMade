@@ -12,6 +12,7 @@
 		AC0EA2D61D051A130041D14E /* GPSlideSuperController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2D41D051A130041D14E /* GPSlideSuperController.m */; };
 		AC0EA2D91D051A750041D14E /* GPEventNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2D81D051A750041D14E /* GPEventNewController.m */; };
 		AC0EA2DC1D051A890041D14E /* GPEventVoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2DB1D051A890041D14E /* GPEventVoteController.m */; };
+		AC0EA3221D05786A0041D14E /* GPEventBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA3211D05786A0041D14E /* GPEventBar.m */; };
 		AC2925761D015B0400726E51 /* GPAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925751D015B0400726E51 /* GPAutoFooter.m */; };
 		AC2925811D02A8BA00726E51 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925791D02A8BA00726E51 /* UIView+Frame.m */; };
 		AC2925821D02A8BA00726E51 /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC29257B1D02A8BA00726E51 /* YZDisplayTitleLabel.m */; };
@@ -130,6 +131,8 @@
 		AC0EA2D81D051A750041D14E /* GPEventNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEventNewController.m; sourceTree = "<group>"; };
 		AC0EA2DA1D051A890041D14E /* GPEventVoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPEventVoteController.h; sourceTree = "<group>"; };
 		AC0EA2DB1D051A890041D14E /* GPEventVoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEventVoteController.m; sourceTree = "<group>"; };
+		AC0EA3201D05786A0041D14E /* GPEventBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPEventBar.h; sourceTree = "<group>"; };
+		AC0EA3211D05786A0041D14E /* GPEventBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEventBar.m; sourceTree = "<group>"; };
 		AC2925741D015B0400726E51 /* GPAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAutoFooter.h; sourceTree = "<group>"; };
 		AC2925751D015B0400726E51 /* GPAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAutoFooter.m; sourceTree = "<group>"; };
 		AC2925781D02A8BA00726E51 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -898,6 +901,8 @@
 		AC7A9CEA1CF07EA6001A9550 /* EventView */ = {
 			isa = PBXGroup;
 			children = (
+				AC0EA3201D05786A0041D14E /* GPEventBar.h */,
+				AC0EA3211D05786A0041D14E /* GPEventBar.m */,
 				AC7A9CF01CF2A16A001A9550 /* GPTitleBtn.h */,
 				AC7A9CF11CF2A16A001A9550 /* GPTitleBtn.m */,
 				AC7A9CF61CF2E060001A9550 /* GPSlideCollectionViewCell.h */,
@@ -1316,6 +1321,7 @@
 				AC4E72D11CE18CB500E92406 /* GPHandTableViewController.m in Sources */,
 				AC5AAE451CF54BC800EDBF99 /* GPContentCell.m in Sources */,
 				AC7A9CF51CF2A36D001A9550 /* UIView+GPExtension.m in Sources */,
+				AC0EA3221D05786A0041D14E /* GPEventBar.m in Sources */,
 				AC561F8E1D050FEB00919703 /* SDCollectionViewCell.m in Sources */,
 				AC2925B51D02CFC600726E51 /* GPNavigationCell.m in Sources */,
 				AC4E72671CE1831B00E92406 /* AppDelegate.m in Sources */,

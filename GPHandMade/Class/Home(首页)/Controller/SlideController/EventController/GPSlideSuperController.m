@@ -162,5 +162,21 @@ static NSString * const GPShopCell = @"shopCell";
     shopCell.shopData = self.DataS[indexPath.row];
     return shopCell;
 }
+#pragma mark - UIScrlloView 代理
+static int _lastPosition;    //A variable define in headfile
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    int currentPostion = scrollView.contentOffset.y;
+    if (currentPostion - _lastPosition > 25) {
+        _lastPosition = currentPostion;
+        NSLog(@"上");
+        [[NSNotificationCenter defaultCenter]postNotificationName:SnowUP object:nil];
+    }
+    else if (_lastPosition - currentPostion > 25){
+        _lastPosition = currentPostion;
+        NSLog(@"下");
+        [[NSNotificationCenter defaultCenter]postNotificationName:SnowDown object:nil];
+
+    }
+}
 
 @end

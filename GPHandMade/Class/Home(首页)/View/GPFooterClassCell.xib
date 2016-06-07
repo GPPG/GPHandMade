@@ -13,31 +13,41 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="202" height="163"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gGE-Z8-Q44">
+                        <rect key="frame" x="0.0" y="0.0" width="202" height="113"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knn-Hu-bbL" userLabel="价格">
+                        <rect key="frame" x="0.0" y="0.5" width="42" height="20.5"/>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.33725490200000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGK-20-Otl" userLabel="下容器">
-                        <rect key="frame" x="0.0" y="93" width="202" height="70"/>
+                        <rect key="frame" x="0.0" y="113" width="202" height="50"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已报名:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djL-OR-3vZ">
-                                <rect key="frame" x="0.0" y="55" width="40" height="14.5"/>
+                                <rect key="frame" x="0.0" y="35" width="40" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq9-W1-zTb" userLabel="报名数">
-                                <rect key="frame" x="43" y="55" width="31" height="14.5"/>
+                                <rect key="frame" x="43" y="35" width="31" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.6204383389" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCT-jb-iH6">
-                                <rect key="frame" x="74" y="55" width="12" height="14.5"/>
+                                <rect key="frame" x="74" y="35" width="12" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxE-PA-RLm" userLabel="标题">
-                                <rect key="frame" x="0.0" y="0.0" width="202" height="19.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="0.0" y="0.0" width="202" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -51,19 +61,9 @@
                             <constraint firstAttribute="bottom" secondItem="eCT-jb-iH6" secondAttribute="bottom" id="UY7-Oi-iWc"/>
                             <constraint firstAttribute="trailing" secondItem="nxE-PA-RLm" secondAttribute="trailing" id="k4a-WJ-7VA"/>
                             <constraint firstItem="djL-OR-3vZ" firstAttribute="leading" secondItem="HGK-20-Otl" secondAttribute="leading" id="kiC-a5-gWU"/>
-                            <constraint firstAttribute="height" constant="70" id="xgC-l5-gdy"/>
+                            <constraint firstAttribute="height" constant="50" id="xgC-l5-gdy"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gGE-Z8-Q44">
-                        <rect key="frame" x="0.0" y="0.0" width="202" height="93"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knn-Hu-bbL" userLabel="价格">
-                        <rect key="frame" x="0.0" y="0.5" width="42" height="20.5"/>
-                        <color key="backgroundColor" red="0.98431372549999996" green="0.33725490200000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
@@ -79,13 +79,21 @@
                 <constraint firstItem="HGK-20-Otl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yd9-Rf-DBD"/>
             </constraints>
             <size key="customSize" width="202" height="163"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                    <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="countLabel" destination="xq9-W1-zTb" id="TRE-zj-IQZ"/>
                 <outlet property="priceLabel" destination="Knn-Hu-bbL" id="5N4-AI-Vu1"/>
                 <outlet property="shopImageView" destination="gGE-Z8-Q44" id="lBL-8k-nw2"/>
                 <outlet property="subtitleLabel" destination="nxE-PA-RLm" id="tJ4-ji-lbR"/>
             </connections>
-            <point key="canvasLocation" x="657" y="284.5"/>
+            <point key="canvasLocation" x="264" y="234.5"/>
         </collectionViewCell>
     </objects>
 </document>

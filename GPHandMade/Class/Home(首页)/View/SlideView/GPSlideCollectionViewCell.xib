@@ -101,7 +101,7 @@
                 <outlet property="userPic" destination="tkI-8x-FnZ" id="aDl-Iq-lkG"/>
                 <outlet property="vote" destination="uLp-jt-arI" id="ni5-RY-8DF"/>
             </connections>
-            <point key="canvasLocation" x="81.5" y="314.5"/>
+            <point key="canvasLocation" x="242.5" y="294.5"/>
         </collectionViewCell>
     </objects>
 </document>

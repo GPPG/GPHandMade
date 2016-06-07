@@ -75,7 +75,7 @@ static NSString * const GPAppraiseCell = @"AppraiseCell";
 #pragma mark - 初始化设置
 -(void)congigNav
 {
-    self.navigationItem.title = @"我的钱包已经饥渴难耐了";
+    self.navigationItem.title = @"买买买 ";
 }
 -(void)regisCell
 {
@@ -106,7 +106,7 @@ static NSString * const GPAppraiseCell = @"AppraiseCell";
    }
 - (void)loadData
 {
-    [SVProgressHUD showWithStatus:@"正在大力加载"];
+    [SVProgressHUD showWithStatus:@"玩命加载中"];
     // 1.添加请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"c"] = @"Handclass";
@@ -226,8 +226,8 @@ static NSString * const GPAppraiseCell = @"AppraiseCell";
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
-        CGFloat W = self.view.width * 0.46;
-        return CGSizeMake(W, W * 1.5);
+        CGFloat W = self.view.width * 0.43;
+        return CGSizeMake(W, W * 1.2);
     }else{
         return CGSizeMake(SCREEN_WIDTH, 100);
     }

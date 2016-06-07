@@ -41,10 +41,13 @@
 #define GPTitlesViewH 40
 #define GPTabBarH 49
 /**
- *  点击图片浏览通知
+ *  通知
  */
 
-#define ClickPhoto @"ClickPhoto"
+#define ClickPhoto @"ClickPhoto" // 点击图片
+#define SnowUP @"snowUp"
+#define SnowDown @"snowDown"
+
 /**
  *  Get
  */

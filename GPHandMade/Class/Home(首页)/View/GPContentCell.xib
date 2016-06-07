@@ -14,9 +14,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="330" height="53.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQj-RW-Zce" userLabel="内容">
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQj-RW-Zce" userLabel="内容">
                         <rect key="frame" x="10" y="10" width="310" height="33.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -30,7 +30,7 @@
             <connections>
                 <outlet property="ContenLabel" destination="WQj-RW-Zce" id="e17-7R-mFT"/>
             </connections>
-            <point key="canvasLocation" x="464" y="307"/>
+            <point key="canvasLocation" x="297" y="264"/>
         </tableViewCell>
     </objects>
 </document>

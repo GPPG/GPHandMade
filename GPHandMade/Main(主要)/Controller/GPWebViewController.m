@@ -8,8 +8,9 @@
 
 #import "GPWebViewController.h"
 #import "GPslide.h"
+#import "GPEventBar.h"
 
-@interface GPWebViewController()<UIWebViewDelegate>
+@interface GPWebViewController()<UIWebViewDelegate,UIScrollViewDelegate>
 
 @end
 @implementation GPWebViewController
@@ -21,13 +22,15 @@
     [self configNav];
     
 }
+#pragma mark - 初始化设置
 - (void)configNav
 {
     
     self.loadWebView.scalesPageToFit = YES;
     self.loadWebView.backgroundColor = [UIColor whiteColor];
+    self.loadWebView.scrollView.delegate = self;
 }
-
+#pragma mark - 数据处理
 - (void)setSlide:(GPslide *)slide
 {
     _slide = slide;
@@ -51,5 +54,20 @@
     [self.loadWebView loadRequest:[NSURLRequest requestWithURL:url]];
     self.navigationItem.title = title;
     
+}
+#pragma mark - UIScrlloView 代理
+ static int _lastPosition;    //A variable define in headfile
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    int currentPostion = scrollView.contentOffset.y;
+    if (currentPostion - _lastPosition > 25) {
+        _lastPosition = currentPostion;
+        [[NSNotificationCenter defaultCenter]postNotificationName:SnowUP object:nil];
+    }
+    else if (_lastPosition - currentPostion > 25){
+        _lastPosition = currentPostion;
+        [[NSNotificationCenter defaultCenter]postNotificationName:SnowDown object:nil];
+        
+    }
 }
 @end
