@@ -45,8 +45,9 @@
  */
 
 #define ClickPhoto @"ClickPhoto" // 点击图片
-#define SnowUP @"snowUp"
-#define SnowDown @"snowDown"
+#define SnowUP @"snowUp" // 上滑
+#define SnowDown @"snowDown" // 下滑
+#define EventBarClick @"eventBarClick"
 
 /**
  *  Get

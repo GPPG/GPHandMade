@@ -11,10 +11,14 @@
 #import "GPEventVoteController.h"
 #import "GPWebViewController.h"
 #import "GPslide.h"
-#import "GPEventBar.h"
+#import "GPLoginController.h"
+#import "HYBBubbleTransition.h"
+#import "GPEventBtn.h"
 
-@interface GPSlideEventController ()
-@property (nonatomic, weak) GPEventBar *bar;
+@interface GPSlideEventController ()<UIViewControllerTransitioningDelegate>
+@property (nonatomic, strong) HYBBubbleTransition *bubbleTransition;
+@property (nonatomic, weak) GPEventBtn *eventBtn;
+
 @end
 
 @implementation GPSlideEventController
@@ -28,6 +32,7 @@
     // 注册通知
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(snowUp) name:SnowUP object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(snowDown) name:SnowDown object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(loginVc) name:EventBarClick object:nil];
 }
 #pragma mark - 初始化子控件
 - (void)setupView
@@ -68,26 +73,54 @@
 }
 - (void)addEventBar
 {
-     GPEventBar *bar = [GPEventBar sharedInstace];
-    [bar showCenter:CGPointMake(self.view.centerX, SCREEN_HEIGHT - 2 * GPTabBarH) cornerRadius:20];
-    self.bar  = bar;
+
+    GPEventBtn *eventBtn = [[GPEventBtn alloc]init];
+    [eventBtn setImage:[UIImage imageNamed:@"activity"] forState:UIControlStateNormal];
+    [eventBtn sizeToFit];
+    [eventBtn showEventButCenter:CGPointMake(SCREEN_WIDTH * 0.5 , SCREEN_HEIGHT - 2 * eventBtn.width)];
+    [eventBtn addTarget:self action:@selector(loginVc) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:eventBtn];
+    [self.view bringSubviewToFront:eventBtn];
+    self.eventBtn = eventBtn;
+
 }
 #pragma mark - 通知回调
 - (void)snowUp
 {
     NSLog(@"快上");
-     [self.bar ShowanimateCenter:CGPointMake(self.view.centerX, SCREEN_HEIGHT + 2 * GPTabBarH) duration:1];
+    [self.eventBtn shoeAnamEventBtnCenter:CGPointMake(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT + 2 * self.eventBtn.width)];
+    
 }
 - (void)snowDown
 {
     NSLog(@"快下");
-     [self.bar ShowanimateCenter:CGPointMake(self.view.centerX, SCREEN_HEIGHT - 2 * GPTabBarH) duration:1];
+    [self.eventBtn shoeAnamEventBtnCenter:CGPointMake(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT - 2 * self.eventBtn.width)];
+}
+- (void)loginVc
+{
+    GPLoginController *loginVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPLoginController class]) bundle:nil].instantiateInitialViewController;
+    
+    loginVc.modalPresentationStyle = UIModalPresentationCustom;
+    
+    self.bubbleTransition = [[HYBBubbleTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
+        
+        HYBBubbleTransition *bubble = (HYBBubbleTransition *)transition;
+        
+        bubble.bubbleColor = presented.view.backgroundColor;
+        
+        // 由于一个控制器有导航，一个没有，导致会有64的误差，所以要记得处理这种情况
+        CGPoint center = CGPointMake(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT - 1.5 *GPTabBarH);
+        bubble.bubbleStartPoint = center;
+    } dismissed:^(UIViewController *dismissed, HYBBaseTransition *transition) {
+        transition.transitionMode = kHYBTransitionDismiss;
+    }];
+    loginVc.transitioningDelegate = self.bubbleTransition;
+    [self presentViewController:loginVc animated:YES completion:nil];
 }
 #pragma mark - 生命周期
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    self.bar.window_.hidden = YES;
 }
 -(void)dealloc
 {

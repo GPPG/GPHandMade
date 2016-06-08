@@ -8,7 +8,7 @@
 
 #import "GPWebViewController.h"
 #import "GPslide.h"
-#import "GPEventBar.h"
+#import "GPEventBtn.h"
 
 @interface GPWebViewController()<UIWebViewDelegate,UIScrollViewDelegate>
 
