@@ -17,23 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bx-iz-358">
-                                <rect key="frame" x="156" y="201" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="btn:" destination="oKV-Ye-Nfb" eventType="touchUpInside" id="Qxs-w0-Kgc"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="IjQ-G9-miM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbu-It-UZV">
+                                <rect key="frame" x="206" y="177" width="188" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="iQh-2j-Awi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U28-iG-Jxi">
+                                <rect key="frame" x="206" y="236" width="188" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.65444783660000005" green="1" blue="0.57594533469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U28-iG-Jxi" firstAttribute="trailing" secondItem="fbu-It-UZV" secondAttribute="trailing" id="0mT-D4-gwr"/>
+                            <constraint firstItem="U28-iG-Jxi" firstAttribute="top" secondItem="fbu-It-UZV" secondAttribute="bottom" constant="29" id="J6R-tb-xAX"/>
+                            <constraint firstItem="IjQ-G9-miM" firstAttribute="top" secondItem="Q3X-K9-cET" secondAttribute="bottom" id="QFz-ek-D3l"/>
+                            <constraint firstItem="fbu-It-UZV" firstAttribute="centerX" secondItem="IjQ-G9-miM" secondAttribute="centerX" id="SAd-O8-567"/>
+                            <constraint firstAttribute="trailing" secondItem="IjQ-G9-miM" secondAttribute="trailing" id="Wp9-NS-9pY"/>
+                            <constraint firstItem="U28-iG-Jxi" firstAttribute="leading" secondItem="fbu-It-UZV" secondAttribute="leading" id="ZKS-FG-lgh"/>
+                            <constraint firstItem="IjQ-G9-miM" firstAttribute="leading" secondItem="d1I-gI-NfQ" secondAttribute="leading" id="adA-in-8IE"/>
+                            <constraint firstItem="0R4-li-b51" firstAttribute="top" secondItem="IjQ-G9-miM" secondAttribute="bottom" id="izq-9U-d5B"/>
+                            <constraint firstItem="fbu-It-UZV" firstAttribute="top" secondItem="Q3X-K9-cET" secondAttribute="bottom" constant="177" id="vyQ-OD-BNd"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="btn" destination="6Bx-iz-358" id="780-s8-CKP"/>
-                    </connections>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxG-P2-j48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="421" y="133"/>
+            <point key="canvasLocation" x="11" y="-67"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="loginBackground" width="375" height="562"/>
+    </resources>
 </document>

@@ -78,6 +78,7 @@
     [eventBtn setImage:[UIImage imageNamed:@"activity"] forState:UIControlStateNormal];
     [eventBtn sizeToFit];
     [eventBtn showEventButCenter:CGPointMake(SCREEN_WIDTH * 0.5 , SCREEN_HEIGHT - 2 * eventBtn.width)];
+    eventBtn.transform = CGAffineTransformMakeScale(2, 2);
     [eventBtn addTarget:self action:@selector(loginVc) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:eventBtn];
     [self.view bringSubviewToFront:eventBtn];

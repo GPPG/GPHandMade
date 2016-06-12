@@ -24,7 +24,6 @@
 -(UIColor*)borderUIColor
 
 {
-    
     return [UIColor colorWithCGColor:self.borderColor];
     
 }
