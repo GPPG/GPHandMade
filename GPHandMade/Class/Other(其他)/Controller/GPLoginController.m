@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addEventBar];
-    
 }
+
 - (void)addEventBar
 {
     GPEventBtn *eventBtn = [[GPEventBtn alloc]init];
@@ -31,7 +31,6 @@
     [self.view addSubview:eventBtn];
     [self.view bringSubviewToFront:eventBtn];
     self.eventBtn = eventBtn;
-    
 }
 - (void)dismissVc
 {

@@ -243,10 +243,12 @@ static NSString * const GPAppraiseCell = @"AppraiseCell";
 #pragma mark - UICollectionView 代理
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    GPSlideLessonController *ss = [[GPSlideLessonController alloc]init];
-    GPOtherClass *otherClass = self.otherCalssS[indexPath.row];
-    ss.handID = otherClass.id;
-    [self.navigationController pushViewController:ss animated:YES];
+    if (indexPath.section == 0) {
+        GPSlideLessonController *ss = [[GPSlideLessonController alloc]init];
+        GPOtherClass *otherClass = self.otherCalssS[indexPath.row];
+        ss.handID = otherClass.id;
+        [self.navigationController pushViewController:ss animated:YES];
+    }
 }
 #pragma mark - UIcollectionView 数据源方法
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -269,6 +271,11 @@ static NSString * const GPAppraiseCell = @"AppraiseCell";
         return classCell;
     }else{
         GPFooterAppraiseCell *appraiseCell = [collectionView dequeueReusableCellWithReuseIdentifier:GPAppraiseCell forIndexPath:indexPath];
+        
+        UIView *selectView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 45)];
+        selectView.backgroundColor = [UIColor lightGrayColor];
+        appraiseCell.selectedBackgroundView = selectView;
+        
         appraiseCell.appraiseData = self.appraiseS[indexPath.row];
         return appraiseCell;
     }
