@@ -34,7 +34,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="U28-iG-Jxi" firstAttribute="trailing" secondItem="fbu-It-UZV" secondAttribute="trailing" id="0mT-D4-gwr"/>
                             <constraint firstItem="U28-iG-Jxi" firstAttribute="top" secondItem="fbu-It-UZV" secondAttribute="bottom" constant="29" id="J6R-tb-xAX"/>
@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxG-P2-j48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11" y="-67"/>
+            <point key="canvasLocation" x="-158" y="-69"/>
         </scene>
     </scenes>
     <resources>

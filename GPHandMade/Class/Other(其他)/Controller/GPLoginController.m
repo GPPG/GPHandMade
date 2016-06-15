@@ -10,6 +10,7 @@
 #import "GPEventBtn.h"
 
 @interface GPLoginController ()
+
 @property (nonatomic, weak) GPEventBtn *eventBtn;
 @end
 
@@ -35,5 +36,10 @@
 - (void)dismissVc
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+    
 }
 @end
