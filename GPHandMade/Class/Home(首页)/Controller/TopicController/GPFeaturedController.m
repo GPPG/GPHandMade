@@ -335,8 +335,8 @@ static NSString * const GPSectionHead = @"HotSectionCell";
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CATransform3D rotation;//3D旋转
-    rotation = CATransform3DMakeTranslation(0 ,50 ,20);
-    //        rotation = CATransform3DMakeRotation( M_PI_4 , 0.0, 0.7, 0.4);
+//    rotation = CATransform3DMakeTranslation(0 ,50 ,20);
+            rotation = CATransform3DMakeRotation( M_PI_4 , 0.0, 0.7, 0.4);
     //逆时针旋转
     
     rotation = CATransform3DScale(rotation, 0.8, 0.8, 1);
