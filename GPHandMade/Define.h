@@ -40,6 +40,7 @@
 #define GPNavBarBottom 64
 #define GPTitlesViewH 40
 #define GPTabBarH 49
+#define GPEventScale 1.5
 /**
  *  通知
  */

@@ -162,20 +162,43 @@ static NSString * const GPShopCell = @"shopCell";
     shopCell.shopData = self.DataS[indexPath.row];
     return shopCell;
 }
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CATransform3D rotation;//3D旋转
+        rotation = CATransform3DMakeTranslation(0 ,50 ,20);
+//    rotation = CATransform3DMakeRotation( M_PI_4 , 0.0, 0.7, 0.4);
+    //逆时针旋转
+    
+    rotation = CATransform3DScale(rotation, 0.6, 0.6, 1);
+    
+    rotation.m34 = 1.0/ 1000;
+    
+    cell.layer.shadowColor = [[UIColor redColor]CGColor];
+    cell.layer.shadowOffset = CGSizeMake(10, 10);
+    cell.alpha = 0;
+    
+    cell.layer.transform = rotation;
+    
+    [UIView beginAnimations:@"rotation" context:NULL];
+    //旋转时间
+    [UIView setAnimationDuration:0.6];
+    
+    cell.layer.transform = CATransform3DIdentity;
+    cell.alpha = 1;
+    cell.layer.shadowOffset = CGSizeMake(0, 0);
+    [UIView commitAnimations];
+}
 #pragma mark - UIScrlloView 代理
 static int _lastPosition;    //A variable define in headfile
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     int currentPostion = scrollView.contentOffset.y;
-    if (currentPostion - _lastPosition > 25) {
+    if (currentPostion - _lastPosition > 60) {
         _lastPosition = currentPostion;
-        NSLog(@"上");
         [[NSNotificationCenter defaultCenter]postNotificationName:SnowUP object:nil];
     }
-    else if (_lastPosition - currentPostion > 25){
+    else if (_lastPosition - currentPostion > 60 ){
         _lastPosition = currentPostion;
-        NSLog(@"下");
         [[NSNotificationCenter defaultCenter]postNotificationName:SnowDown object:nil];
-
     }
 }
 

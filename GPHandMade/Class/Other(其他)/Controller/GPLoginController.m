@@ -24,9 +24,10 @@
 - (void)addEventBar
 {
     GPEventBtn *eventBtn = [[GPEventBtn alloc]init];
-    [eventBtn setImage:[UIImage imageNamed:@"activitiesWillStart"] forState:UIControlStateNormal];
+    [eventBtn setImage:[UIImage imageNamed:@"activity_works_Btn"] forState:UIControlStateNormal];
     [eventBtn sizeToFit];
-    [eventBtn showEventButCenter:CGPointMake(SCREEN_WIDTH * 0.5 , SCREEN_HEIGHT - 2 * eventBtn.width)];
+    eventBtn.transform = CGAffineTransformMakeScale(2, 2);
+    [eventBtn showEventButCenter:CGPointMake(SCREEN_WIDTH * 0.5 , SCREEN_HEIGHT - GPEventScale * eventBtn.width)];
     eventBtn.transform = CGAffineTransformMakeScale(2, 2);
     [eventBtn addTarget:self action:@selector(dismissVc) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:eventBtn];

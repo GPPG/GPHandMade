@@ -271,8 +271,8 @@
 		AC7A9CF81CF2E060001A9550 /* GPSlideCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPSlideCollectionViewCell.xib; sourceTree = "<group>"; };
 		AC7A9CFB1CF2E9AE001A9550 /* GPSlideShopData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSlideShopData.h; sourceTree = "<group>"; };
 		AC7A9CFC1CF2E9AE001A9550 /* GPSlideShopData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSlideShopData.m; sourceTree = "<group>"; };
-		ACA236511D11508C00489F96 /* GPLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPLayout.h; sourceTree = "<group>"; };
-		ACA236521D11508C00489F96 /* GPLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPLayout.m; sourceTree = "<group>"; };
+		ACA236511D11508C00489F96 /* GPLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPLayout.h; path = "../Home(首页)/Controller/TopicController/GPLayout.h"; sourceTree = "<group>"; };
+		ACA236521D11508C00489F96 /* GPLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPLayout.m; path = "../Home(首页)/Controller/TopicController/GPLayout.m"; sourceTree = "<group>"; };
 		ACB2E0ED1CF8278A00D3F5EA /* GPNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPNewFeatureController.h; sourceTree = "<group>"; };
 		ACB2E0EE1CF8278A00D3F5EA /* GPNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPNewFeatureController.m; sourceTree = "<group>"; };
 		ACB2E0F01CF827AC00D3F5EA /* GPNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPNewFeatureCell.h; sourceTree = "<group>"; };
@@ -381,6 +381,8 @@
 		AC0EA3261D06D12D0041D14E /* Other(其他) */ = {
 			isa = PBXGroup;
 			children = (
+				ACA236511D11508C00489F96 /* GPLayout.h */,
+				ACA236521D11508C00489F96 /* GPLayout.m */,
 				AC0EA3271D06D12D0041D14E /* Controller */,
 				AC0EA3281D06D12D0041D14E /* Model */,
 				AC0EA3291D06D12D0041D14E /* View */,
@@ -450,8 +452,6 @@
 		AC2925851D02AD6D00726E51 /* TopicController */ = {
 			isa = PBXGroup;
 			children = (
-				ACA236511D11508C00489F96 /* GPLayout.h */,
-				ACA236521D11508C00489F96 /* GPLayout.m */,
 				AC2925961D02AF7A00726E51 /* GPSuperTopicController.h */,
 				AC2925971D02AF7A00726E51 /* GPSuperTopicController.m */,
 				AC2925991D02B0A400726E51 /* GPFeaturedController.h */,

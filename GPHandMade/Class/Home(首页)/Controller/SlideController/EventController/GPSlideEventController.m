@@ -77,8 +77,8 @@
     GPEventBtn *eventBtn = [[GPEventBtn alloc]init];
     [eventBtn setImage:[UIImage imageNamed:@"activity"] forState:UIControlStateNormal];
     [eventBtn sizeToFit];
-    [eventBtn showEventButCenter:CGPointMake(SCREEN_WIDTH * 0.5 , SCREEN_HEIGHT - 2 * eventBtn.width)];
     eventBtn.transform = CGAffineTransformMakeScale(2, 2);
+    [eventBtn showEventButCenter:CGPointMake(SCREEN_WIDTH * 0.5 , SCREEN_HEIGHT - GPEventScale * eventBtn.width)];
     [eventBtn addTarget:self action:@selector(loginVc) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:eventBtn];
     [self.view bringSubviewToFront:eventBtn];
@@ -88,14 +88,12 @@
 #pragma mark - 通知回调
 - (void)snowUp
 {
-    NSLog(@"快上");
-    [self.eventBtn shoeAnamEventBtnCenter:CGPointMake(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT + 2 * self.eventBtn.width)];
+    [self.eventBtn shoeAnamEventBtnCenter:CGPointMake(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT + GPEventScale * self.eventBtn.width)];
     
 }
 - (void)snowDown
 {
-    NSLog(@"快下");
-    [self.eventBtn shoeAnamEventBtnCenter:CGPointMake(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT - 2 * self.eventBtn.width)];
+    [self.eventBtn shoeAnamEventBtnCenter:CGPointMake(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT - GPEventScale * self.eventBtn.width)];
 }
 - (void)loginVc
 {
@@ -110,7 +108,7 @@
         bubble.bubbleColor = presented.view.backgroundColor;
         
         // 由于一个控制器有导航，一个没有，导致会有64的误差，所以要记得处理这种情况
-        CGPoint center = CGPointMake(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT - 1.5 *GPTabBarH);
+        CGPoint center = CGPointMake(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT - GPEventScale * self.eventBtn.height);
         bubble.bubbleStartPoint = center;
     } dismissed:^(UIViewController *dismissed, HYBBaseTransition *transition) {
         transition.transitionMode = kHYBTransitionDismiss;

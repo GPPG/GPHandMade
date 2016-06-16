@@ -29,6 +29,7 @@
     self.loadWebView.scalesPageToFit = YES;
     self.loadWebView.backgroundColor = [UIColor whiteColor];
     self.loadWebView.scrollView.delegate = self;
+    self.loadWebView.scrollView.bounces = NO;
 }
 #pragma mark - 数据处理
 - (void)setSlide:(GPslide *)slide
