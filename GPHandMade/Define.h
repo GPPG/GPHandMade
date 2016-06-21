@@ -59,7 +59,7 @@
  *  颜色
  */
 #define GPWriteToPlist(obj, filename) [obj writeToFile:[NSString stringWithFormat:@"/Users/mac/Desktop", filename] atomically:YES];
-
+#define GPNameColor [UIColor colorWithRed:(54 / 255.0) green:(71 / 255.0) blue:(121 / 255.0) alpha:0.9]
 #define GPColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define GPColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
 #define GPRandomColor GPColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))

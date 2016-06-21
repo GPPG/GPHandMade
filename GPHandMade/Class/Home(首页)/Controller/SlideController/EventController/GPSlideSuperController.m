@@ -17,11 +17,13 @@
 #import "SVProgressHUD.h"
 #import "GPAutoFooter.h"
 #import "GPEventNewController.h"
+#import "GPTimeLineController.h"
 
 @interface GPSlideSuperController ()
 @property (nonatomic, copy) NSString *handID; // 记录点击轮播的参数
 @property (nonatomic, copy) NSString *lastId; // 标记
 @property (nonatomic, strong) NSMutableArray *DataS; // 请求数据模型数组
+
 
 @end
 
@@ -188,6 +190,14 @@ static NSString * const GPShopCell = @"shopCell";
     cell.layer.shadowOffset = CGSizeMake(0, 0);
     [UIView commitAnimations];
 }
+#pragma mark - UICollection 代理
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    GPTimeLineController *timeLineVc = [[GPTimeLineController alloc]init];
+    GPSlideShopData *shopData = self.DataS[indexPath.row];
+    timeLineVc.circleID = shopData.circle_item_id;
+    [self.navigationController pushViewController:timeLineVc animated:YES];
+}
 #pragma mark - UIScrlloView 代理
 static int _lastPosition;    //A variable define in headfile
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -201,5 +211,4 @@ static int _lastPosition;    //A variable define in headfile
         [[NSNotificationCenter defaultCenter]postNotificationName:SnowDown object:nil];
     }
 }
-
 @end

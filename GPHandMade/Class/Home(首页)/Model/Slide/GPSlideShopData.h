@@ -15,4 +15,5 @@
 @property (nonatomic,copy) NSString *uname; // 用户
 @property (nonatomic,copy) NSString *votes; // 投票数
 @property (nonatomic,copy) NSString *last_id; // 标记
+@property (nonatomic,copy) NSString *circle_item_id; // 跳转参数
 @end

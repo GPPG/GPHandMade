@@ -61,6 +61,11 @@
 		AC561F8E1D050FEB00919703 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC561F831D050FEB00919703 /* SDCollectionViewCell.m */; };
 		AC561F8F1D050FEB00919703 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC561F851D050FEB00919703 /* SDCycleScrollView.m */; };
 		AC561F901D050FEB00919703 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AC561F871D050FEB00919703 /* UIView+SDExtension.m */; };
+		AC5A533C1D13E1260061D5D8 /* GPTimeLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A533B1D13E1260061D5D8 /* GPTimeLineController.m */; };
+		AC5A53471D13E1E00061D5D8 /* GPPhotoContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A53461D13E1E00061D5D8 /* GPPhotoContainerView.m */; };
+		AC5A534C1D13E3110061D5D8 /* GPTimeLineData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A534B1D13E3110061D5D8 /* GPTimeLineData.m */; };
+		AC5A534F1D13E49E0061D5D8 /* GPTimeLinePicData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A534E1D13E49E0061D5D8 /* GPTimeLinePicData.m */; };
+		AC5A53521D13E4C40061D5D8 /* GPTimeLineLaudData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A53511D13E4C40061D5D8 /* GPTimeLineLaudData.m */; };
 		AC5AAE271CF5337600EDBF99 /* GPLessonData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5AAE261CF5337600EDBF99 /* GPLessonData.m */; };
 		AC5AAE2B1CF5442A00EDBF99 /* GPMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5AAE2A1CF5442A00EDBF99 /* GPMaterial.m */; };
 		AC5AAE2E1CF5443A00EDBF99 /* GPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5AAE2D1CF5443A00EDBF99 /* GPTools.m */; };
@@ -107,6 +112,16 @@
 		ACD5854E1CFBF31200F7942D /* GPAppraiseData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5854D1CFBF31200F7942D /* GPAppraiseData.m */; };
 		ACD585511CFC3ECA00F7942D /* GPLessonHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD585501CFC3ECA00F7942D /* GPLessonHeadView.m */; };
 		ACD585531CFC3EE100F7942D /* GPLessonHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD585521CFC3EE100F7942D /* GPLessonHeadView.xib */; };
+		ACDA28501D17796600BE1579 /* GPTimeLineCommentData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDA284F1D17796600BE1579 /* GPTimeLineCommentData.m */; };
+		ACDA28531D179A9700BE1579 /* GPTimeLineEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDA28521D179A9700BE1579 /* GPTimeLineEventCell.m */; };
+		ACDA28561D179AB500BE1579 /* GPTimeLineApperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDA28551D179AB500BE1579 /* GPTimeLineApperCell.m */; };
+		ACDA28591D179AC600BE1579 /* GPTimeLIneCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDA28581D179AC600BE1579 /* GPTimeLIneCommentCell.m */; };
+		ACDA285C1D17CBF200BE1579 /* PhotosContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDA285B1D17CBF200BE1579 /* PhotosContainerView.m */; };
+		ACDA285F1D18E30900BE1579 /* GPTimeLineHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDA285E1D18E30900BE1579 /* GPTimeLineHeadCell.m */; };
+		ACDA28651D191AEB00BE1579 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDA28621D191AEB00BE1579 /* UIImage+RoundedCorner.m */; };
+		ACDA28661D191AEB00BE1579 /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDA28641D191AEB00BE1579 /* UIView+RoundedCorner.m */; };
+		ACDDCCDB1D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDCCD81D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.m */; };
+		ACDDCCDC1D192EEE00E4615D /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDCCDA1D192EEE00E4615D /* UIView+SDAutoLayout.m */; };
 		ACDE67171CED61F500FC47DD /* GPHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDE67161CED61F500FC47DD /* GPHttpTool.m */; };
 		ACEABAE11CFFCA650024FC67 /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABADB1CFFCA650024FC67 /* SDBrowserImageView.m */; };
 		ACEABAE21CFFCA650024FC67 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABADD1CFFCA650024FC67 /* SDPhotoBrowser.m */; };
@@ -238,6 +253,16 @@
 		AC561F851D050FEB00919703 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		AC561F861D050FEB00919703 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		AC561F871D050FEB00919703 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		AC5A533A1D13E1260061D5D8 /* GPTimeLineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimeLineController.h; sourceTree = "<group>"; };
+		AC5A533B1D13E1260061D5D8 /* GPTimeLineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimeLineController.m; sourceTree = "<group>"; };
+		AC5A53451D13E1E00061D5D8 /* GPPhotoContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPhotoContainerView.h; sourceTree = "<group>"; };
+		AC5A53461D13E1E00061D5D8 /* GPPhotoContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPhotoContainerView.m; sourceTree = "<group>"; };
+		AC5A534A1D13E3110061D5D8 /* GPTimeLineData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimeLineData.h; sourceTree = "<group>"; };
+		AC5A534B1D13E3110061D5D8 /* GPTimeLineData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimeLineData.m; sourceTree = "<group>"; };
+		AC5A534D1D13E49E0061D5D8 /* GPTimeLinePicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimeLinePicData.h; sourceTree = "<group>"; };
+		AC5A534E1D13E49E0061D5D8 /* GPTimeLinePicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimeLinePicData.m; sourceTree = "<group>"; };
+		AC5A53501D13E4C40061D5D8 /* GPTimeLineLaudData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimeLineLaudData.h; sourceTree = "<group>"; };
+		AC5A53511D13E4C40061D5D8 /* GPTimeLineLaudData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimeLineLaudData.m; sourceTree = "<group>"; };
 		AC5AAE251CF5337600EDBF99 /* GPLessonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPLessonData.h; sourceTree = "<group>"; };
 		AC5AAE261CF5337600EDBF99 /* GPLessonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPLessonData.m; sourceTree = "<group>"; };
 		AC5AAE291CF5442A00EDBF99 /* GPMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMaterial.h; sourceTree = "<group>"; };
@@ -318,6 +343,26 @@
 		ACD5854F1CFC3ECA00F7942D /* GPLessonHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPLessonHeadView.h; path = ../Model/Slide/GPLessonHeadView.h; sourceTree = "<group>"; };
 		ACD585501CFC3ECA00F7942D /* GPLessonHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPLessonHeadView.m; path = ../Model/Slide/GPLessonHeadView.m; sourceTree = "<group>"; };
 		ACD585521CFC3EE100F7942D /* GPLessonHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GPLessonHeadView.xib; path = ../Model/Slide/GPLessonHeadView.xib; sourceTree = "<group>"; };
+		ACDA284E1D17796600BE1579 /* GPTimeLineCommentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimeLineCommentData.h; sourceTree = "<group>"; };
+		ACDA284F1D17796600BE1579 /* GPTimeLineCommentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimeLineCommentData.m; sourceTree = "<group>"; };
+		ACDA28511D179A9700BE1579 /* GPTimeLineEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimeLineEventCell.h; sourceTree = "<group>"; };
+		ACDA28521D179A9700BE1579 /* GPTimeLineEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimeLineEventCell.m; sourceTree = "<group>"; };
+		ACDA28541D179AB500BE1579 /* GPTimeLineApperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimeLineApperCell.h; sourceTree = "<group>"; };
+		ACDA28551D179AB500BE1579 /* GPTimeLineApperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimeLineApperCell.m; sourceTree = "<group>"; };
+		ACDA28571D179AC600BE1579 /* GPTimeLIneCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimeLIneCommentCell.h; sourceTree = "<group>"; };
+		ACDA28581D179AC600BE1579 /* GPTimeLIneCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimeLIneCommentCell.m; sourceTree = "<group>"; };
+		ACDA285A1D17CBF200BE1579 /* PhotosContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosContainerView.h; sourceTree = "<group>"; };
+		ACDA285B1D17CBF200BE1579 /* PhotosContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosContainerView.m; sourceTree = "<group>"; };
+		ACDA285D1D18E30900BE1579 /* GPTimeLineHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimeLineHeadCell.h; sourceTree = "<group>"; };
+		ACDA285E1D18E30900BE1579 /* GPTimeLineHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimeLineHeadCell.m; sourceTree = "<group>"; };
+		ACDA28611D191AEB00BE1579 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		ACDA28621D191AEB00BE1579 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		ACDA28631D191AEB00BE1579 /* UIView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundedCorner.h"; sourceTree = "<group>"; };
+		ACDA28641D191AEB00BE1579 /* UIView+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorner.m"; sourceTree = "<group>"; };
+		ACDDCCD71D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		ACDDCCD81D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		ACDDCCD91D192EEE00E4615D /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		ACDDCCDA1D192EEE00E4615D /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 		ACDE67151CED61F500FC47DD /* GPHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHttpTool.h; sourceTree = "<group>"; };
 		ACDE67161CED61F500FC47DD /* GPHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHttpTool.m; sourceTree = "<group>"; };
 		ACEABADA1CFFCA650024FC67 /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
@@ -374,6 +419,7 @@
 				AC0EA2D81D051A750041D14E /* GPEventNewController.m */,
 				AC0EA2DA1D051A890041D14E /* GPEventVoteController.h */,
 				AC0EA2DB1D051A890041D14E /* GPEventVoteController.m */,
+				AC5A53391D13E0EC0061D5D8 /* GPEventTimeController */,
 			);
 			name = EventTopicController;
 			sourceTree = "<group>";
@@ -897,6 +943,67 @@
 			path = PageControl;
 			sourceTree = "<group>";
 		};
+		AC5A53391D13E0EC0061D5D8 /* GPEventTimeController */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A533A1D13E1260061D5D8 /* GPTimeLineController.h */,
+				AC5A533B1D13E1260061D5D8 /* GPTimeLineController.m */,
+			);
+			name = GPEventTimeController;
+			sourceTree = "<group>";
+		};
+		AC5A533D1D13E1330061D5D8 /* TimeLineView */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A53441D13E1E00061D5D8 /* PhotoContainer */,
+				ACDA285D1D18E30900BE1579 /* GPTimeLineHeadCell.h */,
+				ACDA285E1D18E30900BE1579 /* GPTimeLineHeadCell.m */,
+				ACDA28511D179A9700BE1579 /* GPTimeLineEventCell.h */,
+				ACDA28521D179A9700BE1579 /* GPTimeLineEventCell.m */,
+				ACDA28541D179AB500BE1579 /* GPTimeLineApperCell.h */,
+				ACDA28551D179AB500BE1579 /* GPTimeLineApperCell.m */,
+				ACDA28571D179AC600BE1579 /* GPTimeLIneCommentCell.h */,
+				ACDA28581D179AC600BE1579 /* GPTimeLIneCommentCell.m */,
+			);
+			name = TimeLineView;
+			sourceTree = "<group>";
+		};
+		AC5A53441D13E1E00061D5D8 /* PhotoContainer */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA285A1D17CBF200BE1579 /* PhotosContainerView.h */,
+				ACDA285B1D17CBF200BE1579 /* PhotosContainerView.m */,
+				AC5A53451D13E1E00061D5D8 /* GPPhotoContainerView.h */,
+				AC5A53461D13E1E00061D5D8 /* GPPhotoContainerView.m */,
+			);
+			path = PhotoContainer;
+			sourceTree = "<group>";
+		};
+		AC5A53481D13E2E70061D5D8 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				AC7A9CFB1CF2E9AE001A9550 /* GPSlideShopData.h */,
+				AC7A9CFC1CF2E9AE001A9550 /* GPSlideShopData.m */,
+				AC5A53491D13E2F60061D5D8 /* TimeLine */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		AC5A53491D13E2F60061D5D8 /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A534A1D13E3110061D5D8 /* GPTimeLineData.h */,
+				AC5A534B1D13E3110061D5D8 /* GPTimeLineData.m */,
+				AC5A534D1D13E49E0061D5D8 /* GPTimeLinePicData.h */,
+				AC5A534E1D13E49E0061D5D8 /* GPTimeLinePicData.m */,
+				AC5A53501D13E4C40061D5D8 /* GPTimeLineLaudData.h */,
+				AC5A53511D13E4C40061D5D8 /* GPTimeLineLaudData.m */,
+				ACDA284E1D17796600BE1579 /* GPTimeLineCommentData.h */,
+				ACDA284F1D17796600BE1579 /* GPTimeLineCommentData.m */,
+			);
+			name = TimeLine;
+			sourceTree = "<group>";
+		};
 		AC5AAE281CF5434600EDBF99 /* Lesson */ = {
 			isa = PBXGroup;
 			children = (
@@ -958,6 +1065,7 @@
 				AC7A9CF81CF2E060001A9550 /* GPSlideCollectionViewCell.xib */,
 				AC0EA3451D07EB9D0041D14E /* GPEventBtn.h */,
 				AC0EA3461D07EB9D0041D14E /* GPEventBtn.m */,
+				AC5A533D1D13E1330061D5D8 /* TimeLineView */,
 			);
 			name = EventView;
 			path = SlideView;
@@ -1074,11 +1182,10 @@
 		ACC047F71CEDA9EA004E8C74 /* Slide */ = {
 			isa = PBXGroup;
 			children = (
-				AC5AAE281CF5434600EDBF99 /* Lesson */,
 				ACC047F81CEDA9EA004E8C74 /* GPslide.h */,
 				ACC047F91CEDA9EA004E8C74 /* GPslide.m */,
-				AC7A9CFB1CF2E9AE001A9550 /* GPSlideShopData.h */,
-				AC7A9CFC1CF2E9AE001A9550 /* GPSlideShopData.m */,
+				AC5A53481D13E2E70061D5D8 /* Event */,
+				AC5AAE281CF5434600EDBF99 /* Lesson */,
 			);
 			path = Slide;
 			sourceTree = "<group>";
@@ -1114,9 +1221,33 @@
 			name = HomeView;
 			sourceTree = "<group>";
 		};
+		ACDA28601D191AEB00BE1579 /* JMRoundedCorner */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA28611D191AEB00BE1579 /* UIImage+RoundedCorner.h */,
+				ACDA28621D191AEB00BE1579 /* UIImage+RoundedCorner.m */,
+				ACDA28631D191AEB00BE1579 /* UIView+RoundedCorner.h */,
+				ACDA28641D191AEB00BE1579 /* UIView+RoundedCorner.m */,
+			);
+			path = JMRoundedCorner;
+			sourceTree = "<group>";
+		};
+		ACDDCCD61D192EEE00E4615D /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				ACDDCCD71D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.h */,
+				ACDDCCD81D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.m */,
+				ACDDCCD91D192EEE00E4615D /* UIView+SDAutoLayout.h */,
+				ACDDCCDA1D192EEE00E4615D /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
 		ACEABAAB1CFEB8FA0024FC67 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				ACDDCCD61D192EEE00E4615D /* SDAutoLayout */,
+				ACDA28601D191AEB00BE1579 /* JMRoundedCorner */,
 				AC0EA3321D0708D10041D14E /* HYBControllerTransitions */,
 				AC561F731D050FEB00919703 /* SDCycleScrollView */,
 				AC2925771D02A8BA00726E51 /* YZDisplayViewController */,
@@ -1349,6 +1480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDA28591D179AC600BE1579 /* GPTimeLIneCommentCell.m in Sources */,
 				AC4E72CE1CE18CA700E92406 /* GPTutorialTableViewController.m in Sources */,
 				AC0EA33F1D0708D10041D14E /* HYBBaseTransition.m in Sources */,
 				AC2925BE1D02E7E700726E51 /* GPGuideTool.m in Sources */,
@@ -1356,6 +1488,8 @@
 				ACB2E0FC1CFABC9A00D3F5EA /* GPJianDaoHeader.m in Sources */,
 				ACC047FB1CEDA9EA004E8C74 /* GPData.m in Sources */,
 				ACC048191CEEEAA4004E8C74 /* GPDarenData.m in Sources */,
+				ACDA285F1D18E30900BE1579 /* GPTimeLineHeadCell.m in Sources */,
+				ACDDCCDB1D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				AC561F8F1D050FEB00919703 /* SDCycleScrollView.m in Sources */,
 				AC5AAE2E1CF5443A00EDBF99 /* GPTools.m in Sources */,
 				ACEABAE31CFFCA650024FC67 /* SDWaitingView.m in Sources */,
@@ -1364,17 +1498,21 @@
 				AC2925B01D02C09200726E51 /* GPAdvanceData.m in Sources */,
 				AC561F8D1D050FEB00919703 /* TAPageControl.m in Sources */,
 				AC7A9CE41CF04F17001A9550 /* GPWebViewController.m in Sources */,
+				ACDA285C1D17CBF200BE1579 /* PhotosContainerView.m in Sources */,
 				AC2925981D02AF7A00726E51 /* GPSuperTopicController.m in Sources */,
+				AC5A53521D13E4C40061D5D8 /* GPTimeLineLaudData.m in Sources */,
 				AC2925A41D02B0E500726E51 /* GPEventController.m in Sources */,
 				AC0EA2D91D051A750041D14E /* GPEventNewController.m in Sources */,
 				AC0EA3441D0708D10041D14E /* UIViewController+HYBMoveTransition.m in Sources */,
 				AC4E72C81CE18A6300E92406 /* GPTabBarController.m in Sources */,
 				ACA236531D11508C00489F96 /* GPLayout.m in Sources */,
 				AC2925821D02A8BA00726E51 /* YZDisplayTitleLabel.m in Sources */,
+				AC5A534F1D13E49E0061D5D8 /* GPTimeLinePicData.m in Sources */,
 				ACB2E0F81CFAA65200D3F5EA /* GPAdViewController.m in Sources */,
 				AC7A9CF21CF2A16A001A9550 /* GPTitleBtn.m in Sources */,
 				AC4E72D11CE18CB500E92406 /* GPHandTableViewController.m in Sources */,
 				AC5AAE451CF54BC800EDBF99 /* GPContentCell.m in Sources */,
+				AC5A534C1D13E3110061D5D8 /* GPTimeLineData.m in Sources */,
 				AC7A9CF51CF2A36D001A9550 /* UIView+GPExtension.m in Sources */,
 				AC561F8E1D050FEB00919703 /* SDCollectionViewCell.m in Sources */,
 				AC2925B51D02CFC600726E51 /* GPNavigationCell.m in Sources */,
@@ -1387,7 +1525,10 @@
 				AC4E72D71CE18CCD00E92406 /* GPMyTableViewController.m in Sources */,
 				AC2925C11D0431F600726E51 /* GPSlideHeadView.m in Sources */,
 				AC0EA2D51D051A130041D14E /* GPSlideEventController.m in Sources */,
+				ACDA28561D179AB500BE1579 /* GPTimeLineApperCell.m in Sources */,
 				AC561F8B1D050FEB00919703 /* TAAnimatedDotView.m in Sources */,
+				AC5A533C1D13E1260061D5D8 /* GPTimeLineController.m in Sources */,
+				ACDA28661D191AEB00BE1579 /* UIView+RoundedCorner.m in Sources */,
 				ACD585451CFBE45400F7942D /* GPFooterClassCell.m in Sources */,
 				AC2925811D02A8BA00726E51 /* UIView+Frame.m in Sources */,
 				AC2925A71D02B1F200726E51 /* GPHomController.m in Sources */,
@@ -1396,6 +1537,7 @@
 				AC0EA3421D0708D10041D14E /* HYBModalTransition.m in Sources */,
 				AC2925BA1D02CFE200726E51 /* GPAdvanceCell.m in Sources */,
 				ACC048051CEDAA53004E8C74 /* GPCompetitionData.m in Sources */,
+				ACDA28501D17796600BE1579 /* GPTimeLineCommentData.m in Sources */,
 				ACEABAE11CFFCA650024FC67 /* SDBrowserImageView.m in Sources */,
 				AC0EA2D61D051A130041D14E /* GPSlideSuperController.m in Sources */,
 				AC2925AD1D02C08400726E51 /* GPNavigationData.m in Sources */,
@@ -1406,6 +1548,7 @@
 				AC0EA3411D0708D10041D14E /* HYBEaseInOutTransition.m in Sources */,
 				AC2925C51D0436D600726E51 /* GPSectionHeadView.m in Sources */,
 				AC29259B1D02B0A400726E51 /* GPFeaturedController.m in Sources */,
+				ACDA28531D179A9700BE1579 /* GPTimeLineEventCell.m in Sources */,
 				ACD5854E1CFBF31200F7942D /* GPAppraiseData.m in Sources */,
 				AC5AAE271CF5337600EDBF99 /* GPLessonData.m in Sources */,
 				ACC047FF1CEDAA27004E8C74 /* GPSalonData.m in Sources */,
@@ -1415,10 +1558,13 @@
 				AC561F8C1D050FEB00919703 /* TADotView.m in Sources */,
 				AC5AAE311CF5445200EDBF99 /* GPOtherClass.m in Sources */,
 				AC7A9CF91CF2E060001A9550 /* GPSlideCollectionViewCell.m in Sources */,
+				ACDDCCDC1D192EEE00E4615D /* UIView+SDAutoLayout.m in Sources */,
+				AC5A53471D13E1E00061D5D8 /* GPPhotoContainerView.m in Sources */,
 				AC2925831D02A8BA00726E51 /* YZDisplayViewController.m in Sources */,
 				ACB2E0EF1CF8278A00D3F5EA /* GPNewFeatureController.m in Sources */,
 				ACDE67171CED61F500FC47DD /* GPHttpTool.m in Sources */,
 				ACB2E0F31CF827AC00D3F5EA /* GPNewFeatureCell.m in Sources */,
+				ACDA28651D191AEB00BE1579 /* UIImage+RoundedCorner.m in Sources */,
 				ACC048091CEDBC14004E8C74 /* GPLookCell.m in Sources */,
 				AC0EA3471D07EB9D0041D14E /* GPEventBtn.m in Sources */,
 				AC5AAE401CF54A3700EDBF99 /* GPSubTitleCell.m in Sources */,
