@@ -19,6 +19,7 @@
 #import "GPTimeLineApperCell.h"
 #import "UITableView+SDAutoTableViewCellHeight.h"
 #import "GPTimeLineHeadCell.h"
+#import "GPLoginController.h"
 
 @interface GPTimeLineController ()
 @property (nonatomic, strong) GPTimeLineData *timeLineData;
@@ -161,6 +162,8 @@ static NSString * const HeadCell = @"headCell";
 #pragma mark - 内部方法
 - (void)eventBtnClcik
 {
+    GPLoginController *loginVc = [UIStoryboard storyboardWithName:@"GPLoginController" bundle:nil].instantiateInitialViewController;
+    [self presentViewController:loginVc animated:YES completion:nil];
 }
 
 @end
