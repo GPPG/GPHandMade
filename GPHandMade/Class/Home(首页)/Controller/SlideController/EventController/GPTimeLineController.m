@@ -25,6 +25,7 @@
 @property (nonatomic, strong) NSMutableArray *picUrlS; // 九宫格图片
 @property (nonatomic, strong) NSArray *commentS; // 评论数组
 @property (nonatomic, strong) NSMutableArray *laudUrlS; // 点赞图片
+@property (nonatomic,strong) NSMutableArray *sizeArray;
 
 @property (nonatomic, strong) GPTimeLineCommentData *commentData;
 @end
@@ -58,6 +59,14 @@ static NSString * const HeadCell = @"headCell";
     }
     return _laudUrlS;
 }
+- (NSMutableArray *)sizeArray
+{
+    if (!_sizeArray) {
+        
+        _sizeArray = [[NSMutableArray alloc] init];
+    }
+    return _sizeArray;
+}
 #pragma mark - 初始化
 - (void)regisCell
 {
@@ -88,6 +97,10 @@ static NSString * const HeadCell = @"headCell";
         for (GPTimeLinePicData *PicData in weakSelf.timeLineData.pic) {
             [weakSelf.picUrlS addObject:PicData.url];
         }
+        // 只有一张图片的尺寸
+        GPTimeLinePicData *picFistData = weakSelf.timeLineData.pic.firstObject;
+        [weakSelf.sizeArray addObjectsFromArray:@[picFistData.width,picFistData.height]];
+        
         // 点赞头像
         for (GPTimeLineLaudData *laudData in weakSelf.timeLineData.laud_list) {
             [weakSelf.laudUrlS addObject:laudData.avatar];
@@ -105,49 +118,49 @@ static NSString * const HeadCell = @"headCell";
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 4;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSInteger sectionRow = 1;
+    if (section == 3) {
+        sectionRow = self.commentS.count;
+    }
     return sectionRow;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     if (indexPath.section == 0) {
         GPTimeLineHeadCell *headLineCell = [tableView dequeueReusableCellWithIdentifier:HeadCell];
+        headLineCell.sizeArray = self.sizeArray;
         headLineCell.timeLineData = self.timeLineData;
         headLineCell.picUrlArray = self.picUrlS;
         return headLineCell;
     }else if(indexPath.section == 1){
         GPTimeLineEventCell *timeEventCell = [tableView dequeueReusableCellWithIdentifier:EventCell];
             timeEventCell.lineData = self.timeLineData;
+        timeEventCell.EventBtnClick = ^{
+            [self eventBtnClcik];
+        };
         timeEventCell.backgroundColor = [UIColor whiteColor];
             return timeEventCell;
-    }else{
+    }else if (indexPath.section == 2){
         GPTimeLineApperCell *timeApperCell = [tableView dequeueReusableCellWithIdentifier:ApperCell];
                 timeApperCell.laudnum = self.timeLineData.laud_num;
                 timeApperCell.laudArray = self.laudUrlS;
                 return timeApperCell;
+    }else{
+        GPTimeLIneCommentCell *timeCommentCell = [tableView dequeueReusableCellWithIdentifier:CommentCell];
+                timeCommentCell.commentData = self.timeLineData.comment[indexPath.row];
+                return timeCommentCell;
     }
-//
-//    if (indexPath.row == 0) {
-//        GPTimeLineEventCell *timeEventCell = [tableView dequeueReusableCellWithIdentifier:EventCell];
-//        timeEventCell.lineData = self.timeLineData;
-//        return timeEventCell;
-//    }else if (indexPath.row == 1){
-//        GPTimeLineApperCell *timeApperCell = [tableView dequeueReusableCellWithIdentifier:ApperCell];
-//        timeApperCell.laudnum = self.timeLineData.votes;
-//        timeApperCell.laudArray = self.laudUrlS;
-//        return timeApperCell;
-//    }else{
-//        GPTimeLIneCommentCell *timeCommentCell = [tableView dequeueReusableCellWithIdentifier:CommentCell];
-//        timeCommentCell.commentData = self.timeLineData.comment[indexPath.row];
-//        return timeCommentCell;
-//    }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return [self cellHeightForIndexPath:indexPath cellContentViewWidth:SCREEN_WIDTH];
 }
+#pragma mark - 内部方法
+- (void)eventBtnClcik
+{
+}
+
 @end

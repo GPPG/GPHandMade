@@ -59,10 +59,7 @@
     CGFloat itemW = [self itemWidthForPicPathArray:_picPathStringsArray];
     CGFloat itemH = 0;
     if (_picPathStringsArray.count == 1) {
-        UIImage *image = [UIImage imageNamed:_picPathStringsArray.firstObject];
-        if (image.size.width) {
-            itemH = image.size.height / image.size.width * itemW;
-        }
+        itemH = 1.0 * [self.sizeArray[1] intValue] / [self.sizeArray[0] intValue] * itemW;
     } else {
         itemH = itemW;
     }
@@ -104,7 +101,7 @@
 - (CGFloat)itemWidthForPicPathArray:(NSArray *)array
 {
     if (array.count == 1) {
-        return 120;
+        return SCREEN_WIDTH * 0.7;
     } else {
         CGFloat w = [UIScreen mainScreen].bounds.size.width > 320 ? 80 : 70;
         return w;

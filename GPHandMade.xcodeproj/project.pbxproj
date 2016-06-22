@@ -12,8 +12,6 @@
 		AC0EA2D61D051A130041D14E /* GPSlideSuperController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2D41D051A130041D14E /* GPSlideSuperController.m */; };
 		AC0EA2D91D051A750041D14E /* GPEventNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2D81D051A750041D14E /* GPEventNewController.m */; };
 		AC0EA2DC1D051A890041D14E /* GPEventVoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2DB1D051A890041D14E /* GPEventVoteController.m */; };
-		AC0EA32C1D06D15A0041D14E /* GPLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA32B1D06D15A0041D14E /* GPLoginController.m */; };
-		AC0EA32E1D06F7AA0041D14E /* GPLoginController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0EA32D1D06F7AA0041D14E /* GPLoginController.storyboard */; };
 		AC0EA33F1D0708D10041D14E /* HYBBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA3341D0708D10041D14E /* HYBBaseTransition.m */; };
 		AC0EA3401D0708D10041D14E /* HYBBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA3361D0708D10041D14E /* HYBBubbleTransition.m */; };
 		AC0EA3411D0708D10041D14E /* HYBEaseInOutTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA3381D0708D10041D14E /* HYBEaseInOutTransition.m */; };
@@ -92,6 +90,8 @@
 		ACB2E0F81CFAA65200D3F5EA /* GPAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB2E0F61CFAA65200D3F5EA /* GPAdViewController.m */; };
 		ACB2E0F91CFAA65200D3F5EA /* GPAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB2E0F71CFAA65200D3F5EA /* GPAdViewController.xib */; };
 		ACB2E0FC1CFABC9A00D3F5EA /* GPJianDaoHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB2E0FB1CFABC9A00D3F5EA /* GPJianDaoHeader.m */; };
+		ACBF6BA61D1A93F500ABE062 /* GPLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBF6BA51D1A93F500ABE062 /* GPLoginController.m */; };
+		ACBF6BA81D1A93FC00ABE062 /* GPLoginController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBF6BA71D1A93FC00ABE062 /* GPLoginController.storyboard */; };
 		ACC047FA1CEDA9EA004E8C74 /* GPActivityData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC047F31CEDA9EA004E8C74 /* GPActivityData.m */; };
 		ACC047FB1CEDA9EA004E8C74 /* GPData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC047F61CEDA9EA004E8C74 /* GPData.m */; };
 		ACC047FC1CEDA9EA004E8C74 /* GPslide.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC047F91CEDA9EA004E8C74 /* GPslide.m */; };
@@ -155,9 +155,6 @@
 		AC0EA2D81D051A750041D14E /* GPEventNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEventNewController.m; sourceTree = "<group>"; };
 		AC0EA2DA1D051A890041D14E /* GPEventVoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPEventVoteController.h; sourceTree = "<group>"; };
 		AC0EA2DB1D051A890041D14E /* GPEventVoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEventVoteController.m; sourceTree = "<group>"; };
-		AC0EA32A1D06D15A0041D14E /* GPLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPLoginController.h; sourceTree = "<group>"; };
-		AC0EA32B1D06D15A0041D14E /* GPLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPLoginController.m; sourceTree = "<group>"; };
-		AC0EA32D1D06F7AA0041D14E /* GPLoginController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GPLoginController.storyboard; sourceTree = "<group>"; };
 		AC0EA3331D0708D10041D14E /* HYBBaseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBaseTransition.h; sourceTree = "<group>"; };
 		AC0EA3341D0708D10041D14E /* HYBBaseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBaseTransition.m; sourceTree = "<group>"; };
 		AC0EA3351D0708D10041D14E /* HYBBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBubbleTransition.h; sourceTree = "<group>"; };
@@ -308,6 +305,9 @@
 		ACB2E0F71CFAA65200D3F5EA /* GPAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GPAdViewController.xib; path = ../Controller/GPAdViewController.xib; sourceTree = "<group>"; };
 		ACB2E0FA1CFABC9A00D3F5EA /* GPJianDaoHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPJianDaoHeader.h; sourceTree = "<group>"; };
 		ACB2E0FB1CFABC9A00D3F5EA /* GPJianDaoHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPJianDaoHeader.m; sourceTree = "<group>"; };
+		ACBF6BA41D1A93F500ABE062 /* GPLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPLoginController.h; sourceTree = "<group>"; };
+		ACBF6BA51D1A93F500ABE062 /* GPLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPLoginController.m; sourceTree = "<group>"; };
+		ACBF6BA71D1A93FC00ABE062 /* GPLoginController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GPLoginController.storyboard; sourceTree = "<group>"; };
 		ACC047F21CEDA9EA004E8C74 /* GPActivityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPActivityData.h; sourceTree = "<group>"; };
 		ACC047F31CEDA9EA004E8C74 /* GPActivityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPActivityData.m; sourceTree = "<group>"; };
 		ACC047F51CEDA9EA004E8C74 /* GPData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPData.h; sourceTree = "<group>"; };
@@ -439,8 +439,8 @@
 		AC0EA3271D06D12D0041D14E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AC0EA32A1D06D15A0041D14E /* GPLoginController.h */,
-				AC0EA32B1D06D15A0041D14E /* GPLoginController.m */,
+				ACBF6BA41D1A93F500ABE062 /* GPLoginController.h */,
+				ACBF6BA51D1A93F500ABE062 /* GPLoginController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -455,7 +455,7 @@
 		AC0EA3291D06D12D0041D14E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC0EA32D1D06F7AA0041D14E /* GPLoginController.storyboard */,
+				ACBF6BA71D1A93FC00ABE062 /* GPLoginController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1402,10 +1402,10 @@
 				ACC0480F1CEDBC2A004E8C74 /* GPHotCell.xib in Resources */,
 				AC2925B61D02CFC600726E51 /* GPNavigationCell.xib in Resources */,
 				ACD585531CFC3EE100F7942D /* GPLessonHeadView.xib in Resources */,
-				AC0EA32E1D06F7AA0041D14E /* GPLoginController.storyboard in Resources */,
 				AC2925BB1D02CFE200726E51 /* GPAdvanceCell.xib in Resources */,
 				AC7A9CE61CF04F48001A9550 /* GPWebViewController.storyboard in Resources */,
 				ACB2E0F41CF827AC00D3F5EA /* GPNewFeatureCell.xib in Resources */,
+				ACBF6BA81D1A93FC00ABE062 /* GPLoginController.storyboard in Resources */,
 				AC7A9CFA1CF2E060001A9550 /* GPSlideCollectionViewCell.xib in Resources */,
 				ACB2E0F91CFAA65200D3F5EA /* GPAdViewController.xib in Resources */,
 			);
@@ -1528,6 +1528,7 @@
 				ACDA28561D179AB500BE1579 /* GPTimeLineApperCell.m in Sources */,
 				AC561F8B1D050FEB00919703 /* TAAnimatedDotView.m in Sources */,
 				AC5A533C1D13E1260061D5D8 /* GPTimeLineController.m in Sources */,
+				ACBF6BA61D1A93F500ABE062 /* GPLoginController.m in Sources */,
 				ACDA28661D191AEB00BE1579 /* UIView+RoundedCorner.m in Sources */,
 				ACD585451CFBE45400F7942D /* GPFooterClassCell.m in Sources */,
 				AC2925811D02A8BA00726E51 /* UIView+Frame.m in Sources */,
@@ -1552,7 +1553,6 @@
 				ACD5854E1CFBF31200F7942D /* GPAppraiseData.m in Sources */,
 				AC5AAE271CF5337600EDBF99 /* GPLessonData.m in Sources */,
 				ACC047FF1CEDAA27004E8C74 /* GPSalonData.m in Sources */,
-				AC0EA32C1D06D15A0041D14E /* GPLoginController.m in Sources */,
 				ACC047FC1CEDA9EA004E8C74 /* GPslide.m in Sources */,
 				AC7A9CE11CF008C1001A9550 /* GPHotData.m in Sources */,
 				AC561F8C1D050FEB00919703 /* TADotView.m in Sources */,

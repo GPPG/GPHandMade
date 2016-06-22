@@ -9,6 +9,7 @@
 #import "GPTimeLineEventCell.h"
 #import "UIView+SDAutoLayout.h"
 #import "GPTimeLineData.h"
+#import "SVProgressHUD.h"
 
 @interface GPTimeLineEventCell()
 @property (nonatomic, weak) UIButton *eventBtn;
@@ -32,6 +33,7 @@
     UIButton *eventBtn = [[UIButton alloc]init];
     [eventBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     eventBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    [eventBtn addTarget:self action:@selector(eventBtnClick) forControlEvents:UIControlEventTouchUpInside];
     self.eventBtn = eventBtn;
     
     UIImageView *arrowImageView = [[UIImageView alloc]init];
@@ -50,6 +52,7 @@
     [voteBtn setBackgroundColor:[UIColor orangeColor]];
     [voteBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [voteBtn setTitle:@"投票" forState:UIControlStateNormal];
+    [voteBtn addTarget:self action:@selector(voteBtnClick) forControlEvents:UIControlEventTouchUpInside];
     self.voteBtn = voteBtn;
     
     NSArray *chilS = @[eventBtn,countBtn,voteBtn,arrowImageView];
@@ -95,5 +98,17 @@
     NSString *titleStr = [NSString stringWithFormat:@"活动名称:%@",lineData.c_name];
     [self.eventBtn setTitle:titleStr forState:UIControlStateNormal];
     [self.countBtn setTitle:lineData.votes forState:UIControlStateNormal];
+}
+#pragma mark - 内部方法
+- (void)voteBtnClick
+{
+    [SVProgressHUD showSuccessWithStatus:@"投票成功"];
+}
+- (void)eventBtnClick
+{
+    if (self.EventBtnClick) {
+        self.EventBtnClick();
+    }
+    
 }
 @end

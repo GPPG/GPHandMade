@@ -10,4 +10,5 @@
 @class GPTimeLineData;
 @interface GPTimeLineEventCell : UITableViewCell
 @property (nonatomic, strong) GPTimeLineData *lineData;
+@property (nonatomic,copy) void(^EventBtnClick)();
 @end

@@ -111,4 +111,9 @@
     _picUrlArray = picUrlArray;
     self.photoView.picPathStringsArray = picUrlArray;
 }
+- (void)setSizeArray:(NSMutableArray *)sizeArray
+{
+    _sizeArray = sizeArray;
+    self.photoView.sizeArray = sizeArray;
+}
 @end

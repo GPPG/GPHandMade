@@ -9,6 +9,7 @@
 #import "GPFooterAppraiseCell.h"
 #import "GPAppraiseData.h"
 #import "UIImageView+WebCache.h"
+#import "UIView+RoundedCorner.h"
 
 @interface GPFooterAppraiseCell()
 
@@ -24,7 +25,13 @@
 {
     _appraiseData = appraiseData;
     NSURL *userPicUrl = [NSURL URLWithString:appraiseData.face_pic];
-    [self.userImageView sd_setImageWithURL:userPicUrl placeholderImage:[UIImage imageNamed:@"1"]];
+    
+    [[SDWebImageManager sharedManager] downloadImageWithURL:userPicUrl options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+        if (image) {
+            [self.userImageView jm_setCornerRadius:25 withImage:image];
+        }
+    }];
+
     self.userNameLabel.text = appraiseData.uname;
     self.timeLabel.text = appraiseData.add_time;
     self.commentLabel.text = appraiseData.content;

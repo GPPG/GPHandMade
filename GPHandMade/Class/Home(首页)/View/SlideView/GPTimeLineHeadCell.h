@@ -11,4 +11,5 @@
 @interface GPTimeLineHeadCell : UITableViewCell
 @property (nonatomic, strong) GPTimeLineData *timeLineData;
 @property (nonatomic, strong) NSMutableArray *picUrlArray;
+@property (nonatomic, strong) NSMutableArray *sizeArray;
 @end
