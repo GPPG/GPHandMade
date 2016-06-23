@@ -33,7 +33,9 @@
 #import "GPSlideHeadView.h"
 #import "GPSectionHeadView.h"
 #import "GPSlideEventController.h"
-
+#import "XWCoolAnimator.h"
+#import "UINavigationController+XWTransition.h"
+#import "UIViewController+XWTransition.h"
 
 @interface GPFeaturedController ()<SDCycleScrollViewDelegate>
 @property (strong,nonatomic) NSMutableArray *dataSlideArray; // 轮播图片数组
@@ -46,6 +48,7 @@
 @property (nonatomic, strong) SDCycleScrollView *cycleScorllView;
 
 @property (strong,nonatomic) GPData *data;
+@property (nonatomic, weak) GPWebViewController *webVc;
 @end
 
 static NSString * const GPAdvance = @"AdvanceCell";
@@ -273,13 +276,17 @@ static NSString * const GPSectionHead = @"HotSectionCell";
 }
 
 #pragma mark - UICollectionView 代理
-//- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    GPSlideLessonController *ss = [[GPSlideLessonController alloc]init];
-//    GPOtherClass *otherClass = self.otherCalssS[indexPath.row];
-//    ss.handID = otherClass.id;
-//    [self.navigationController pushViewController:ss animated:YES];
-//}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 2) {
+        GPWebViewController *webVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPWebViewController class]) bundle:nil].instantiateInitialViewController;
+        webVc.hotData = self.dataHotArray[indexPath.row];
+        XWCoolAnimator *animator = [XWCoolAnimator xw_animatorWithType:XWCoolTransitionAnimatorTypeFoldFromRight];
+        animator.toDuration = 0.5f;
+        animator.backDuration = 0.5f;
+        [self.navigationController xw_pushViewController:webVc withAnimator:animator];
+    }
+}
 #pragma mark - UIcollectionView 数据源方法
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {

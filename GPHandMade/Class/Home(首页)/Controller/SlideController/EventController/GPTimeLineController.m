@@ -20,6 +20,7 @@
 #import "UITableView+SDAutoTableViewCellHeight.h"
 #import "GPTimeLineHeadCell.h"
 #import "GPLoginController.h"
+#import "HYBEaseInOutTransition.h"
 
 @interface GPTimeLineController ()
 @property (nonatomic, strong) GPTimeLineData *timeLineData;
@@ -27,6 +28,7 @@
 @property (nonatomic, strong) NSArray *commentS; // 评论数组
 @property (nonatomic, strong) NSMutableArray *laudUrlS; // 点赞图片
 @property (nonatomic,strong) NSMutableArray *sizeArray;
+@property (nonatomic, strong) HYBEaseInOutTransition *transition;
 
 @property (nonatomic, strong) GPTimeLineCommentData *commentData;
 @end
@@ -163,7 +165,19 @@ static NSString * const HeadCell = @"headCell";
 - (void)eventBtnClcik
 {
     GPLoginController *loginVc = [UIStoryboard storyboardWithName:@"GPLoginController" bundle:nil].instantiateInitialViewController;
-    [self presentViewController:loginVc animated:YES completion:nil];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVc];
+    self.transition = [[HYBEaseInOutTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
+        HYBEaseInOutTransition *modal = (HYBEaseInOutTransition *)transition;
+        
+        modal.animatedWithSpring = YES;
+    } dismissed:^(UIViewController *dismissed, HYBBaseTransition *transition) {
+        // do nothing
+    }];
+    
+    nav.transitioningDelegate = self.transition;
+    [self presentViewController:nav animated:YES completion:NULL];
+
 }
 
 @end

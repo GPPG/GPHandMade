@@ -46,6 +46,7 @@
 #pragma mark - 初始化
 - (void)setupView
 {
+    self.navigationController.navigationBarHidden = YES;
     UIActivityIndicatorView *acView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     self.acView = acView;
     

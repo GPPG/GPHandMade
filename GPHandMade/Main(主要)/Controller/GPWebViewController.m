@@ -9,19 +9,22 @@
 #import "GPWebViewController.h"
 #import "GPslide.h"
 #import "GPEventBtn.h"
+#import "GPHotData.h"
+#import "UINavigationController+XWTransition.h"
+#import "UIViewController+XWTransition.h"
 
 @interface GPWebViewController()<UIWebViewDelegate,UIScrollViewDelegate>
 
 @end
 @implementation GPWebViewController
 
-
 -(void)viewDidLoad{
     [super viewDidLoad];
 
     [self configNav];
-    
+
 }
+
 #pragma mark - 初始化设置
 - (void)configNav
 {
@@ -32,6 +35,7 @@
     self.loadWebView.scrollView.bounces = NO;
 }
 #pragma mark - 数据处理
+// 轮播图
 - (void)setSlide:(GPslide *)slide
 {
     _slide = slide;
@@ -48,13 +52,20 @@
 
     }
 }
+// 热帖
+- (void)setHotData:(GPHotData *)hotData
+{
+    _hotData = hotData;
+    if (hotData.mob_h5_url.length) {
+        [self loadSlidDataType:hotData.mob_h5_url title:@"专题详情"];
+    }
+}
 - (void)loadSlidDataType:(NSString *)urlString title:(NSString *)title
 {
     NSURL *url = [NSURL URLWithString:urlString];
     [self.view addSubview:self.loadWebView];
     [self.loadWebView loadRequest:[NSURLRequest requestWithURL:url]];
     self.navigationItem.title = title;
-    
 }
 #pragma mark - UIScrlloView 代理
  static int _lastPosition;    //A variable define in headfile
