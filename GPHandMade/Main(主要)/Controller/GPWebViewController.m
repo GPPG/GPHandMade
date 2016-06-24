@@ -10,8 +10,7 @@
 #import "GPslide.h"
 #import "GPEventBtn.h"
 #import "GPHotData.h"
-#import "UINavigationController+XWTransition.h"
-#import "UIViewController+XWTransition.h"
+
 
 @interface GPWebViewController()<UIWebViewDelegate,UIScrollViewDelegate>
 
@@ -22,13 +21,10 @@
     [super viewDidLoad];
 
     [self configNav];
-
 }
-
 #pragma mark - 初始化设置
 - (void)configNav
 {
-    
     self.loadWebView.scalesPageToFit = YES;
     self.loadWebView.backgroundColor = [UIColor whiteColor];
     self.loadWebView.scrollView.delegate = self;

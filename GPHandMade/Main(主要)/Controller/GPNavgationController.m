@@ -7,7 +7,6 @@
 //
 
 #import "GPNavgationController.h"
-
 @interface GPNavgationController ()
 
 @end

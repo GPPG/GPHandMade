@@ -20,7 +20,6 @@
 #import "GPCompetitionData.h"
 #import "GPLookCell.h"
 #import "GPHotCell.h"
-#import "GPRecommendCell.h"
 #import "GPHotData.h"
 #import "GPWebViewController.h"
 #import "GPSlideLessonController.h"
@@ -33,9 +32,6 @@
 #import "GPSlideHeadView.h"
 #import "GPSectionHeadView.h"
 #import "GPSlideEventController.h"
-#import "XWCoolAnimator.h"
-#import "UINavigationController+XWTransition.h"
-#import "UIViewController+XWTransition.h"
 
 @interface GPFeaturedController ()<SDCycleScrollViewDelegate>
 @property (strong,nonatomic) NSMutableArray *dataSlideArray; // 轮播图片数组
@@ -67,9 +63,7 @@ static NSString * const GPSectionHead = @"HotSectionCell";
     [self loadData];
     // 注册 cell
     [self regisCell];
-
 }
-
 #pragma mark - 懒加载
 - (NSMutableArray *)dataSlideArray
 {
@@ -161,9 +155,7 @@ static NSString * const GPSectionHead = @"HotSectionCell";
 }
 -(void)loadNewData
 {
-    [SVProgressHUD showWithStatus:@"正在加载数据"];
-    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+
     // 1.添加参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"c"] = @"index";
@@ -178,7 +170,6 @@ static NSString * const GPSectionHead = @"HotSectionCell";
     [self.dataAdvanceArray removeAllObjects];
     // 2.发起请求
     [GPHttpTool get:HomeBaseURl params:params success:^(id responseObj) {
-        [SVProgressHUD dismiss];
         // 字典转模型
         self.data = [GPData mj_objectWithKeyValues:responseObj[@"data"]];
         // 轮播图数组
@@ -281,10 +272,8 @@ static NSString * const GPSectionHead = @"HotSectionCell";
     if (indexPath.section == 2) {
         GPWebViewController *webVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPWebViewController class]) bundle:nil].instantiateInitialViewController;
         webVc.hotData = self.dataHotArray[indexPath.row];
-        XWCoolAnimator *animator = [XWCoolAnimator xw_animatorWithType:XWCoolTransitionAnimatorTypeFoldFromRight];
-        animator.toDuration = 0.5f;
-        animator.backDuration = 0.5f;
-        [self.navigationController xw_pushViewController:webVc withAnimator:animator];
+        
+        [self.navigationController pushViewController:webVc animated:YES];
     }
 }
 #pragma mark - UIcollectionView 数据源方法
