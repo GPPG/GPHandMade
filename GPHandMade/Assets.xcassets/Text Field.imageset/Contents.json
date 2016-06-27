@@ -1,25 +1,9 @@
 {
   "images" : [
     {
-      "resizing" : {
-        "mode" : "9-part",
-        "center" : {
-          "mode" : "tile",
-          "width" : 1,
-          "height" : 1
-        },
-        "cap-insets" : {
-          "bottom" : 20,
-          "top" : 19,
-          "right" : 5,
-          "left" : 5
-        }
-      },
+      "scale" : "1x",
       "idiom" : "universal",
       "filename" : "Text Field.png",
-      "scale" : "1x"
-    },
-    {
       "resizing" : {
         "mode" : "9-part",
         "center" : {
@@ -28,17 +12,17 @@
           "height" : 1
         },
         "cap-insets" : {
-          "bottom" : 40,
-          "top" : 39,
-          "right" : 10,
-          "left" : 10
+          "left" : 5,
+          "top" : 19,
+          "right" : 5,
+          "bottom" : 20
         }
-      },
+      }
+    },
+    {
+      "scale" : "2x",
       "idiom" : "universal",
       "filename" : "Text Field@2x.png",
-      "scale" : "2x"
-    },
-    {
       "resizing" : {
         "mode" : "9-part",
         "center" : {
@@ -47,15 +31,31 @@
           "height" : 1
         },
         "cap-insets" : {
-          "bottom" : 60,
-          "top" : 59,
-          "right" : 15,
-          "left" : 15
+          "left" : 10,
+          "top" : 39,
+          "right" : 10,
+          "bottom" : 40
         }
-      },
+      }
+    },
+    {
+      "scale" : "3x",
       "idiom" : "universal",
       "filename" : "Text Field@3x.png",
-      "scale" : "3x"
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "left" : 15,
+          "top" : 59,
+          "right" : 15,
+          "bottom" : 60
+        }
+      }
     }
   ],
   "info" : {

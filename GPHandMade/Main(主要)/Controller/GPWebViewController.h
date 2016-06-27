@@ -11,5 +11,4 @@
 @interface GPWebViewController : UIViewController
 @property (nonatomic, strong) GPslide *slide;
 @property (weak, nonatomic) IBOutlet UIWebView *loadWebView;
-@property (nonatomic, strong) GPHotData *hotData;
 @end

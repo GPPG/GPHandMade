@@ -13,6 +13,8 @@
 #import "Define.h"
 #import "UIView+GPExtension.h"
 #import "CALayer+GPExtension.h"
+#import "UINavigationController+XWTransition.h"
+#import "UIViewController+XWTransition.h"
 /**
  *  自定义输出
  */

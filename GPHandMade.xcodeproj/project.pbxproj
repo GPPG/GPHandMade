@@ -19,6 +19,9 @@
 		AC0EA3431D0708D10041D14E /* HYBMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA33C1D0708D10041D14E /* HYBMoveTransition.m */; };
 		AC0EA3441D0708D10041D14E /* UIViewController+HYBMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA33E1D0708D10041D14E /* UIViewController+HYBMoveTransition.m */; };
 		AC0EA3471D07EB9D0041D14E /* GPEventBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA3461D07EB9D0041D14E /* GPEventBtn.m */; };
+		AC20C0631D20253D0008A060 /* GPDaRenPicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0621D20253D0008A060 /* GPDaRenPicsController.m */; };
+		AC20C0671D20B77A0008A060 /* GPDaRenPicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0651D20B77A0008A060 /* GPDaRenPicsCell.m */; };
+		AC20C0681D20B77A0008A060 /* GPDaRenPicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC20C0661D20B77A0008A060 /* GPDaRenPicsCell.xib */; };
 		AC2925761D015B0400726E51 /* GPAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925751D015B0400726E51 /* GPAutoFooter.m */; };
 		AC2925811D02A8BA00726E51 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925791D02A8BA00726E51 /* UIView+Frame.m */; };
 		AC2925821D02A8BA00726E51 /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC29257B1D02A8BA00726E51 /* YZDisplayTitleLabel.m */; };
@@ -85,6 +88,50 @@
 		AC7A9CFD1CF2E9AE001A9550 /* GPSlideShopData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A9CFC1CF2E9AE001A9550 /* GPSlideShopData.m */; };
 		ACA236531D11508C00489F96 /* GPLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA236521D11508C00489F96 /* GPLayout.m */; };
 		ACA8D7171D1BCB6D0097B8C3 /* GPDaData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7161D1BCB6D0097B8C3 /* GPDaData.m */; };
+		ACA8D7211D1CE2130097B8C3 /* GPDaRenPicController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7201D1CE2130097B8C3 /* GPDaRenPicController.m */; };
+		ACA8D7241D1CE3D90097B8C3 /* GPDaRenPicData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7231D1CE3D90097B8C3 /* GPDaRenPicData.m */; };
+		ACA8D7271D1CE5DF0097B8C3 /* GPDaRenToolsData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7261D1CE5DF0097B8C3 /* GPDaRenToolsData.m */; };
+		ACA8D72A1D1CE6000097B8C3 /* GPDaRenMaterialData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7291D1CE6000097B8C3 /* GPDaRenMaterialData.m */; };
+		ACA8D72D1D1CE6240097B8C3 /* GPDaRenStepData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D72C1D1CE6240097B8C3 /* GPDaRenStepData.m */; };
+		ACA8D7311D1D0A270097B8C3 /* GPDaRenStepOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D72F1D1D0A270097B8C3 /* GPDaRenStepOneCell.m */; };
+		ACA8D7321D1D0A270097B8C3 /* GPDaRenStepOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA8D7301D1D0A270097B8C3 /* GPDaRenStepOneCell.xib */; };
+		ACA8D7361D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7341D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.m */; };
+		ACA8D7371D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA8D7351D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.xib */; };
+		ACA8D73B1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7391D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.m */; };
+		ACA8D73C1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA8D73A1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.xib */; };
+		ACA8D74A1D1E87B90097B8C3 /* GPStepTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7481D1E87B90097B8C3 /* GPStepTableViewCell.m */; };
+		ACA8D74B1D1E87B90097B8C3 /* GPStepTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA8D7491D1E87B90097B8C3 /* GPStepTableViewCell.xib */; };
+		ACA8D7951D1FC2DA0097B8C3 /* UINavigationController+XWTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7581D1FC2DA0097B8C3 /* UINavigationController+XWTransition.m */; };
+		ACA8D7961D1FC2DA0097B8C3 /* UIViewController+XWTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D75A1D1FC2DA0097B8C3 /* UIViewController+XWTransition.m */; };
+		ACA8D7971D1FC2DA0097B8C3 /* XWInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D75D1D1FC2DA0097B8C3 /* XWInteractiveTransition.m */; };
+		ACA8D7981D1FC2DA0097B8C3 /* XWTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D75F1D1FC2DA0097B8C3 /* XWTransitionAnimator.m */; };
+		ACA8D7991D1FC2DA0097B8C3 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = ACA8D7611D1FC2DA0097B8C3 /* line.png */; };
+		ACA8D79A1D1FC2DA0097B8C3 /* mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACA8D7621D1FC2DA0097B8C3 /* mask.jpg */; };
+		ACA8D79B1D1FC2DA0097B8C3 /* restrictedshine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ACA8D7631D1FC2DA0097B8C3 /* restrictedshine.tiff */; };
+		ACA8D79C1D1FC2DA0097B8C3 /* XWCircleSpreadAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7661D1FC2DA0097B8C3 /* XWCircleSpreadAnimator.m */; };
+		ACA8D79D1D1FC2DA0097B8C3 /* XWCoolAnimator+XWExplode.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7691D1FC2DA0097B8C3 /* XWCoolAnimator+XWExplode.m */; };
+		ACA8D79E1D1FC2DA0097B8C3 /* XWCoolAnimator+XWFold.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D76B1D1FC2DA0097B8C3 /* XWCoolAnimator+XWFold.m */; };
+		ACA8D79F1D1FC2DA0097B8C3 /* XWCoolAnimator+XWLines.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D76D1D1FC2DA0097B8C3 /* XWCoolAnimator+XWLines.m */; };
+		ACA8D7A01D1FC2DA0097B8C3 /* XWCoolAnimator+XWMiddlePageFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D76F1D1FC2DA0097B8C3 /* XWCoolAnimator+XWMiddlePageFlip.m */; };
+		ACA8D7A11D1FC2DA0097B8C3 /* XWCoolAnimator+XWPageFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7711D1FC2DA0097B8C3 /* XWCoolAnimator+XWPageFlip.m */; };
+		ACA8D7A21D1FC2DA0097B8C3 /* XWCoolAnimator+XWPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7731D1FC2DA0097B8C3 /* XWCoolAnimator+XWPortal.m */; };
+		ACA8D7A31D1FC2DA0097B8C3 /* XWCoolAnimator+XWScanning.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7751D1FC2DA0097B8C3 /* XWCoolAnimator+XWScanning.m */; };
+		ACA8D7A41D1FC2DA0097B8C3 /* XWCoolAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7771D1FC2DA0097B8C3 /* XWCoolAnimator.m */; };
+		ACA8D7A51D1FC2DA0097B8C3 /* XWDrawerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D77A1D1FC2DA0097B8C3 /* XWDrawerAnimator.m */; };
+		ACA8D7A61D1FC2DA0097B8C3 /* XWFilterAnimator+XWBarSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D77D1D1FC2DA0097B8C3 /* XWFilterAnimator+XWBarSwipe.m */; };
+		ACA8D7A71D1FC2DA0097B8C3 /* XWFilterAnimator+XWBoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D77F1D1FC2DA0097B8C3 /* XWFilterAnimator+XWBoxBlur.m */; };
+		ACA8D7A81D1FC2DA0097B8C3 /* XWFilterAnimator+XWCopyMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7811D1FC2DA0097B8C3 /* XWFilterAnimator+XWCopyMachine.m */; };
+		ACA8D7A91D1FC2DA0097B8C3 /* XWFilterAnimator+XWFlash.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7831D1FC2DA0097B8C3 /* XWFilterAnimator+XWFlash.m */; };
+		ACA8D7AA1D1FC2DA0097B8C3 /* XWFilterAnimator+XWMask.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7851D1FC2DA0097B8C3 /* XWFilterAnimator+XWMask.m */; };
+		ACA8D7AB1D1FC2DA0097B8C3 /* XWFilterAnimator+XWMod.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7871D1FC2DA0097B8C3 /* XWFilterAnimator+XWMod.m */; };
+		ACA8D7AC1D1FC2DA0097B8C3 /* XWFilterAnimator+XWPageCurl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7891D1FC2DA0097B8C3 /* XWFilterAnimator+XWPageCurl.m */; };
+		ACA8D7AD1D1FC2DA0097B8C3 /* XWFilterAnimator+XWRipple.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D78B1D1FC2DA0097B8C3 /* XWFilterAnimator+XWRipple.m */; };
+		ACA8D7AE1D1FC2DA0097B8C3 /* XWFilterAnimator+XWSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D78D1D1FC2DA0097B8C3 /* XWFilterAnimator+XWSwipe.m */; };
+		ACA8D7AF1D1FC2DA0097B8C3 /* XWFilterAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D78F1D1FC2DA0097B8C3 /* XWFilterAnimator.m */; };
+		ACA8D7B01D1FC2DA0097B8C3 /* XWFilterTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7911D1FC2DA0097B8C3 /* XWFilterTransitionView.m */; };
+		ACA8D7B11D1FC2DA0097B8C3 /* XWMagicMoveAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7941D1FC2DA0097B8C3 /* XWMagicMoveAnimator.m */; };
+		ACA8D7B41D1FC76E0097B8C3 /* GPMainWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7B31D1FC76E0097B8C3 /* GPMainWebController.m */; };
+		ACA8D7B61D1FC7950097B8C3 /* GPMainWebController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA8D7B51D1FC7950097B8C3 /* GPMainWebController.storyboard */; };
 		ACB2E0EF1CF8278A00D3F5EA /* GPNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB2E0EE1CF8278A00D3F5EA /* GPNewFeatureController.m */; };
 		ACB2E0F31CF827AC00D3F5EA /* GPNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB2E0F11CF827AC00D3F5EA /* GPNewFeatureCell.m */; };
 		ACB2E0F41CF827AC00D3F5EA /* GPNewFeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB2E0F21CF827AC00D3F5EA /* GPNewFeatureCell.xib */; };
@@ -169,6 +216,11 @@
 		AC0EA33E1D0708D10041D14E /* UIViewController+HYBMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HYBMoveTransition.m"; sourceTree = "<group>"; };
 		AC0EA3451D07EB9D0041D14E /* GPEventBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPEventBtn.h; sourceTree = "<group>"; };
 		AC0EA3461D07EB9D0041D14E /* GPEventBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEventBtn.m; sourceTree = "<group>"; };
+		AC20C0611D20253D0008A060 /* GPDaRenPicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicsController.h; sourceTree = "<group>"; };
+		AC20C0621D20253D0008A060 /* GPDaRenPicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenPicsController.m; sourceTree = "<group>"; };
+		AC20C0641D20B77A0008A060 /* GPDaRenPicsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicsCell.h; sourceTree = "<group>"; };
+		AC20C0651D20B77A0008A060 /* GPDaRenPicsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenPicsCell.m; sourceTree = "<group>"; };
+		AC20C0661D20B77A0008A060 /* GPDaRenPicsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDaRenPicsCell.xib; sourceTree = "<group>"; };
 		AC2925741D015B0400726E51 /* GPAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAutoFooter.h; sourceTree = "<group>"; };
 		AC2925751D015B0400726E51 /* GPAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAutoFooter.m; sourceTree = "<group>"; };
 		AC2925781D02A8BA00726E51 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -297,6 +349,86 @@
 		ACA236521D11508C00489F96 /* GPLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPLayout.m; path = "../Home(首页)/Controller/TopicController/GPLayout.m"; sourceTree = "<group>"; };
 		ACA8D7151D1BCB6D0097B8C3 /* GPDaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaData.h; sourceTree = "<group>"; };
 		ACA8D7161D1BCB6D0097B8C3 /* GPDaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaData.m; sourceTree = "<group>"; };
+		ACA8D71F1D1CE2130097B8C3 /* GPDaRenPicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicController.h; sourceTree = "<group>"; };
+		ACA8D7201D1CE2130097B8C3 /* GPDaRenPicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenPicController.m; sourceTree = "<group>"; };
+		ACA8D7221D1CE3D90097B8C3 /* GPDaRenPicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicData.h; sourceTree = "<group>"; };
+		ACA8D7231D1CE3D90097B8C3 /* GPDaRenPicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenPicData.m; sourceTree = "<group>"; };
+		ACA8D7251D1CE5DF0097B8C3 /* GPDaRenToolsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenToolsData.h; sourceTree = "<group>"; };
+		ACA8D7261D1CE5DF0097B8C3 /* GPDaRenToolsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenToolsData.m; sourceTree = "<group>"; };
+		ACA8D7281D1CE6000097B8C3 /* GPDaRenMaterialData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenMaterialData.h; sourceTree = "<group>"; };
+		ACA8D7291D1CE6000097B8C3 /* GPDaRenMaterialData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenMaterialData.m; sourceTree = "<group>"; };
+		ACA8D72B1D1CE6240097B8C3 /* GPDaRenStepData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenStepData.h; sourceTree = "<group>"; };
+		ACA8D72C1D1CE6240097B8C3 /* GPDaRenStepData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenStepData.m; sourceTree = "<group>"; };
+		ACA8D72E1D1D0A270097B8C3 /* GPDaRenStepOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenStepOneCell.h; sourceTree = "<group>"; };
+		ACA8D72F1D1D0A270097B8C3 /* GPDaRenStepOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenStepOneCell.m; sourceTree = "<group>"; };
+		ACA8D7301D1D0A270097B8C3 /* GPDaRenStepOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDaRenStepOneCell.xib; sourceTree = "<group>"; };
+		ACA8D7331D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenStepTwoCell.h; sourceTree = "<group>"; };
+		ACA8D7341D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenStepTwoCell.m; sourceTree = "<group>"; };
+		ACA8D7351D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDaRenStepTwoCell.xib; sourceTree = "<group>"; };
+		ACA8D7381D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenStepThreeCell.h; sourceTree = "<group>"; };
+		ACA8D7391D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenStepThreeCell.m; sourceTree = "<group>"; };
+		ACA8D73A1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDaRenStepThreeCell.xib; sourceTree = "<group>"; };
+		ACA8D7471D1E87B90097B8C3 /* GPStepTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPStepTableViewCell.h; sourceTree = "<group>"; };
+		ACA8D7481D1E87B90097B8C3 /* GPStepTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPStepTableViewCell.m; sourceTree = "<group>"; };
+		ACA8D7491D1E87B90097B8C3 /* GPStepTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPStepTableViewCell.xib; sourceTree = "<group>"; };
+		ACA8D7571D1FC2DA0097B8C3 /* UINavigationController+XWTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+XWTransition.h"; sourceTree = "<group>"; };
+		ACA8D7581D1FC2DA0097B8C3 /* UINavigationController+XWTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+XWTransition.m"; sourceTree = "<group>"; };
+		ACA8D7591D1FC2DA0097B8C3 /* UIViewController+XWTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XWTransition.h"; sourceTree = "<group>"; };
+		ACA8D75A1D1FC2DA0097B8C3 /* UIViewController+XWTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XWTransition.m"; sourceTree = "<group>"; };
+		ACA8D75C1D1FC2DA0097B8C3 /* XWInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWInteractiveTransition.h; sourceTree = "<group>"; };
+		ACA8D75D1D1FC2DA0097B8C3 /* XWInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWInteractiveTransition.m; sourceTree = "<group>"; };
+		ACA8D75E1D1FC2DA0097B8C3 /* XWTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWTransitionAnimator.h; sourceTree = "<group>"; };
+		ACA8D75F1D1FC2DA0097B8C3 /* XWTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWTransitionAnimator.m; sourceTree = "<group>"; };
+		ACA8D7611D1FC2DA0097B8C3 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		ACA8D7621D1FC2DA0097B8C3 /* mask.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mask.jpg; sourceTree = "<group>"; };
+		ACA8D7631D1FC2DA0097B8C3 /* restrictedshine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = restrictedshine.tiff; sourceTree = "<group>"; };
+		ACA8D7651D1FC2DA0097B8C3 /* XWCircleSpreadAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCircleSpreadAnimator.h; sourceTree = "<group>"; };
+		ACA8D7661D1FC2DA0097B8C3 /* XWCircleSpreadAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCircleSpreadAnimator.m; sourceTree = "<group>"; };
+		ACA8D7681D1FC2DA0097B8C3 /* XWCoolAnimator+XWExplode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWExplode.h"; sourceTree = "<group>"; };
+		ACA8D7691D1FC2DA0097B8C3 /* XWCoolAnimator+XWExplode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWExplode.m"; sourceTree = "<group>"; };
+		ACA8D76A1D1FC2DA0097B8C3 /* XWCoolAnimator+XWFold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWFold.h"; sourceTree = "<group>"; };
+		ACA8D76B1D1FC2DA0097B8C3 /* XWCoolAnimator+XWFold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWFold.m"; sourceTree = "<group>"; };
+		ACA8D76C1D1FC2DA0097B8C3 /* XWCoolAnimator+XWLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWLines.h"; sourceTree = "<group>"; };
+		ACA8D76D1D1FC2DA0097B8C3 /* XWCoolAnimator+XWLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWLines.m"; sourceTree = "<group>"; };
+		ACA8D76E1D1FC2DA0097B8C3 /* XWCoolAnimator+XWMiddlePageFlip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWMiddlePageFlip.h"; sourceTree = "<group>"; };
+		ACA8D76F1D1FC2DA0097B8C3 /* XWCoolAnimator+XWMiddlePageFlip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWMiddlePageFlip.m"; sourceTree = "<group>"; };
+		ACA8D7701D1FC2DA0097B8C3 /* XWCoolAnimator+XWPageFlip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWPageFlip.h"; sourceTree = "<group>"; };
+		ACA8D7711D1FC2DA0097B8C3 /* XWCoolAnimator+XWPageFlip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWPageFlip.m"; sourceTree = "<group>"; };
+		ACA8D7721D1FC2DA0097B8C3 /* XWCoolAnimator+XWPortal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWPortal.h"; sourceTree = "<group>"; };
+		ACA8D7731D1FC2DA0097B8C3 /* XWCoolAnimator+XWPortal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWPortal.m"; sourceTree = "<group>"; };
+		ACA8D7741D1FC2DA0097B8C3 /* XWCoolAnimator+XWScanning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWScanning.h"; sourceTree = "<group>"; };
+		ACA8D7751D1FC2DA0097B8C3 /* XWCoolAnimator+XWScanning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWScanning.m"; sourceTree = "<group>"; };
+		ACA8D7761D1FC2DA0097B8C3 /* XWCoolAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCoolAnimator.h; sourceTree = "<group>"; };
+		ACA8D7771D1FC2DA0097B8C3 /* XWCoolAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCoolAnimator.m; sourceTree = "<group>"; };
+		ACA8D7791D1FC2DA0097B8C3 /* XWDrawerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDrawerAnimator.h; sourceTree = "<group>"; };
+		ACA8D77A1D1FC2DA0097B8C3 /* XWDrawerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDrawerAnimator.m; sourceTree = "<group>"; };
+		ACA8D77C1D1FC2DA0097B8C3 /* XWFilterAnimator+XWBarSwipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWBarSwipe.h"; sourceTree = "<group>"; };
+		ACA8D77D1D1FC2DA0097B8C3 /* XWFilterAnimator+XWBarSwipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWBarSwipe.m"; sourceTree = "<group>"; };
+		ACA8D77E1D1FC2DA0097B8C3 /* XWFilterAnimator+XWBoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWBoxBlur.h"; sourceTree = "<group>"; };
+		ACA8D77F1D1FC2DA0097B8C3 /* XWFilterAnimator+XWBoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWBoxBlur.m"; sourceTree = "<group>"; };
+		ACA8D7801D1FC2DA0097B8C3 /* XWFilterAnimator+XWCopyMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWCopyMachine.h"; sourceTree = "<group>"; };
+		ACA8D7811D1FC2DA0097B8C3 /* XWFilterAnimator+XWCopyMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWCopyMachine.m"; sourceTree = "<group>"; };
+		ACA8D7821D1FC2DA0097B8C3 /* XWFilterAnimator+XWFlash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWFlash.h"; sourceTree = "<group>"; };
+		ACA8D7831D1FC2DA0097B8C3 /* XWFilterAnimator+XWFlash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWFlash.m"; sourceTree = "<group>"; };
+		ACA8D7841D1FC2DA0097B8C3 /* XWFilterAnimator+XWMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWMask.h"; sourceTree = "<group>"; };
+		ACA8D7851D1FC2DA0097B8C3 /* XWFilterAnimator+XWMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWMask.m"; sourceTree = "<group>"; };
+		ACA8D7861D1FC2DA0097B8C3 /* XWFilterAnimator+XWMod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWMod.h"; sourceTree = "<group>"; };
+		ACA8D7871D1FC2DA0097B8C3 /* XWFilterAnimator+XWMod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWMod.m"; sourceTree = "<group>"; };
+		ACA8D7881D1FC2DA0097B8C3 /* XWFilterAnimator+XWPageCurl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWPageCurl.h"; sourceTree = "<group>"; };
+		ACA8D7891D1FC2DA0097B8C3 /* XWFilterAnimator+XWPageCurl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWPageCurl.m"; sourceTree = "<group>"; };
+		ACA8D78A1D1FC2DA0097B8C3 /* XWFilterAnimator+XWRipple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWRipple.h"; sourceTree = "<group>"; };
+		ACA8D78B1D1FC2DA0097B8C3 /* XWFilterAnimator+XWRipple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWRipple.m"; sourceTree = "<group>"; };
+		ACA8D78C1D1FC2DA0097B8C3 /* XWFilterAnimator+XWSwipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWSwipe.h"; sourceTree = "<group>"; };
+		ACA8D78D1D1FC2DA0097B8C3 /* XWFilterAnimator+XWSwipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWSwipe.m"; sourceTree = "<group>"; };
+		ACA8D78E1D1FC2DA0097B8C3 /* XWFilterAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWFilterAnimator.h; sourceTree = "<group>"; };
+		ACA8D78F1D1FC2DA0097B8C3 /* XWFilterAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWFilterAnimator.m; sourceTree = "<group>"; };
+		ACA8D7901D1FC2DA0097B8C3 /* XWFilterTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWFilterTransitionView.h; sourceTree = "<group>"; };
+		ACA8D7911D1FC2DA0097B8C3 /* XWFilterTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWFilterTransitionView.m; sourceTree = "<group>"; };
+		ACA8D7931D1FC2DA0097B8C3 /* XWMagicMoveAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWMagicMoveAnimator.h; sourceTree = "<group>"; };
+		ACA8D7941D1FC2DA0097B8C3 /* XWMagicMoveAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWMagicMoveAnimator.m; sourceTree = "<group>"; };
+		ACA8D7B21D1FC76E0097B8C3 /* GPMainWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMainWebController.h; sourceTree = "<group>"; };
+		ACA8D7B31D1FC76E0097B8C3 /* GPMainWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMainWebController.m; sourceTree = "<group>"; };
+		ACA8D7B51D1FC7950097B8C3 /* GPMainWebController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GPMainWebController.storyboard; sourceTree = "<group>"; };
 		ACB2E0ED1CF8278A00D3F5EA /* GPNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPNewFeatureController.h; sourceTree = "<group>"; };
 		ACB2E0EE1CF8278A00D3F5EA /* GPNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPNewFeatureController.m; sourceTree = "<group>"; };
 		ACB2E0F01CF827AC00D3F5EA /* GPNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPNewFeatureCell.h; sourceTree = "<group>"; };
@@ -735,6 +867,9 @@
 				AC2925A61D02B1F200726E51 /* GPHomController.m */,
 				AC2925851D02AD6D00726E51 /* TopicController */,
 				AC29258D1D02ADC300726E51 /* SlideController */,
+				ACA8D7B21D1FC76E0097B8C3 /* GPMainWebController.h */,
+				ACA8D7B31D1FC76E0097B8C3 /* GPMainWebController.m */,
+				ACA8D7B51D1FC7950097B8C3 /* GPMainWebController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1069,6 +1204,10 @@
 			children = (
 				AC29259F1D02B0D900726E51 /* GPDaRenController.h */,
 				AC2925A01D02B0D900726E51 /* GPDaRenController.m */,
+				ACA8D71F1D1CE2130097B8C3 /* GPDaRenPicController.h */,
+				ACA8D7201D1CE2130097B8C3 /* GPDaRenPicController.m */,
+				AC20C0611D20253D0008A060 /* GPDaRenPicsController.h */,
+				AC20C0621D20253D0008A060 /* GPDaRenPicsController.m */,
 			);
 			name = GPDaRenController;
 			sourceTree = "<group>";
@@ -1098,6 +1237,132 @@
 				AC2925A31D02B0E500726E51 /* GPEventController.m */,
 			);
 			name = GPEventController;
+			sourceTree = "<group>";
+		};
+		ACA8D7551D1FC2DA0097B8C3 /* XWTransition */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8D7561D1FC2DA0097B8C3 /* Category */,
+				ACA8D75B1D1FC2DA0097B8C3 /* Main */,
+				ACA8D7601D1FC2DA0097B8C3 /* Resoures */,
+				ACA8D7641D1FC2DA0097B8C3 /* XWCircleSpreadAnimator */,
+				ACA8D7671D1FC2DA0097B8C3 /* XWCoolAnimator */,
+				ACA8D7781D1FC2DA0097B8C3 /* XWDrawerAnimator */,
+				ACA8D77B1D1FC2DA0097B8C3 /* XWFilterAnimator */,
+				ACA8D7921D1FC2DA0097B8C3 /* XWMagicMoveAnimator */,
+			);
+			path = XWTransition;
+			sourceTree = "<group>";
+		};
+		ACA8D7561D1FC2DA0097B8C3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8D7571D1FC2DA0097B8C3 /* UINavigationController+XWTransition.h */,
+				ACA8D7581D1FC2DA0097B8C3 /* UINavigationController+XWTransition.m */,
+				ACA8D7591D1FC2DA0097B8C3 /* UIViewController+XWTransition.h */,
+				ACA8D75A1D1FC2DA0097B8C3 /* UIViewController+XWTransition.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		ACA8D75B1D1FC2DA0097B8C3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8D75C1D1FC2DA0097B8C3 /* XWInteractiveTransition.h */,
+				ACA8D75D1D1FC2DA0097B8C3 /* XWInteractiveTransition.m */,
+				ACA8D75E1D1FC2DA0097B8C3 /* XWTransitionAnimator.h */,
+				ACA8D75F1D1FC2DA0097B8C3 /* XWTransitionAnimator.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ACA8D7601D1FC2DA0097B8C3 /* Resoures */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8D7611D1FC2DA0097B8C3 /* line.png */,
+				ACA8D7621D1FC2DA0097B8C3 /* mask.jpg */,
+				ACA8D7631D1FC2DA0097B8C3 /* restrictedshine.tiff */,
+			);
+			path = Resoures;
+			sourceTree = "<group>";
+		};
+		ACA8D7641D1FC2DA0097B8C3 /* XWCircleSpreadAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8D7651D1FC2DA0097B8C3 /* XWCircleSpreadAnimator.h */,
+				ACA8D7661D1FC2DA0097B8C3 /* XWCircleSpreadAnimator.m */,
+			);
+			path = XWCircleSpreadAnimator;
+			sourceTree = "<group>";
+		};
+		ACA8D7671D1FC2DA0097B8C3 /* XWCoolAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8D7681D1FC2DA0097B8C3 /* XWCoolAnimator+XWExplode.h */,
+				ACA8D7691D1FC2DA0097B8C3 /* XWCoolAnimator+XWExplode.m */,
+				ACA8D76A1D1FC2DA0097B8C3 /* XWCoolAnimator+XWFold.h */,
+				ACA8D76B1D1FC2DA0097B8C3 /* XWCoolAnimator+XWFold.m */,
+				ACA8D76C1D1FC2DA0097B8C3 /* XWCoolAnimator+XWLines.h */,
+				ACA8D76D1D1FC2DA0097B8C3 /* XWCoolAnimator+XWLines.m */,
+				ACA8D76E1D1FC2DA0097B8C3 /* XWCoolAnimator+XWMiddlePageFlip.h */,
+				ACA8D76F1D1FC2DA0097B8C3 /* XWCoolAnimator+XWMiddlePageFlip.m */,
+				ACA8D7701D1FC2DA0097B8C3 /* XWCoolAnimator+XWPageFlip.h */,
+				ACA8D7711D1FC2DA0097B8C3 /* XWCoolAnimator+XWPageFlip.m */,
+				ACA8D7721D1FC2DA0097B8C3 /* XWCoolAnimator+XWPortal.h */,
+				ACA8D7731D1FC2DA0097B8C3 /* XWCoolAnimator+XWPortal.m */,
+				ACA8D7741D1FC2DA0097B8C3 /* XWCoolAnimator+XWScanning.h */,
+				ACA8D7751D1FC2DA0097B8C3 /* XWCoolAnimator+XWScanning.m */,
+				ACA8D7761D1FC2DA0097B8C3 /* XWCoolAnimator.h */,
+				ACA8D7771D1FC2DA0097B8C3 /* XWCoolAnimator.m */,
+			);
+			path = XWCoolAnimator;
+			sourceTree = "<group>";
+		};
+		ACA8D7781D1FC2DA0097B8C3 /* XWDrawerAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8D7791D1FC2DA0097B8C3 /* XWDrawerAnimator.h */,
+				ACA8D77A1D1FC2DA0097B8C3 /* XWDrawerAnimator.m */,
+			);
+			path = XWDrawerAnimator;
+			sourceTree = "<group>";
+		};
+		ACA8D77B1D1FC2DA0097B8C3 /* XWFilterAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8D77C1D1FC2DA0097B8C3 /* XWFilterAnimator+XWBarSwipe.h */,
+				ACA8D77D1D1FC2DA0097B8C3 /* XWFilterAnimator+XWBarSwipe.m */,
+				ACA8D77E1D1FC2DA0097B8C3 /* XWFilterAnimator+XWBoxBlur.h */,
+				ACA8D77F1D1FC2DA0097B8C3 /* XWFilterAnimator+XWBoxBlur.m */,
+				ACA8D7801D1FC2DA0097B8C3 /* XWFilterAnimator+XWCopyMachine.h */,
+				ACA8D7811D1FC2DA0097B8C3 /* XWFilterAnimator+XWCopyMachine.m */,
+				ACA8D7821D1FC2DA0097B8C3 /* XWFilterAnimator+XWFlash.h */,
+				ACA8D7831D1FC2DA0097B8C3 /* XWFilterAnimator+XWFlash.m */,
+				ACA8D7841D1FC2DA0097B8C3 /* XWFilterAnimator+XWMask.h */,
+				ACA8D7851D1FC2DA0097B8C3 /* XWFilterAnimator+XWMask.m */,
+				ACA8D7861D1FC2DA0097B8C3 /* XWFilterAnimator+XWMod.h */,
+				ACA8D7871D1FC2DA0097B8C3 /* XWFilterAnimator+XWMod.m */,
+				ACA8D7881D1FC2DA0097B8C3 /* XWFilterAnimator+XWPageCurl.h */,
+				ACA8D7891D1FC2DA0097B8C3 /* XWFilterAnimator+XWPageCurl.m */,
+				ACA8D78A1D1FC2DA0097B8C3 /* XWFilterAnimator+XWRipple.h */,
+				ACA8D78B1D1FC2DA0097B8C3 /* XWFilterAnimator+XWRipple.m */,
+				ACA8D78C1D1FC2DA0097B8C3 /* XWFilterAnimator+XWSwipe.h */,
+				ACA8D78D1D1FC2DA0097B8C3 /* XWFilterAnimator+XWSwipe.m */,
+				ACA8D78E1D1FC2DA0097B8C3 /* XWFilterAnimator.h */,
+				ACA8D78F1D1FC2DA0097B8C3 /* XWFilterAnimator.m */,
+				ACA8D7901D1FC2DA0097B8C3 /* XWFilterTransitionView.h */,
+				ACA8D7911D1FC2DA0097B8C3 /* XWFilterTransitionView.m */,
+			);
+			path = XWFilterAnimator;
+			sourceTree = "<group>";
+		};
+		ACA8D7921D1FC2DA0097B8C3 /* XWMagicMoveAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8D7931D1FC2DA0097B8C3 /* XWMagicMoveAnimator.h */,
+				ACA8D7941D1FC2DA0097B8C3 /* XWMagicMoveAnimator.m */,
+			);
+			path = XWMagicMoveAnimator;
 			sourceTree = "<group>";
 		};
 		ACB2E0E51CF7EEE800D3F5EA /* Ad(广告) */ = {
@@ -1240,6 +1505,14 @@
 			children = (
 				ACA8D7151D1BCB6D0097B8C3 /* GPDaData.h */,
 				ACA8D7161D1BCB6D0097B8C3 /* GPDaData.m */,
+				ACA8D7221D1CE3D90097B8C3 /* GPDaRenPicData.h */,
+				ACA8D7231D1CE3D90097B8C3 /* GPDaRenPicData.m */,
+				ACA8D7251D1CE5DF0097B8C3 /* GPDaRenToolsData.h */,
+				ACA8D7261D1CE5DF0097B8C3 /* GPDaRenToolsData.m */,
+				ACA8D7281D1CE6000097B8C3 /* GPDaRenMaterialData.h */,
+				ACA8D7291D1CE6000097B8C3 /* GPDaRenMaterialData.m */,
+				ACA8D72B1D1CE6240097B8C3 /* GPDaRenStepData.h */,
+				ACA8D72C1D1CE6240097B8C3 /* GPDaRenStepData.m */,
 			);
 			name = DaRenData;
 			sourceTree = "<group>";
@@ -1259,6 +1532,21 @@
 				ACCF53DF1D1BC3600085BA3D /* GPDarenCell.h */,
 				ACCF53E01D1BC3600085BA3D /* GPDarenCell.m */,
 				ACCF53E11D1BC3600085BA3D /* GPDarenCell.xib */,
+				ACA8D72E1D1D0A270097B8C3 /* GPDaRenStepOneCell.h */,
+				ACA8D72F1D1D0A270097B8C3 /* GPDaRenStepOneCell.m */,
+				ACA8D7301D1D0A270097B8C3 /* GPDaRenStepOneCell.xib */,
+				ACA8D7331D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.h */,
+				ACA8D7341D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.m */,
+				ACA8D7351D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.xib */,
+				ACA8D7381D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.h */,
+				ACA8D7391D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.m */,
+				ACA8D73A1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.xib */,
+				ACA8D7471D1E87B90097B8C3 /* GPStepTableViewCell.h */,
+				ACA8D7481D1E87B90097B8C3 /* GPStepTableViewCell.m */,
+				ACA8D7491D1E87B90097B8C3 /* GPStepTableViewCell.xib */,
+				AC20C0641D20B77A0008A060 /* GPDaRenPicsCell.h */,
+				AC20C0651D20B77A0008A060 /* GPDaRenPicsCell.m */,
+				AC20C0661D20B77A0008A060 /* GPDaRenPicsCell.xib */,
 			);
 			name = DaRenView;
 			sourceTree = "<group>";
@@ -1310,6 +1598,7 @@
 		ACEABAAB1CFEB8FA0024FC67 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				ACA8D7551D1FC2DA0097B8C3 /* XWTransition */,
 				ACDDCCD61D192EEE00E4615D /* SDAutoLayout */,
 				ACDA28601D191AEB00BE1579 /* JMRoundedCorner */,
 				AC0EA3321D0708D10041D14E /* HYBControllerTransitions */,
@@ -1457,20 +1746,29 @@
 				AC5AAE411CF54A3700EDBF99 /* GPSubTitleCell.xib in Resources */,
 				AC4E726F1CE1831B00E92406 /* Assets.xcassets in Resources */,
 				ACCF53E31D1BC3600085BA3D /* GPDarenCell.xib in Resources */,
+				ACA8D7991D1FC2DA0097B8C3 /* line.png in Resources */,
 				ACD585461CFBE45400F7942D /* GPFooterClassCell.xib in Resources */,
 				ACC0480A1CEDBC14004E8C74 /* GPLookCell.xib in Resources */,
+				ACA8D73C1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.xib in Resources */,
 				AC2925C61D0436D600726E51 /* GPSectionHeadView.xib in Resources */,
 				ACD5854B1CFBE47D00F7942D /* GPFooterAppraiseCell.xib in Resources */,
 				AC5AAE461CF54BC800EDBF99 /* GPContentCell.xib in Resources */,
 				AC5AAE4B1CF54C0C00EDBF99 /* GPUserCell.xib in Resources */,
 				ACC0480F1CEDBC2A004E8C74 /* GPHotCell.xib in Resources */,
 				AC2925B61D02CFC600726E51 /* GPNavigationCell.xib in Resources */,
+				ACA8D7321D1D0A270097B8C3 /* GPDaRenStepOneCell.xib in Resources */,
 				ACD585531CFC3EE100F7942D /* GPLessonHeadView.xib in Resources */,
 				AC2925BB1D02CFE200726E51 /* GPAdvanceCell.xib in Resources */,
 				AC7A9CE61CF04F48001A9550 /* GPWebViewController.storyboard in Resources */,
 				ACB2E0F41CF827AC00D3F5EA /* GPNewFeatureCell.xib in Resources */,
 				ACBF6BA81D1A93FC00ABE062 /* GPLoginController.storyboard in Resources */,
+				ACA8D79B1D1FC2DA0097B8C3 /* restrictedshine.tiff in Resources */,
+				ACA8D79A1D1FC2DA0097B8C3 /* mask.jpg in Resources */,
+				ACA8D7B61D1FC7950097B8C3 /* GPMainWebController.storyboard in Resources */,
 				AC7A9CFA1CF2E060001A9550 /* GPSlideCollectionViewCell.xib in Resources */,
+				AC20C0681D20B77A0008A060 /* GPDaRenPicsCell.xib in Resources */,
+				ACA8D7371D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.xib in Resources */,
+				ACA8D74B1D1E87B90097B8C3 /* GPStepTableViewCell.xib in Resources */,
 				ACB2E0F91CFAA65200D3F5EA /* GPAdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1545,57 +1843,87 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACDA28591D179AC600BE1579 /* GPTimeLIneCommentCell.m in Sources */,
+				ACA8D74A1D1E87B90097B8C3 /* GPStepTableViewCell.m in Sources */,
 				AC4E72CE1CE18CA700E92406 /* GPTutorialTableViewController.m in Sources */,
 				AC0EA33F1D0708D10041D14E /* HYBBaseTransition.m in Sources */,
+				ACA8D7A91D1FC2DA0097B8C3 /* XWFilterAnimator+XWFlash.m in Sources */,
+				ACA8D7A01D1FC2DA0097B8C3 /* XWCoolAnimator+XWMiddlePageFlip.m in Sources */,
 				AC2925BE1D02E7E700726E51 /* GPGuideTool.m in Sources */,
+				ACA8D7A11D1FC2DA0097B8C3 /* XWCoolAnimator+XWPageFlip.m in Sources */,
 				AC4E72C71CE18A6300E92406 /* GPNavgationController.m in Sources */,
 				ACB2E0FC1CFABC9A00D3F5EA /* GPJianDaoHeader.m in Sources */,
+				ACA8D7B41D1FC76E0097B8C3 /* GPMainWebController.m in Sources */,
 				ACC047FB1CEDA9EA004E8C74 /* GPData.m in Sources */,
 				ACDA285F1D18E30900BE1579 /* GPTimeLineHeadCell.m in Sources */,
 				ACDDCCDB1D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				AC561F8F1D050FEB00919703 /* SDCycleScrollView.m in Sources */,
+				ACA8D7361D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.m in Sources */,
+				ACA8D7AB1D1FC2DA0097B8C3 /* XWFilterAnimator+XWMod.m in Sources */,
 				AC5AAE2E1CF5443A00EDBF99 /* GPTools.m in Sources */,
 				ACEABAE31CFFCA650024FC67 /* SDWaitingView.m in Sources */,
 				ACD5854A1CFBE47D00F7942D /* GPFooterAppraiseCell.m in Sources */,
+				AC20C0671D20B77A0008A060 /* GPDaRenPicsCell.m in Sources */,
 				ACC0480E1CEDBC2A004E8C74 /* GPHotCell.m in Sources */,
+				AC20C0631D20253D0008A060 /* GPDaRenPicsController.m in Sources */,
 				AC2925B01D02C09200726E51 /* GPAdvanceData.m in Sources */,
 				AC561F8D1D050FEB00919703 /* TAPageControl.m in Sources */,
 				AC7A9CE41CF04F17001A9550 /* GPWebViewController.m in Sources */,
+				ACA8D73B1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.m in Sources */,
 				ACDA285C1D17CBF200BE1579 /* PhotosContainerView.m in Sources */,
 				AC2925981D02AF7A00726E51 /* GPSuperTopicController.m in Sources */,
 				AC5A53521D13E4C40061D5D8 /* GPTimeLineLaudData.m in Sources */,
+				ACA8D7AF1D1FC2DA0097B8C3 /* XWFilterAnimator.m in Sources */,
 				AC2925A41D02B0E500726E51 /* GPEventController.m in Sources */,
 				AC0EA2D91D051A750041D14E /* GPEventNewController.m in Sources */,
 				AC0EA3441D0708D10041D14E /* UIViewController+HYBMoveTransition.m in Sources */,
 				AC4E72C81CE18A6300E92406 /* GPTabBarController.m in Sources */,
+				ACA8D7A71D1FC2DA0097B8C3 /* XWFilterAnimator+XWBoxBlur.m in Sources */,
 				ACCF53E21D1BC3600085BA3D /* GPDarenCell.m in Sources */,
+				ACA8D7AA1D1FC2DA0097B8C3 /* XWFilterAnimator+XWMask.m in Sources */,
 				ACA236531D11508C00489F96 /* GPLayout.m in Sources */,
 				AC2925821D02A8BA00726E51 /* YZDisplayTitleLabel.m in Sources */,
+				ACA8D7A31D1FC2DA0097B8C3 /* XWCoolAnimator+XWScanning.m in Sources */,
 				AC5A534F1D13E49E0061D5D8 /* GPTimeLinePicData.m in Sources */,
 				ACB2E0F81CFAA65200D3F5EA /* GPAdViewController.m in Sources */,
 				AC7A9CF21CF2A16A001A9550 /* GPTitleBtn.m in Sources */,
 				AC4E72D11CE18CB500E92406 /* GPHandTableViewController.m in Sources */,
+				ACA8D79D1D1FC2DA0097B8C3 /* XWCoolAnimator+XWExplode.m in Sources */,
 				AC5AAE451CF54BC800EDBF99 /* GPContentCell.m in Sources */,
 				AC5A534C1D13E3110061D5D8 /* GPTimeLineData.m in Sources */,
 				AC7A9CF51CF2A36D001A9550 /* UIView+GPExtension.m in Sources */,
+				ACA8D7271D1CE5DF0097B8C3 /* GPDaRenToolsData.m in Sources */,
 				AC561F8E1D050FEB00919703 /* SDCollectionViewCell.m in Sources */,
 				AC2925B51D02CFC600726E51 /* GPNavigationCell.m in Sources */,
 				AC4E72671CE1831B00E92406 /* AppDelegate.m in Sources */,
+				ACA8D7211D1CE2130097B8C3 /* GPDaRenPicController.m in Sources */,
+				ACA8D7241D1CE3D90097B8C3 /* GPDaRenPicData.m in Sources */,
 				AC5AAE2B1CF5442A00EDBF99 /* GPMaterial.m in Sources */,
 				AC561F8A1D050FEB00919703 /* TAAbstractDotView.m in Sources */,
 				AC4E72D41CE18CC100E92406 /* GPFairTableViewController.m in Sources */,
+				ACA8D79C1D1FC2DA0097B8C3 /* XWCircleSpreadAnimator.m in Sources */,
+				ACA8D7AD1D1FC2DA0097B8C3 /* XWFilterAnimator+XWRipple.m in Sources */,
 				ACC047FA1CEDA9EA004E8C74 /* GPActivityData.m in Sources */,
 				AC561F901D050FEB00919703 /* UIView+SDExtension.m in Sources */,
+				ACA8D7A81D1FC2DA0097B8C3 /* XWFilterAnimator+XWCopyMachine.m in Sources */,
 				AC4E72D71CE18CCD00E92406 /* GPMyTableViewController.m in Sources */,
+				ACA8D72A1D1CE6000097B8C3 /* GPDaRenMaterialData.m in Sources */,
+				ACA8D7961D1FC2DA0097B8C3 /* UIViewController+XWTransition.m in Sources */,
+				ACA8D79F1D1FC2DA0097B8C3 /* XWCoolAnimator+XWLines.m in Sources */,
+				ACA8D7AE1D1FC2DA0097B8C3 /* XWFilterAnimator+XWSwipe.m in Sources */,
 				AC2925C11D0431F600726E51 /* GPSlideHeadView.m in Sources */,
+				ACA8D7A51D1FC2DA0097B8C3 /* XWDrawerAnimator.m in Sources */,
 				AC0EA2D51D051A130041D14E /* GPSlideEventController.m in Sources */,
 				ACDA28561D179AB500BE1579 /* GPTimeLineApperCell.m in Sources */,
 				AC561F8B1D050FEB00919703 /* TAAnimatedDotView.m in Sources */,
 				AC5A533C1D13E1260061D5D8 /* GPTimeLineController.m in Sources */,
+				ACA8D7951D1FC2DA0097B8C3 /* UINavigationController+XWTransition.m in Sources */,
 				ACBF6BA61D1A93F500ABE062 /* GPLoginController.m in Sources */,
+				ACA8D7A61D1FC2DA0097B8C3 /* XWFilterAnimator+XWBarSwipe.m in Sources */,
 				ACDA28661D191AEB00BE1579 /* UIView+RoundedCorner.m in Sources */,
 				ACD585451CFBE45400F7942D /* GPFooterClassCell.m in Sources */,
+				ACA8D7981D1FC2DA0097B8C3 /* XWTransitionAnimator.m in Sources */,
 				AC2925811D02A8BA00726E51 /* UIView+Frame.m in Sources */,
+				ACA8D7A21D1FC2DA0097B8C3 /* XWCoolAnimator+XWPortal.m in Sources */,
 				AC2925A71D02B1F200726E51 /* GPHomController.m in Sources */,
 				AC0EA3431D0708D10041D14E /* HYBMoveTransition.m in Sources */,
 				AC2925761D015B0400726E51 /* GPAutoFooter.m in Sources */,
@@ -1604,12 +1932,15 @@
 				ACC048051CEDAA53004E8C74 /* GPCompetitionData.m in Sources */,
 				ACDA28501D17796600BE1579 /* GPTimeLineCommentData.m in Sources */,
 				ACEABAE11CFFCA650024FC67 /* SDBrowserImageView.m in Sources */,
+				ACA8D79E1D1FC2DA0097B8C3 /* XWCoolAnimator+XWFold.m in Sources */,
 				AC0EA2D61D051A130041D14E /* GPSlideSuperController.m in Sources */,
 				AC2925AD1D02C08400726E51 /* GPNavigationData.m in Sources */,
+				ACA8D7B01D1FC2DA0097B8C3 /* XWFilterTransitionView.m in Sources */,
 				AC2925951D02ADC300726E51 /* GPSlideLessonController.m in Sources */,
 				AC5AAE511CF5F69100EDBF99 /* CALayer+GPExtension.m in Sources */,
 				AC0EA3401D0708D10041D14E /* HYBBubbleTransition.m in Sources */,
 				AC0EA3411D0708D10041D14E /* HYBEaseInOutTransition.m in Sources */,
+				ACA8D7311D1D0A270097B8C3 /* GPDaRenStepOneCell.m in Sources */,
 				AC2925C51D0436D600726E51 /* GPSectionHeadView.m in Sources */,
 				AC29259B1D02B0A400726E51 /* GPFeaturedController.m in Sources */,
 				ACDA28531D179A9700BE1579 /* GPTimeLineEventCell.m in Sources */,
@@ -1623,20 +1954,25 @@
 				AC7A9CF91CF2E060001A9550 /* GPSlideCollectionViewCell.m in Sources */,
 				ACDDCCDC1D192EEE00E4615D /* UIView+SDAutoLayout.m in Sources */,
 				AC5A53471D13E1E00061D5D8 /* GPPhotoContainerView.m in Sources */,
+				ACA8D7A41D1FC2DA0097B8C3 /* XWCoolAnimator.m in Sources */,
 				AC2925831D02A8BA00726E51 /* YZDisplayViewController.m in Sources */,
 				ACB2E0EF1CF8278A00D3F5EA /* GPNewFeatureController.m in Sources */,
 				ACDE67171CED61F500FC47DD /* GPHttpTool.m in Sources */,
 				ACB2E0F31CF827AC00D3F5EA /* GPNewFeatureCell.m in Sources */,
 				ACDA28651D191AEB00BE1579 /* UIImage+RoundedCorner.m in Sources */,
 				ACC048091CEDBC14004E8C74 /* GPLookCell.m in Sources */,
+				ACA8D72D1D1CE6240097B8C3 /* GPDaRenStepData.m in Sources */,
 				ACA8D7171D1BCB6D0097B8C3 /* GPDaData.m in Sources */,
 				AC0EA3471D07EB9D0041D14E /* GPEventBtn.m in Sources */,
 				AC5AAE401CF54A3700EDBF99 /* GPSubTitleCell.m in Sources */,
 				AC29259E1D02B0C800726E51 /* GPFocusController.m in Sources */,
+				ACA8D7AC1D1FC2DA0097B8C3 /* XWFilterAnimator+XWPageCurl.m in Sources */,
 				AC7A9CFD1CF2E9AE001A9550 /* GPSlideShopData.m in Sources */,
 				AC2925841D02A8BA00726E51 /* YZFlowLayout.m in Sources */,
 				ACC048021CEDAA3A004E8C74 /* GPDynamicData.m in Sources */,
 				AC2925A11D02B0D900726E51 /* GPDaRenController.m in Sources */,
+				ACA8D7971D1FC2DA0097B8C3 /* XWInteractiveTransition.m in Sources */,
+				ACA8D7B11D1FC2DA0097B8C3 /* XWMagicMoveAnimator.m in Sources */,
 				AC0EA2DC1D051A890041D14E /* GPEventVoteController.m in Sources */,
 				ACD585511CFC3ECA00F7942D /* GPLessonHeadView.m in Sources */,
 				AC4E72641CE1831B00E92406 /* main.m in Sources */,

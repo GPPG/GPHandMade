@@ -18,13 +18,13 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="la4-DO-1sw" userLabel="下背景">
                         <rect key="frame" x="0.0" y="80" width="538" height="174.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-WE-vrB" userLabel="一图">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-WE-vrB" userLabel="一图">
                                 <rect key="frame" x="0.0" y="0.0" width="179.5" height="174.5"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tpi-yw-c0u" userLabel="二图">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tpi-yw-c0u" userLabel="二图">
                                 <rect key="frame" x="179" y="0.0" width="179" height="174.5"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bt2-FU-v80" userLabel="三图">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bt2-FU-v80" userLabel="三图">
                                 <rect key="frame" x="358" y="0.0" width="179.5" height="174.5"/>
                             </imageView>
                         </subviews>
@@ -48,20 +48,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="538" height="80"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="11U-oI-iJF" userLabel="头像">
-                                <rect key="frame" x="15" y="15" width="60" height="60"/>
+                                <rect key="frame" x="15" y="15" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="YCL-vX-Md7"/>
-                                    <constraint firstAttribute="width" constant="60" id="bCt-wE-MY4"/>
+                                    <constraint firstAttribute="height" constant="50" id="YCL-vX-Md7"/>
+                                    <constraint firstAttribute="width" constant="50" id="bCt-wE-MY4"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82h-ZB-i6z" userLabel="昵称">
-                                <rect key="frame" x="80" y="15" width="37.5" height="18"/>
+                                <rect key="frame" x="70" y="15" width="37.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wag-tc-nI0">
-                                <rect key="frame" x="470" y="30" width="60" height="30"/>
+                                <rect key="frame" x="470" y="25" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="JUL-pS-aHB"/>
                                 </constraints>
@@ -77,7 +77,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg7-Ve-ENF" userLabel="子标题">
-                                <rect key="frame" x="80" y="63" width="26.5" height="12"/>
+                                <rect key="frame" x="70" y="53" width="26.5" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>

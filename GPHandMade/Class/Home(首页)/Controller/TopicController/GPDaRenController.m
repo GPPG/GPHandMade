@@ -14,6 +14,8 @@
 #import "GPDaData.h"
 #import "MJExtension.h"
 #import "GPDarenCell.h"
+#import "GPDaRenPicController.h"
+#import "XWCoolAnimator.h"
 
 static NSString * const GPDaCellID = @"GPDaRenCell";
 
@@ -124,14 +126,23 @@ static NSString * const GPDaCellID = @"GPDaRenCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     GPDarenCell *daRenCell = [tableView dequeueReusableCellWithIdentifier:GPDaCellID];
-    
     daRenCell.daData = self.daRenArray[indexPath.row];
+    daRenCell.imageClick = ^(NSInteger tagCount)
+    {
+        [self imageViewClick:tagCount];
+    };
     return daRenCell;
 }
-#pragma mark - UItableView 代理
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark - 内部方法
+- (void)imageViewClick:(NSInteger)tagCount
 {
-    
+    XWCoolAnimator *animator = [XWCoolAnimator xw_animatorWithType:XWCoolTransitionAnimatorTypeFoldFromRight];
+    GPDaRenPicController *picVc = [[GPDaRenPicController alloc]init];
+    picVc.tagCpunt = [NSString stringWithFormat:@"%ld",tagCount];
+    [self xw_presentViewController:picVc withAnimator:animator];
+//    [self presentViewController:picVc animated:YES completion:nil];
+//    [self.navigationController xw_pushViewController:picVc withAnimator:animator];
 }
+#pragma mark - UItableView 代理
 
 @end

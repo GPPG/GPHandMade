@@ -9,7 +9,6 @@
 #import "GPWebViewController.h"
 #import "GPslide.h"
 #import "GPEventBtn.h"
-#import "GPHotData.h"
 
 
 @interface GPWebViewController()<UIWebViewDelegate,UIScrollViewDelegate>
@@ -48,14 +47,7 @@
 
     }
 }
-// 热帖
-- (void)setHotData:(GPHotData *)hotData
-{
-    _hotData = hotData;
-    if (hotData.mob_h5_url.length) {
-        [self loadSlidDataType:hotData.mob_h5_url title:@"专题详情"];
-    }
-}
+
 - (void)loadSlidDataType:(NSString *)urlString title:(NSString *)title
 {
     NSURL *url = [NSURL URLWithString:urlString];

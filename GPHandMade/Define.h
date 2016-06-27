@@ -49,7 +49,7 @@
 #define SnowUP @"snowUp" // 上滑
 #define SnowDown @"snowDown" // 下滑
 #define EventBarClick @"eventBarClick"
-
+#define DaRenStep @"setpPics"
 /**
  *  Get
  */

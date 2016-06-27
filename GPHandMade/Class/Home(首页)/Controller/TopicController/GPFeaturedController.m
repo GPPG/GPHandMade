@@ -32,6 +32,8 @@
 #import "GPSlideHeadView.h"
 #import "GPSectionHeadView.h"
 #import "GPSlideEventController.h"
+#import "XWCoolAnimator.h"
+#import "GPMainWebController.h"
 
 @interface GPFeaturedController ()<SDCycleScrollViewDelegate>
 @property (strong,nonatomic) NSMutableArray *dataSlideArray; // 轮播图片数组
@@ -270,10 +272,10 @@ static NSString * const GPSectionHead = @"HotSectionCell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 2) {
-        GPWebViewController *webVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPWebViewController class]) bundle:nil].instantiateInitialViewController;
+         XWCoolAnimator *animator = [XWCoolAnimator xw_animatorWithType:XWCoolTransitionAnimatorTypePortal];
+        GPMainWebController *webVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPMainWebController class]) bundle:nil].instantiateInitialViewController;
         webVc.hotData = self.dataHotArray[indexPath.row];
-        
-        [self.navigationController pushViewController:webVc animated:YES];
+        [self xw_presentViewController:webVc withAnimator:animator];
     }
 }
 #pragma mark - UIcollectionView 数据源方法

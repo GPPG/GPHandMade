@@ -20,20 +20,24 @@
 @property (weak, nonatomic) IBOutlet UIImageView *oneImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *twoImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *threeImageView;
-@property (nonatomic, strong) NSMutableArray *picArray;
+@property (nonatomic, strong) NSArray *picArray;
+@property (nonatomic, strong) NSMutableArray *handArray;
 @end
 
 @implementation GPDarenCell
-#pragma mark - 懒加载
-- (NSMutableArray *)picArray
+- (void)awakeFromNib
 {
-    if (!_picArray) {
-        
-        _picArray = [[NSMutableArray alloc] init];
-    }
-    return _picArray;
+    self.picArray = @[self.oneImageView,self.twoImageView,self.threeImageView];
 }
-
+#pragma mark - 懒加载
+- (NSMutableArray *)handArray
+{
+    if (!_handArray) {
+        
+        _handArray = [[NSMutableArray alloc] init];
+    }
+    return _handArray;
+}
 - (IBAction)guanBtnClick:(UIButton *)sender {
     sender.selected = YES;
     self.guanBtn.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -49,7 +53,7 @@
         self.guanBtn.selected = NO;
         self.guanBtn.layer.borderColor = [UIColor orangeColor].CGColor;
     }
-    self.iconImageView.layer.cornerRadius = 30;
+    self.iconImageView.layer.cornerRadius = 25;
     self.iconImageView.layer.masksToBounds = YES;
     
     NSURL *iconUrl = [NSURL URLWithString:daData.avatar];
@@ -57,11 +61,30 @@
     self.nameLabel.text = daData.nick_name;
     NSString *subStr = [NSString stringWithFormat:@"%@图文教程|%@视频教程|%@手工圈",daData.course_count,daData.video_count,daData.opus_count];
     self.subTitleLabel.text = subStr;
+    int i = 0;
     for (NSDictionary *picDic in daData.list) {
-        [self.picArray addObject:picDic[@"host_pic"]];
+        [self addImage:picDic[@"host_pic"] imageView:self.picArray[i] tag:picDic[@"hand_id"]];
+        [self addTapGestuer:self.picArray[i]];
+        i ++;
     }
-    [self.oneImageView sd_setImageWithURL:[NSURL URLWithString:self.picArray[0]]placeholderImage:[UIImage imageNamed:@"2"]];
-    [self.twoImageView sd_setImageWithURL:[NSURL URLWithString:self.picArray[1]]placeholderImage:[UIImage imageNamed:@"2"]];
-    [self.threeImageView sd_setImageWithURL:[NSURL URLWithString:self.picArray[2]]placeholderImage:[UIImage imageNamed:@"2"]];
+}
+#pragma mark - 内部方法
+- (void)addImage:(NSString *)picUrl imageView:(UIImageView *)imageView tag:(NSString *)tapStr
+{
+    [imageView sd_setImageWithURL:[NSURL URLWithString:picUrl] placeholderImage:[UIImage imageNamed:@"2"]];
+    imageView.tag = [tapStr intValue];
+}
+#pragma mark - 添加手势
+- (void)addTapGestuer:(UIImageView *)imageView
+{
+    UITapGestureRecognizer *tapGs = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imageViewClick:)];
+    [imageView addGestureRecognizer:tapGs];
+}
+- (void)imageViewClick:(UITapGestureRecognizer *)gestureRecognizer
+{
+    UIImageView *imageView = (UIImageView *)[gestureRecognizer view];
+    if (self.imageClick) {
+        self.imageClick(imageView.tag);
+    }
 }
 @end

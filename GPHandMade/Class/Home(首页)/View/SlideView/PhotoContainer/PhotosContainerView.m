@@ -9,7 +9,7 @@
 #import "UIView+SDAutoLayout.h"
 #import "UIImageView+WebCache.h"
 #import "UIView+RoundedCorner.h"
-
+#define coutn 10
 @implementation PhotosContainerView
 {
     NSMutableArray *_imageViewsArray;
@@ -51,7 +51,7 @@
             NSURL *imageUrl = [NSURL URLWithString:photoNamesArray[idx]];
             [[SDWebImageManager sharedManager] downloadImageWithURL:imageUrl options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
                 if (image) {
-                    [imageView jm_setCornerRadius:10 withImage:image];
+                    [imageView jm_setCornerRadius:(SCREEN_WIDTH - 102)/ (2 * coutn) withImage:image];
                 }
             }];
             [temp addObject:imageView];
@@ -61,7 +61,7 @@
         }
     }];
     
-    [self setupAutoWidthFlowItems:[temp copy] withPerRowItemsCount:10 verticalMargin:2 horizontalMargin:2];
+    [self setupAutoWidthFlowItems:[temp copy] withPerRowItemsCount:coutn verticalMargin:2 horizontalMargin:2];
 }
 
 

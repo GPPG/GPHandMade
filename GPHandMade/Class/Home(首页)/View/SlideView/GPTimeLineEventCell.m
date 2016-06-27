@@ -101,7 +101,8 @@
 }
 #pragma mark - 内部方法
 - (void)voteBtnClick
-{
+{   [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+
     [SVProgressHUD showSuccessWithStatus:@"投票成功"];
 }
 - (void)eventBtnClick

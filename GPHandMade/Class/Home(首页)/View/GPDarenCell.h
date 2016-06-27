@@ -12,4 +12,5 @@
 @interface GPDarenCell : UITableViewCell
 
 @property (nonatomic, strong) GPDaData *daData;
+@property (nonatomic, copy)void(^imageClick)(NSInteger tagImageView);
 @end
