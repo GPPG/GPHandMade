@@ -34,6 +34,8 @@
 #import "GPSlideEventController.h"
 #import "XWCoolAnimator.h"
 #import "GPMainWebController.h"
+#import "GPLoginController.h"
+#import "GPTopicListController.h"
 
 @interface GPFeaturedController ()<SDCycleScrollViewDelegate>
 @property (strong,nonatomic) NSMutableArray *dataSlideArray; // 轮播图片数组
@@ -152,8 +154,6 @@ static NSString * const GPSectionHead = @"HotSectionCell";
     [header beginRefreshing];
     // 设置header
     self.collectionView.mj_header = header;
-    
-    
 }
 -(void)loadNewData
 {
@@ -276,6 +276,22 @@ static NSString * const GPSectionHead = @"HotSectionCell";
         GPMainWebController *webVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPMainWebController class]) bundle:nil].instantiateInitialViewController;
         webVc.hotData = self.dataHotArray[indexPath.row];
         [self xw_presentViewController:webVc withAnimator:animator];
+    }else if (indexPath.section == 0){
+        if (indexPath.row == 2) {
+            GPWebViewController *webVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPWebViewController class]) bundle:nil].instantiateInitialViewController;
+            webVc.navigatioanData = self.dataNavigationArray[indexPath.row];
+            [self.navigationController pushViewController:webVc animated:YES];
+        }else if (indexPath.row == 3){
+            XWCoolAnimator *animator = [XWCoolAnimator xw_animatorWithType:XWCoolTransitionAnimatorTypeExplode];
+            GPLoginController *logVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPLoginController class]) bundle:nil].instantiateInitialViewController;
+            [self xw_presentViewController:logVc withAnimator:animator];
+        }
+    }else if (indexPath.section == 1){
+        if (indexPath.row == 0) {
+            GPTopicListController *topListVc = [[GPTopicListController alloc]init];
+            
+            [self.navigationController pushViewController:topListVc animated:YES];
+        }
     }
 }
 #pragma mark - UIcollectionView 数据源方法

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="topicListCell" rowHeight="167" id="KGk-i7-Jjw" customClass="GPTopicListCell">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="166.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gdc-7h-zf2">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="166.5"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqS-Vn-aji">
+                        <rect key="frame" x="0.0" y="106.5" width="431" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="ncg-gs-xs5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <inset key="contentEdgeInsets" minX="10" minY="20" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Button" backgroundImage="input_btn_line">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gdc-7h-zf2" secondAttribute="trailing" id="DSM-Is-ohN"/>
+                    <constraint firstItem="gdc-7h-zf2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="L11-sI-Xga"/>
+                    <constraint firstItem="JqS-Vn-aji" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NO5-C7-Tk4"/>
+                    <constraint firstItem="gdc-7h-zf2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QXh-Yu-UnS"/>
+                    <constraint firstAttribute="bottom" secondItem="gdc-7h-zf2" secondAttribute="bottom" id="gFb-cs-EBf"/>
+                    <constraint firstAttribute="bottom" secondItem="JqS-Vn-aji" secondAttribute="bottom" id="pfL-Wf-Rge"/>
+                    <constraint firstAttribute="trailing" secondItem="JqS-Vn-aji" secondAttribute="trailing" id="xK6-Wc-bed"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="gdc-7h-zf2" id="sCn-w7-vML"/>
+                <outlet property="subTitleBtn" destination="JqS-Vn-aji" id="Wgj-pS-L9e"/>
+            </connections>
+            <point key="canvasLocation" x="473.5" y="253.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="input_btn_line" width="2" height="1"/>
+    </resources>
+</document>

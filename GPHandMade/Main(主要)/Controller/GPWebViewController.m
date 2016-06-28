@@ -9,7 +9,8 @@
 #import "GPWebViewController.h"
 #import "GPslide.h"
 #import "GPEventBtn.h"
-
+#import "GPNavigationData.h"
+#import "GPTopListData.h"
 
 @interface GPWebViewController()<UIWebViewDelegate,UIScrollViewDelegate>
 
@@ -30,6 +31,21 @@
     self.loadWebView.scrollView.bounces = NO;
 }
 #pragma mark - 数据处理
+// 市集
+- (void)setListData:(GPTopListData *)listData
+{
+    _listData = listData;
+    if (listData.mob_h5_url.length) {
+        [self loadSlidDataType:listData.mob_h5_url title:@"专题详情"];}
+}
+// 秒杀
+- (void)setNavigatioanData:(GPNavigationData *)navigatioanData
+{
+    _navigatioanData = navigatioanData;
+    if (navigatioanData.mob_h5_url.length) {
+        [self loadSlidDataType:navigatioanData.mob_h5_url title:@"专题详情"];    }
+}
+// 活动
 - (void)setHandId:(NSString *)handId
 {
     _handId = handId;

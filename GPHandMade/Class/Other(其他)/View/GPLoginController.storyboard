@@ -70,7 +70,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mow-j9-OHg">
-                                <rect key="frame" x="20" y="286" width="335" height="60"/>
+                                <rect key="frame" x="20" y="311" width="335" height="60"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="bml-TE-tUh"/>
@@ -88,7 +88,7 @@
                             <constraint firstAttribute="trailing" secondItem="Gb8-3p-9hX" secondAttribute="trailing" constant="20" id="0VB-6Q-qhe"/>
                             <constraint firstItem="Mow-j9-OHg" firstAttribute="centerX" secondItem="x4p-Vl-bPj" secondAttribute="centerX" id="77P-PH-kI8"/>
                             <constraint firstItem="Gb8-3p-9hX" firstAttribute="centerX" secondItem="x4p-Vl-bPj" secondAttribute="centerX" id="AT1-Hu-BiE"/>
-                            <constraint firstItem="Mow-j9-OHg" firstAttribute="top" secondItem="qkG-EY-Z2v" secondAttribute="bottom" constant="35" id="AzS-f1-sI5"/>
+                            <constraint firstItem="Mow-j9-OHg" firstAttribute="top" secondItem="qkG-EY-Z2v" secondAttribute="bottom" constant="60" id="AzS-f1-sI5"/>
                             <constraint firstItem="Qbm-Sr-88w" firstAttribute="top" secondItem="U4S-oH-eDC" secondAttribute="bottom" id="D0X-ko-MCi"/>
                             <constraint firstItem="EkX-WC-iad" firstAttribute="leading" secondItem="x4p-Vl-bPj" secondAttribute="leading" constant="20" id="DRs-I0-had"/>
                             <constraint firstItem="U4S-oH-eDC" firstAttribute="top" secondItem="FOI-7c-anR" secondAttribute="bottom" id="ERz-ip-soV"/>
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7BM-5I-taQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206.5" y="-35.5"/>
+            <point key="canvasLocation" x="-54.5" y="0.5"/>
         </scene>
     </scenes>
     <resources>
