@@ -50,7 +50,7 @@ static NSString * const fouceCell = @"focusCell";
     self.contenImageArray = contenImageArray;
     NSArray *nameArray = @[@"我是小菜蛋对你点赞了",@"我是小菜蛋关注了你",@"我是小菜蛋求你赏个赞呗",@"我是小菜蛋求你给个关注呗",@"我是小菜蛋祝你发大财"];
     self.nameArray = nameArray;
-    NSArray *contenArray = @[@"哈哈哈哈,下拉有惊喜呀,要不要试一试呢",@"暗恋的女孩告诉我，如果我喜欢她就别说出来，因为愿望说出来就不灵了。这道理我懂!",@"你现在不喜欢我，我告诉你，过了这个村，我在下一个村等你!!",@"我姓黄，又在秋天出生，所以我叫黄天出",@"哈哈哈,上拉也有惊喜"];
+    NSArray *contenArray = @[@"哈哈哈哈,下拉&点击有惊喜呀,要不要试一试呢",@"暗恋的女孩告诉我，如果我喜欢她就别说出来，因为愿望说出来就不灵了。这道理我懂!",@"你现在不喜欢我，我告诉你，过了这个村，我在下一个村等你!!",@"我姓黄，又在秋天出生，所以我叫黄天出",@"哈哈哈,上拉&点击也有惊喜"];
     self.contenArray = contenArray;
     [self.collectionView reloadData];
 }
@@ -86,5 +86,4 @@ static NSString * const fouceCell = @"focusCell";
 {
      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
 }
-
 @end
