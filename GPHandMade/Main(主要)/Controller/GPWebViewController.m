@@ -30,6 +30,12 @@
     self.loadWebView.scrollView.bounces = NO;
 }
 #pragma mark - 数据处理
+- (void)setHandId:(NSString *)handId
+{
+    _handId = handId;
+    NSString *urlString = [NSString stringWithFormat: @"http://m.shougongke.com/index.php?c=Competition&cid=%@",self.handId];
+    [self loadSlidDataType:urlString title:nil];
+}
 // 轮播图
 - (void)setSlide:(GPslide *)slide
 {

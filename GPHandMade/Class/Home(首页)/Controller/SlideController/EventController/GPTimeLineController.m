@@ -37,14 +37,17 @@ static NSString * const ApperCell = @"apperCell";
 static NSString * const CommentCell = @"CommentCell";
 static NSString * const HeadCell = @"headCell";
 @implementation GPTimeLineController
-
+#pragma mark - 生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self regisCell];
     [self configThame];
     [self loadData];
 }
-
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
+}
 #pragma mark - 懒加载
 - (NSMutableArray *)picUrlS
 {

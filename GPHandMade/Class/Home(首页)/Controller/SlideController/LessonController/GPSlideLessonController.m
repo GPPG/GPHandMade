@@ -40,7 +40,7 @@ static NSString * const GPConCell = @"contentCell";
 static NSString * const GPUseCell = @"userCell";
 static NSString * const GPOtherClassCell = @"otherClassCell";
 static NSString * const GPAppraiseCell = @"AppraiseCell";
-
+#pragma mark - 生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadData];
@@ -50,6 +50,11 @@ static NSString * const GPAppraiseCell = @"AppraiseCell";
     
     // 点击图片的通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadTimer) name:ClickPhoto object:nil];
+}
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
 }
 - (void)dealloc
 {

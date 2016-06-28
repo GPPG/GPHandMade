@@ -58,16 +58,19 @@
     GPWebViewController *webVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPWebViewController class]) bundle:nil].instantiateInitialViewController;
     webVc.title = @"活动介绍";
     webVc.slide = self.slide;
+    webVc.handId = self.handId;
     [self addChildViewController:webVc];
     
     GPEventNewController *newVc = [[GPEventNewController alloc]init];
     newVc.title = @"最新作品";
     newVc.slide = self.slide;
+    newVc.handID = self.handId;
     [self addChildViewController:newVc];
     
     GPEventVoteController *voteVc = [[GPEventVoteController alloc]init];
     voteVc.title = @"投票最多";
     voteVc.slide = self.slide;
+    voteVc.handID = self.handId;
     [self addChildViewController:voteVc];
     
 }

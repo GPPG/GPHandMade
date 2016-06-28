@@ -20,7 +20,6 @@
 #import "GPTimeLineController.h"
 
 @interface GPSlideSuperController ()
-@property (nonatomic, copy) NSString *handID; // 记录点击轮播的参数
 @property (nonatomic, copy) NSString *lastId; // 标记
 @property (nonatomic, strong) NSMutableArray *DataS; // 请求数据模型数组
 
@@ -71,6 +70,7 @@ static NSString * const GPShopCell = @"shopCell";
     _slide = slide;
     self.handID = slide.hand_id;
 }
+
 - (void)loadData
 {
     // 添加下拉刷新

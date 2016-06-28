@@ -11,4 +11,6 @@
 @interface GPWebViewController : UIViewController
 @property (nonatomic, strong) GPslide *slide;
 @property (weak, nonatomic) IBOutlet UIWebView *loadWebView;
+@property (nonatomic,copy) NSString *handId;
+
 @end

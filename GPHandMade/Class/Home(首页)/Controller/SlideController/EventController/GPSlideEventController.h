@@ -10,4 +10,6 @@
 @class GPslide;
 @interface GPSlideEventController : YZDisplayViewController
 @property (nonatomic, strong) GPslide *slide;
+@property (nonatomic,copy) NSString *handId;
+
 @end

@@ -10,5 +10,7 @@
 @class GPslide;
 @interface GPSlideSuperController : UICollectionViewController
 @property (nonatomic, strong) GPslide *slide;
+@property (nonatomic, copy) NSString *handID; // 记录点击轮播的参数
+
 - (NSString *)paramA;
 @end

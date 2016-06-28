@@ -22,6 +22,9 @@
 		AC20C0631D20253D0008A060 /* GPDaRenPicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0621D20253D0008A060 /* GPDaRenPicsController.m */; };
 		AC20C0671D20B77A0008A060 /* GPDaRenPicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0651D20B77A0008A060 /* GPDaRenPicsCell.m */; };
 		AC20C0681D20B77A0008A060 /* GPDaRenPicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC20C0661D20B77A0008A060 /* GPDaRenPicsCell.xib */; };
+		AC20C0771D21228D0008A060 /* GPEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0751D21228D0008A060 /* GPEventCell.m */; };
+		AC20C0781D21228D0008A060 /* GPEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC20C0761D21228D0008A060 /* GPEventCell.xib */; };
+		AC20C07C1D2127030008A060 /* GPEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C07B1D2127030008A060 /* GPEventData.m */; };
 		AC2925761D015B0400726E51 /* GPAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925751D015B0400726E51 /* GPAutoFooter.m */; };
 		AC2925811D02A8BA00726E51 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925791D02A8BA00726E51 /* UIView+Frame.m */; };
 		AC2925821D02A8BA00726E51 /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC29257B1D02A8BA00726E51 /* YZDisplayTitleLabel.m */; };
@@ -221,6 +224,11 @@
 		AC20C0641D20B77A0008A060 /* GPDaRenPicsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicsCell.h; sourceTree = "<group>"; };
 		AC20C0651D20B77A0008A060 /* GPDaRenPicsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenPicsCell.m; sourceTree = "<group>"; };
 		AC20C0661D20B77A0008A060 /* GPDaRenPicsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDaRenPicsCell.xib; sourceTree = "<group>"; };
+		AC20C0741D21228D0008A060 /* GPEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPEventCell.h; sourceTree = "<group>"; };
+		AC20C0751D21228D0008A060 /* GPEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEventCell.m; sourceTree = "<group>"; };
+		AC20C0761D21228D0008A060 /* GPEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPEventCell.xib; sourceTree = "<group>"; };
+		AC20C07A1D2127030008A060 /* GPEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPEventData.h; sourceTree = "<group>"; };
+		AC20C07B1D2127030008A060 /* GPEventData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPEventData.m; sourceTree = "<group>"; };
 		AC2925741D015B0400726E51 /* GPAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAutoFooter.h; sourceTree = "<group>"; };
 		AC2925751D015B0400726E51 /* GPAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAutoFooter.m; sourceTree = "<group>"; };
 		AC2925781D02A8BA00726E51 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -611,6 +619,25 @@
 			path = HYBControllerTransitions;
 			sourceTree = "<group>";
 		};
+		AC20C0731D2122550008A060 /* EventView */ = {
+			isa = PBXGroup;
+			children = (
+				AC20C0741D21228D0008A060 /* GPEventCell.h */,
+				AC20C0751D21228D0008A060 /* GPEventCell.m */,
+				AC20C0761D21228D0008A060 /* GPEventCell.xib */,
+			);
+			name = EventView;
+			sourceTree = "<group>";
+		};
+		AC20C0791D2126E70008A060 /* EventData */ = {
+			isa = PBXGroup;
+			children = (
+				AC20C07A1D2127030008A060 /* GPEventData.h */,
+				AC20C07B1D2127030008A060 /* GPEventData.m */,
+			);
+			name = EventData;
+			sourceTree = "<group>";
+		};
 		AC2925771D02A8BA00726E51 /* YZDisplayViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -877,9 +904,10 @@
 		AC4E72A11CE186D800E92406 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ACCF53DE1D1BC33F0085BA3D /* DaRenView */,
 				ACD5853F1CFBE11A00F7942D /* HomeView */,
+				ACCF53DE1D1BC33F0085BA3D /* DaRenView */,
 				ACCF53DD1D1BC32E0085BA3D /* FeatureView */,
+				AC20C0731D2122550008A060 /* EventView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1442,6 +1470,7 @@
 				AC2925AA1D02BFA000726E51 /* OutOfDate(报废模型) */,
 				ACCF53D81D1BC1EB0085BA3D /* FeatureData */,
 				ACCF53D91D1BC20A0085BA3D /* DaRenData */,
+				AC20C0791D2126E70008A060 /* EventData */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1756,6 +1785,7 @@
 				AC5AAE4B1CF54C0C00EDBF99 /* GPUserCell.xib in Resources */,
 				ACC0480F1CEDBC2A004E8C74 /* GPHotCell.xib in Resources */,
 				AC2925B61D02CFC600726E51 /* GPNavigationCell.xib in Resources */,
+				AC20C0781D21228D0008A060 /* GPEventCell.xib in Resources */,
 				ACA8D7321D1D0A270097B8C3 /* GPDaRenStepOneCell.xib in Resources */,
 				ACD585531CFC3EE100F7942D /* GPLessonHeadView.xib in Resources */,
 				AC2925BB1D02CFE200726E51 /* GPAdvanceCell.xib in Resources */,
@@ -1883,6 +1913,7 @@
 				ACA236531D11508C00489F96 /* GPLayout.m in Sources */,
 				AC2925821D02A8BA00726E51 /* YZDisplayTitleLabel.m in Sources */,
 				ACA8D7A31D1FC2DA0097B8C3 /* XWCoolAnimator+XWScanning.m in Sources */,
+				AC20C07C1D2127030008A060 /* GPEventData.m in Sources */,
 				AC5A534F1D13E49E0061D5D8 /* GPTimeLinePicData.m in Sources */,
 				ACB2E0F81CFAA65200D3F5EA /* GPAdViewController.m in Sources */,
 				AC7A9CF21CF2A16A001A9550 /* GPTitleBtn.m in Sources */,
@@ -1893,6 +1924,7 @@
 				AC7A9CF51CF2A36D001A9550 /* UIView+GPExtension.m in Sources */,
 				ACA8D7271D1CE5DF0097B8C3 /* GPDaRenToolsData.m in Sources */,
 				AC561F8E1D050FEB00919703 /* SDCollectionViewCell.m in Sources */,
+				AC20C0771D21228D0008A060 /* GPEventCell.m in Sources */,
 				AC2925B51D02CFC600726E51 /* GPNavigationCell.m in Sources */,
 				AC4E72671CE1831B00E92406 /* AppDelegate.m in Sources */,
 				ACA8D7211D1CE2130097B8C3 /* GPDaRenPicController.m in Sources */,
