@@ -55,6 +55,8 @@
  */
 
 #define HomeBaseURl @"http://m.shougongke.com/index.php"
+#define Blog @"http://www.jianshu.com/users/3e324b24a2a8/latest_articles"
+#define Github @"https://github.com/GPPG"
 /**
  *  颜色
  */

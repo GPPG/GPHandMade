@@ -47,6 +47,8 @@
 		AC2925C11D0431F600726E51 /* GPSlideHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925C01D0431F600726E51 /* GPSlideHeadView.m */; };
 		AC2925C51D0436D600726E51 /* GPSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925C31D0436D600726E51 /* GPSectionHeadView.m */; };
 		AC2925C61D0436D600726E51 /* GPSectionHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2925C41D0436D600726E51 /* GPSectionHeadView.xib */; };
+		AC3825E61D2211AF00F2866B /* GPFocusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3825E41D2211AF00F2866B /* GPFocusCell.m */; };
+		AC3825E71D2211AF00F2866B /* GPFocusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3825E51D2211AF00F2866B /* GPFocusCell.xib */; };
 		AC4E72641CE1831B00E92406 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4E72631CE1831B00E92406 /* main.m */; };
 		AC4E72671CE1831B00E92406 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4E72661CE1831B00E92406 /* AppDelegate.m */; };
 		AC4E726F1CE1831B00E92406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4E726E1CE1831B00E92406 /* Assets.xcassets */; };
@@ -271,6 +273,9 @@
 		AC2925C21D0436D600726E51 /* GPSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSectionHeadView.h; sourceTree = "<group>"; };
 		AC2925C31D0436D600726E51 /* GPSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSectionHeadView.m; sourceTree = "<group>"; };
 		AC2925C41D0436D600726E51 /* GPSectionHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPSectionHeadView.xib; sourceTree = "<group>"; };
+		AC3825E31D2211AF00F2866B /* GPFocusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFocusCell.h; sourceTree = "<group>"; };
+		AC3825E41D2211AF00F2866B /* GPFocusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFocusCell.m; sourceTree = "<group>"; };
+		AC3825E51D2211AF00F2866B /* GPFocusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFocusCell.xib; sourceTree = "<group>"; };
 		AC4E725F1CE1831B00E92406 /* GPHandMade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPHandMade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4E72631CE1831B00E92406 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC4E72651CE1831B00E92406 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -732,6 +737,16 @@
 			name = "OutOfDate(报废View)";
 			sourceTree = "<group>";
 		};
+		AC3825E21D220E0000F2866B /* FocusView */ = {
+			isa = PBXGroup;
+			children = (
+				AC3825E31D2211AF00F2866B /* GPFocusCell.h */,
+				AC3825E41D2211AF00F2866B /* GPFocusCell.m */,
+				AC3825E51D2211AF00F2866B /* GPFocusCell.xib */,
+			);
+			name = FocusView;
+			sourceTree = "<group>";
+		};
 		AC4E72561CE1831B00E92406 = {
 			isa = PBXGroup;
 			children = (
@@ -904,6 +919,7 @@
 		AC4E72A11CE186D800E92406 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC3825E21D220E0000F2866B /* FocusView */,
 				ACD5853F1CFBE11A00F7942D /* HomeView */,
 				ACCF53DE1D1BC33F0085BA3D /* DaRenView */,
 				ACCF53DD1D1BC32E0085BA3D /* FeatureView */,
@@ -1778,6 +1794,7 @@
 				ACA8D7991D1FC2DA0097B8C3 /* line.png in Resources */,
 				ACD585461CFBE45400F7942D /* GPFooterClassCell.xib in Resources */,
 				ACC0480A1CEDBC14004E8C74 /* GPLookCell.xib in Resources */,
+				AC3825E71D2211AF00F2866B /* GPFocusCell.xib in Resources */,
 				ACA8D73C1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.xib in Resources */,
 				AC2925C61D0436D600726E51 /* GPSectionHeadView.xib in Resources */,
 				ACD5854B1CFBE47D00F7942D /* GPFooterAppraiseCell.xib in Resources */,
@@ -1966,6 +1983,7 @@
 				ACEABAE11CFFCA650024FC67 /* SDBrowserImageView.m in Sources */,
 				ACA8D79E1D1FC2DA0097B8C3 /* XWCoolAnimator+XWFold.m in Sources */,
 				AC0EA2D61D051A130041D14E /* GPSlideSuperController.m in Sources */,
+				AC3825E61D2211AF00F2866B /* GPFocusCell.m in Sources */,
 				AC2925AD1D02C08400726E51 /* GPNavigationData.m in Sources */,
 				ACA8D7B01D1FC2DA0097B8C3 /* XWFilterTransitionView.m in Sources */,
 				AC2925951D02ADC300726E51 /* GPSlideLessonController.m in Sources */,

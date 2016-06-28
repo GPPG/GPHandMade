@@ -30,11 +30,11 @@
 
         CGRect cellRect = attr.frame;
         if (offsetY <= 0) {
-            CGFloat distance = fabs(offsetY) / 10;
+            CGFloat distance = fabs(offsetY) / 8;
             cellRect.origin.y += offsetY + distance * (CGFloat)(attr.indexPath.section + 1);
 
         }else if (bottomOffset > 0 ){
-            CGFloat distance = bottomOffset / 10;
+            CGFloat distance = bottomOffset / 8;
             cellRect.origin.y += bottomOffset - distance *(CGFloat)(numOfItems - attr.indexPath.section);
         }
         attr.frame = cellRect;

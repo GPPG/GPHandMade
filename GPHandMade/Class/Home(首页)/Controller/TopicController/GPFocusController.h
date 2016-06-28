@@ -8,6 +8,6 @@
 
 #import "GPSuperTopicController.h"
 
-@interface GPFocusController : GPSuperTopicController
+@interface GPFocusController : UICollectionViewController
 
 @end
