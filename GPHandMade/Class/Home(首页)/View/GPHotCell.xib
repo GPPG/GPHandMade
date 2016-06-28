@@ -17,9 +17,9 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gYk-fS-zfG">
                         <rect key="frame" x="0.0" y="0.0" width="370" height="149"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOF-w0-lEv">
-                        <rect key="frame" x="10" y="124.5" width="360" height="14.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOF-w0-lEv">
+                        <rect key="frame" x="10" y="118.5" width="360" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -40,7 +40,7 @@
                 <outlet property="BgImageView" destination="gYk-fS-zfG" id="Kr1-zQ-ECp"/>
                 <outlet property="SubTitle" destination="AOF-w0-lEv" id="Rb0-ZB-t5h"/>
             </connections>
-            <point key="canvasLocation" x="722" y="509.5"/>
+            <point key="canvasLocation" x="446" y="301.5"/>
         </collectionViewCell>
     </objects>
 </document>
