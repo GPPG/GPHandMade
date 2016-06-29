@@ -36,6 +36,8 @@
 #import "GPMainWebController.h"
 #import "GPLoginController.h"
 #import "GPTopicListController.h"
+#import "GPChatController.h"
+#import "XWDrawerAnimator.h"
 
 @interface GPFeaturedController ()<SDCycleScrollViewDelegate>
 @property (strong,nonatomic) NSMutableArray *dataSlideArray; // 轮播图片数组
@@ -285,11 +287,16 @@ static NSString * const GPSectionHead = @"HotSectionCell";
             XWCoolAnimator *animator = [XWCoolAnimator xw_animatorWithType:XWCoolTransitionAnimatorTypeExplode];
             GPLoginController *logVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPLoginController class]) bundle:nil].instantiateInitialViewController;
             [self xw_presentViewController:logVc withAnimator:animator];
+        }else if (indexPath.row == 1){
+            GPChatController *chatVc = [[GPChatController alloc]init];
+//            [self.navigationController pushViewController:chatVc animated:YES];
+            XWDrawerAnimator *animator = [XWDrawerAnimator xw_animatorWithDirection:XWDrawerAnimatorDirectionBottom moveDistance:SCREEN_HEIGHT * 0.8];
+            animator.flipEnable = YES;
+            [self xw_presentViewController:chatVc withAnimator:animator];
         }
     }else if (indexPath.section == 1){
         if (indexPath.row == 0) {
             GPTopicListController *topListVc = [[GPTopicListController alloc]init];
-            
             [self.navigationController pushViewController:topListVc animated:YES];
         }
     }

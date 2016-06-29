@@ -193,6 +193,27 @@
 		ACDDCCDB1D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDCCD81D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.m */; };
 		ACDDCCDC1D192EEE00E4615D /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDCCDA1D192EEE00E4615D /* UIView+SDAutoLayout.m */; };
 		ACDE67171CED61F500FC47DD /* GPHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDE67161CED61F500FC47DD /* GPHttpTool.m */; };
+		ACDEF3E71D236FF700B23C43 /* GPFakeChatData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF3E61D236FF700B23C43 /* GPFakeChatData.m */; };
+		ACDEF3EA1D2373FF00B23C43 /* GPChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF3E91D2373FF00B23C43 /* GPChatController.m */; };
+		ACDEF3EE1D23743E00B23C43 /* GPChatData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF3ED1D23743E00B23C43 /* GPChatData.m */; };
+		ACDEF3F21D2374C100B23C43 /* GPChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF3F11D2374C100B23C43 /* GPChatCell.m */; };
+		ACDEF4181D2376F600B23C43 /* MLEmoji_Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACDEF3F41D2376F600B23C43 /* MLEmoji_Expression.bundle */; };
+		ACDEF4191D2376F600B23C43 /* MLEmoji_Expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACDEF3F51D2376F600B23C43 /* MLEmoji_Expression.plist */; };
+		ACDEF41A1D2376F600B23C43 /* MLEmoji_ExpressionImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACDEF3F61D2376F600B23C43 /* MLEmoji_ExpressionImage.plist */; };
+		ACDEF41B1D2376F600B23C43 /* MLEmojiLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF3F81D2376F600B23C43 /* MLEmojiLabel.m */; };
+		ACDEF41C1D2376F600B23C43 /* NSAttributedString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF3FD1D2376F600B23C43 /* NSAttributedString+MLLabel.m */; };
+		ACDEF41D1D2376F600B23C43 /* NSMutableAttributedString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF3FF1D2376F600B23C43 /* NSMutableAttributedString+MLLabel.m */; };
+		ACDEF41E1D2376F600B23C43 /* NSString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4011D2376F600B23C43 /* NSString+MLLabel.m */; };
+		ACDEF41F1D2376F600B23C43 /* MLExpressionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4041D2376F600B23C43 /* MLExpressionManager.m */; };
+		ACDEF4201D2376F600B23C43 /* MLTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4061D2376F600B23C43 /* MLTextAttachment.m */; };
+		ACDEF4211D2376F600B23C43 /* NSAttributedString+MLExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4081D2376F600B23C43 /* NSAttributedString+MLExpression.m */; };
+		ACDEF4221D2376F600B23C43 /* NSString+MLExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF40A1D2376F600B23C43 /* NSString+MLExpression.m */; };
+		ACDEF4231D2376F600B23C43 /* MLLabelLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF40E1D2376F600B23C43 /* MLLabelLayoutManager.m */; };
+		ACDEF4241D2376F600B23C43 /* MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4101D2376F600B23C43 /* MLLabel.m */; };
+		ACDEF4251D2376F600B23C43 /* MLLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4121D2376F600B23C43 /* MLLinkLabel.m */; };
+		ACDEF4261D2376F600B23C43 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = ACDEF4131D2376F600B23C43 /* LICENSE */; };
+		ACDEF4271D2376F600B23C43 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4141D2376F600B23C43 /* README.md */; };
+		ACDEF4281D2376F600B23C43 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4171D2376F600B23C43 /* TTTAttributedLabel.m */; };
 		ACEABAE11CFFCA650024FC67 /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABADB1CFFCA650024FC67 /* SDBrowserImageView.m */; };
 		ACEABAE21CFFCA650024FC67 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABADD1CFFCA650024FC67 /* SDPhotoBrowser.m */; };
 		ACEABAE31CFFCA650024FC67 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABAE01CFFCA650024FC67 /* SDWaitingView.m */; };
@@ -563,6 +584,44 @@
 		ACDDCCDA1D192EEE00E4615D /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 		ACDE67151CED61F500FC47DD /* GPHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHttpTool.h; sourceTree = "<group>"; };
 		ACDE67161CED61F500FC47DD /* GPHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHttpTool.m; sourceTree = "<group>"; };
+		ACDEF3E51D236FF700B23C43 /* GPFakeChatData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFakeChatData.h; sourceTree = "<group>"; };
+		ACDEF3E61D236FF700B23C43 /* GPFakeChatData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFakeChatData.m; sourceTree = "<group>"; };
+		ACDEF3E81D2373FF00B23C43 /* GPChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPChatController.h; sourceTree = "<group>"; };
+		ACDEF3E91D2373FF00B23C43 /* GPChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPChatController.m; sourceTree = "<group>"; };
+		ACDEF3EC1D23743E00B23C43 /* GPChatData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPChatData.h; sourceTree = "<group>"; };
+		ACDEF3ED1D23743E00B23C43 /* GPChatData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPChatData.m; sourceTree = "<group>"; };
+		ACDEF3F01D2374C100B23C43 /* GPChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPChatCell.h; sourceTree = "<group>"; };
+		ACDEF3F11D2374C100B23C43 /* GPChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPChatCell.m; sourceTree = "<group>"; };
+		ACDEF3F41D2376F600B23C43 /* MLEmoji_Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MLEmoji_Expression.bundle; sourceTree = "<group>"; };
+		ACDEF3F51D2376F600B23C43 /* MLEmoji_Expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MLEmoji_Expression.plist; sourceTree = "<group>"; };
+		ACDEF3F61D2376F600B23C43 /* MLEmoji_ExpressionImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MLEmoji_ExpressionImage.plist; sourceTree = "<group>"; };
+		ACDEF3F71D2376F600B23C43 /* MLEmojiLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLEmojiLabel.h; sourceTree = "<group>"; };
+		ACDEF3F81D2376F600B23C43 /* MLEmojiLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLEmojiLabel.m; sourceTree = "<group>"; };
+		ACDEF3FC1D2376F600B23C43 /* NSAttributedString+MLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MLLabel.h"; sourceTree = "<group>"; };
+		ACDEF3FD1D2376F600B23C43 /* NSAttributedString+MLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MLLabel.m"; sourceTree = "<group>"; };
+		ACDEF3FE1D2376F600B23C43 /* NSMutableAttributedString+MLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+MLLabel.h"; sourceTree = "<group>"; };
+		ACDEF3FF1D2376F600B23C43 /* NSMutableAttributedString+MLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+MLLabel.m"; sourceTree = "<group>"; };
+		ACDEF4001D2376F600B23C43 /* NSString+MLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MLLabel.h"; sourceTree = "<group>"; };
+		ACDEF4011D2376F600B23C43 /* NSString+MLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MLLabel.m"; sourceTree = "<group>"; };
+		ACDEF4031D2376F600B23C43 /* MLExpressionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLExpressionManager.h; sourceTree = "<group>"; };
+		ACDEF4041D2376F600B23C43 /* MLExpressionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLExpressionManager.m; sourceTree = "<group>"; };
+		ACDEF4051D2376F600B23C43 /* MLTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTextAttachment.h; sourceTree = "<group>"; };
+		ACDEF4061D2376F600B23C43 /* MLTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTextAttachment.m; sourceTree = "<group>"; };
+		ACDEF4071D2376F600B23C43 /* NSAttributedString+MLExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MLExpression.h"; sourceTree = "<group>"; };
+		ACDEF4081D2376F600B23C43 /* NSAttributedString+MLExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MLExpression.m"; sourceTree = "<group>"; };
+		ACDEF4091D2376F600B23C43 /* NSString+MLExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MLExpression.h"; sourceTree = "<group>"; };
+		ACDEF40A1D2376F600B23C43 /* NSString+MLExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MLExpression.m"; sourceTree = "<group>"; };
+		ACDEF40C1D2376F600B23C43 /* MLLabel+Override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MLLabel+Override.h"; sourceTree = "<group>"; };
+		ACDEF40D1D2376F600B23C43 /* MLLabelLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLabelLayoutManager.h; sourceTree = "<group>"; };
+		ACDEF40E1D2376F600B23C43 /* MLLabelLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLabelLayoutManager.m; sourceTree = "<group>"; };
+		ACDEF40F1D2376F600B23C43 /* MLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLabel.h; sourceTree = "<group>"; };
+		ACDEF4101D2376F600B23C43 /* MLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLabel.m; sourceTree = "<group>"; };
+		ACDEF4111D2376F600B23C43 /* MLLinkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLinkLabel.h; sourceTree = "<group>"; };
+		ACDEF4121D2376F600B23C43 /* MLLinkLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLinkLabel.m; sourceTree = "<group>"; };
+		ACDEF4131D2376F600B23C43 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		ACDEF4141D2376F600B23C43 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ACDEF4161D2376F600B23C43 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		ACDEF4171D2376F600B23C43 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		ACEABADA1CFFCA650024FC67 /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
 		ACEABADB1CFFCA650024FC67 /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
 		ACEABADC1CFFCA650024FC67 /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
@@ -766,6 +825,7 @@
 		AC2925A91D02BF7200726E51 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				ACDEF3EB1D23742400B23C43 /* GPChatData */,
 				AC2925AB1D02C08400726E51 /* GPNavigationData.h */,
 				AC2925AC1D02C08400726E51 /* GPNavigationData.m */,
 			);
@@ -1380,9 +1440,10 @@
 		ACA8D71C1D1CE16B0097B8C3 /* GPFeaturedController */ = {
 			isa = PBXGroup;
 			children = (
+				AC3825E81D22541B00F2866B /* GPTopicListController */,
+				ACDEF3E41D236EB500B23C43 /* GPChatController */,
 				AC2925991D02B0A400726E51 /* GPFeaturedController.h */,
 				AC29259A1D02B0A400726E51 /* GPFeaturedController.m */,
-				AC3825E81D22541B00F2866B /* GPTopicListController */,
 			);
 			name = GPFeaturedController;
 			sourceTree = "<group>";
@@ -1725,9 +1786,7 @@
 				ACC0480B1CEDBC2A004E8C74 /* GPHotCell.h */,
 				ACC0480C1CEDBC2A004E8C74 /* GPHotCell.m */,
 				ACC0480D1CEDBC2A004E8C74 /* GPHotCell.xib */,
-				AC2925B21D02CFC600726E51 /* GPNavigationCell.h */,
-				AC2925B31D02CFC600726E51 /* GPNavigationCell.m */,
-				AC2925B41D02CFC600726E51 /* GPNavigationCell.xib */,
+				ACDEF3EF1D23749100B23C43 /* GPNavgationCell */,
 				AC38261E1D2266F900F2866B /* GPAdvanceView */,
 				AC2925BF1D0431F600726E51 /* GPSlideHeadView.h */,
 				AC2925C01D0431F600726E51 /* GPSlideHeadView.m */,
@@ -1760,9 +1819,127 @@
 			path = SDAutoLayout;
 			sourceTree = "<group>";
 		};
+		ACDEF3E41D236EB500B23C43 /* GPChatController */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEF3E51D236FF700B23C43 /* GPFakeChatData.h */,
+				ACDEF3E61D236FF700B23C43 /* GPFakeChatData.m */,
+				ACDEF3E81D2373FF00B23C43 /* GPChatController.h */,
+				ACDEF3E91D2373FF00B23C43 /* GPChatController.m */,
+			);
+			name = GPChatController;
+			sourceTree = "<group>";
+		};
+		ACDEF3EB1D23742400B23C43 /* GPChatData */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEF3EC1D23743E00B23C43 /* GPChatData.h */,
+				ACDEF3ED1D23743E00B23C43 /* GPChatData.m */,
+			);
+			name = GPChatData;
+			sourceTree = "<group>";
+		};
+		ACDEF3EF1D23749100B23C43 /* GPNavgationCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC2925B21D02CFC600726E51 /* GPNavigationCell.h */,
+				AC2925B31D02CFC600726E51 /* GPNavigationCell.m */,
+				AC2925B41D02CFC600726E51 /* GPNavigationCell.xib */,
+				ACDEF3F01D2374C100B23C43 /* GPChatCell.h */,
+				ACDEF3F11D2374C100B23C43 /* GPChatCell.m */,
+			);
+			name = GPNavgationCell;
+			sourceTree = "<group>";
+		};
+		ACDEF3F31D2376F600B23C43 /* MLEmojiLabel */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEF3F41D2376F600B23C43 /* MLEmoji_Expression.bundle */,
+				ACDEF3F51D2376F600B23C43 /* MLEmoji_Expression.plist */,
+				ACDEF3F61D2376F600B23C43 /* MLEmoji_ExpressionImage.plist */,
+				ACDEF3F71D2376F600B23C43 /* MLEmojiLabel.h */,
+				ACDEF3F81D2376F600B23C43 /* MLEmojiLabel.m */,
+				ACDEF3F91D2376F600B23C43 /* MLLabel */,
+				ACDEF4151D2376F600B23C43 /* TTTAttributedLabel */,
+			);
+			path = MLEmojiLabel;
+			sourceTree = "<group>";
+		};
+		ACDEF3F91D2376F600B23C43 /* MLLabel */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEF3FA1D2376F600B23C43 /* Classes */,
+				ACDEF4131D2376F600B23C43 /* LICENSE */,
+				ACDEF4141D2376F600B23C43 /* README.md */,
+			);
+			path = MLLabel;
+			sourceTree = "<group>";
+		};
+		ACDEF3FA1D2376F600B23C43 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEF3FB1D2376F600B23C43 /* Category */,
+				ACDEF4021D2376F600B23C43 /* Expression */,
+				ACDEF40B1D2376F600B23C43 /* Helper */,
+				ACDEF40F1D2376F600B23C43 /* MLLabel.h */,
+				ACDEF4101D2376F600B23C43 /* MLLabel.m */,
+				ACDEF4111D2376F600B23C43 /* MLLinkLabel.h */,
+				ACDEF4121D2376F600B23C43 /* MLLinkLabel.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ACDEF3FB1D2376F600B23C43 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEF3FC1D2376F600B23C43 /* NSAttributedString+MLLabel.h */,
+				ACDEF3FD1D2376F600B23C43 /* NSAttributedString+MLLabel.m */,
+				ACDEF3FE1D2376F600B23C43 /* NSMutableAttributedString+MLLabel.h */,
+				ACDEF3FF1D2376F600B23C43 /* NSMutableAttributedString+MLLabel.m */,
+				ACDEF4001D2376F600B23C43 /* NSString+MLLabel.h */,
+				ACDEF4011D2376F600B23C43 /* NSString+MLLabel.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		ACDEF4021D2376F600B23C43 /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEF4031D2376F600B23C43 /* MLExpressionManager.h */,
+				ACDEF4041D2376F600B23C43 /* MLExpressionManager.m */,
+				ACDEF4051D2376F600B23C43 /* MLTextAttachment.h */,
+				ACDEF4061D2376F600B23C43 /* MLTextAttachment.m */,
+				ACDEF4071D2376F600B23C43 /* NSAttributedString+MLExpression.h */,
+				ACDEF4081D2376F600B23C43 /* NSAttributedString+MLExpression.m */,
+				ACDEF4091D2376F600B23C43 /* NSString+MLExpression.h */,
+				ACDEF40A1D2376F600B23C43 /* NSString+MLExpression.m */,
+			);
+			path = Expression;
+			sourceTree = "<group>";
+		};
+		ACDEF40B1D2376F600B23C43 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEF40C1D2376F600B23C43 /* MLLabel+Override.h */,
+				ACDEF40D1D2376F600B23C43 /* MLLabelLayoutManager.h */,
+				ACDEF40E1D2376F600B23C43 /* MLLabelLayoutManager.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		ACDEF4151D2376F600B23C43 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEF4161D2376F600B23C43 /* TTTAttributedLabel.h */,
+				ACDEF4171D2376F600B23C43 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
 		ACEABAAB1CFEB8FA0024FC67 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				ACDEF3F31D2376F600B23C43 /* MLEmojiLabel */,
 				ACA8D7551D1FC2DA0097B8C3 /* XWTransition */,
 				ACDDCCD61D192EEE00E4615D /* SDAutoLayout */,
 				ACDA28601D191AEB00BE1579 /* JMRoundedCorner */,
@@ -1909,18 +2086,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5AAE411CF54A3700EDBF99 /* GPSubTitleCell.xib in Resources */,
+				ACDEF4181D2376F600B23C43 /* MLEmoji_Expression.bundle in Resources */,
 				AC4E726F1CE1831B00E92406 /* Assets.xcassets in Resources */,
 				ACCF53E31D1BC3600085BA3D /* GPDarenCell.xib in Resources */,
 				ACA8D7991D1FC2DA0097B8C3 /* line.png in Resources */,
 				ACD585461CFBE45400F7942D /* GPFooterClassCell.xib in Resources */,
 				ACC0480A1CEDBC14004E8C74 /* GPLookCell.xib in Resources */,
 				AC3825E71D2211AF00F2866B /* GPFocusCell.xib in Resources */,
+				ACDEF4261D2376F600B23C43 /* LICENSE in Resources */,
 				ACA8D73C1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.xib in Resources */,
 				AC2925C61D0436D600726E51 /* GPSectionHeadView.xib in Resources */,
 				ACD5854B1CFBE47D00F7942D /* GPFooterAppraiseCell.xib in Resources */,
 				AC5AAE461CF54BC800EDBF99 /* GPContentCell.xib in Resources */,
 				AC5AAE4B1CF54C0C00EDBF99 /* GPUserCell.xib in Resources */,
 				ACC0480F1CEDBC2A004E8C74 /* GPHotCell.xib in Resources */,
+				ACDEF4191D2376F600B23C43 /* MLEmoji_Expression.plist in Resources */,
 				AC2925B61D02CFC600726E51 /* GPNavigationCell.xib in Resources */,
 				AC20C0781D21228D0008A060 /* GPEventCell.xib in Resources */,
 				ACA8D7321D1D0A270097B8C3 /* GPDaRenStepOneCell.xib in Resources */,
@@ -1934,6 +2114,7 @@
 				ACA8D7B61D1FC7950097B8C3 /* GPMainWebController.storyboard in Resources */,
 				AC7A9CFA1CF2E060001A9550 /* GPSlideCollectionViewCell.xib in Resources */,
 				AC20C0681D20B77A0008A060 /* GPDaRenPicsCell.xib in Resources */,
+				ACDEF41A1D2376F600B23C43 /* MLEmoji_ExpressionImage.plist in Resources */,
 				ACA8D7371D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.xib in Resources */,
 				ACA8D74B1D1E87B90097B8C3 /* GPStepTableViewCell.xib in Resources */,
 				AC3826231D22672500F2866B /* GPTopicListCell.xib in Resources */,
@@ -2011,6 +2192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACDA28591D179AC600BE1579 /* GPTimeLIneCommentCell.m in Sources */,
+				ACDEF4241D2376F600B23C43 /* MLLabel.m in Sources */,
 				ACA8D74A1D1E87B90097B8C3 /* GPStepTableViewCell.m in Sources */,
 				AC4E72CE1CE18CA700E92406 /* GPTutorialTableViewController.m in Sources */,
 				AC0EA33F1D0708D10041D14E /* HYBBaseTransition.m in Sources */,
@@ -2051,6 +2233,7 @@
 				AC0EA3441D0708D10041D14E /* UIViewController+HYBMoveTransition.m in Sources */,
 				AC4E72C81CE18A6300E92406 /* GPTabBarController.m in Sources */,
 				ACA8D7A71D1FC2DA0097B8C3 /* XWFilterAnimator+XWBoxBlur.m in Sources */,
+				ACDEF3EE1D23743E00B23C43 /* GPChatData.m in Sources */,
 				ACCF53E21D1BC3600085BA3D /* GPDarenCell.m in Sources */,
 				ACA8D7AA1D1FC2DA0097B8C3 /* XWFilterAnimator+XWMask.m in Sources */,
 				ACA236531D11508C00489F96 /* GPLayout.m in Sources */,
@@ -2074,6 +2257,7 @@
 				ACA8D7241D1CE3D90097B8C3 /* GPDaRenPicData.m in Sources */,
 				AC38260D1D2257F900F2866B /* GPTenController.m in Sources */,
 				AC5AAE2B1CF5442A00EDBF99 /* GPMaterial.m in Sources */,
+				ACDEF4271D2376F600B23C43 /* README.md in Sources */,
 				AC561F8A1D050FEB00919703 /* TAAbstractDotView.m in Sources */,
 				AC4E72D41CE18CC100E92406 /* GPFairTableViewController.m in Sources */,
 				ACA8D79C1D1FC2DA0097B8C3 /* XWCircleSpreadAnimator.m in Sources */,
@@ -2084,11 +2268,15 @@
 				AC4E72D71CE18CCD00E92406 /* GPMyTableViewController.m in Sources */,
 				AC3825F51D2256F700F2866B /* GPTwoController.m in Sources */,
 				ACA8D72A1D1CE6000097B8C3 /* GPDaRenMaterialData.m in Sources */,
+				ACDEF3EA1D2373FF00B23C43 /* GPChatController.m in Sources */,
+				ACDEF4251D2376F600B23C43 /* MLLinkLabel.m in Sources */,
+				ACDEF4281D2376F600B23C43 /* TTTAttributedLabel.m in Sources */,
 				ACA8D7961D1FC2DA0097B8C3 /* UIViewController+XWTransition.m in Sources */,
 				ACA8D79F1D1FC2DA0097B8C3 /* XWCoolAnimator+XWLines.m in Sources */,
 				ACA8D7AE1D1FC2DA0097B8C3 /* XWFilterAnimator+XWSwipe.m in Sources */,
 				AC2925C11D0431F600726E51 /* GPSlideHeadView.m in Sources */,
 				ACA8D7A51D1FC2DA0097B8C3 /* XWDrawerAnimator.m in Sources */,
+				ACDEF4231D2376F600B23C43 /* MLLabelLayoutManager.m in Sources */,
 				AC0EA2D51D051A130041D14E /* GPSlideEventController.m in Sources */,
 				ACDA28561D179AB500BE1579 /* GPTimeLineApperCell.m in Sources */,
 				AC561F8B1D050FEB00919703 /* TAAnimatedDotView.m in Sources */,
@@ -2102,6 +2290,7 @@
 				AC2925811D02A8BA00726E51 /* UIView+Frame.m in Sources */,
 				ACA8D7A21D1FC2DA0097B8C3 /* XWCoolAnimator+XWPortal.m in Sources */,
 				AC2925A71D02B1F200726E51 /* GPHomController.m in Sources */,
+				ACDEF4201D2376F600B23C43 /* MLTextAttachment.m in Sources */,
 				AC0EA3431D0708D10041D14E /* HYBMoveTransition.m in Sources */,
 				AC2925761D015B0400726E51 /* GPAutoFooter.m in Sources */,
 				AC0EA3421D0708D10041D14E /* HYBModalTransition.m in Sources */,
@@ -2141,30 +2330,39 @@
 				AC2925831D02A8BA00726E51 /* YZDisplayViewController.m in Sources */,
 				ACB2E0EF1CF8278A00D3F5EA /* GPNewFeatureController.m in Sources */,
 				ACDE67171CED61F500FC47DD /* GPHttpTool.m in Sources */,
+				ACDEF41D1D2376F600B23C43 /* NSMutableAttributedString+MLLabel.m in Sources */,
 				ACB2E0F31CF827AC00D3F5EA /* GPNewFeatureCell.m in Sources */,
 				ACDA28651D191AEB00BE1579 /* UIImage+RoundedCorner.m in Sources */,
 				ACC048091CEDBC14004E8C74 /* GPLookCell.m in Sources */,
+				ACDEF41F1D2376F600B23C43 /* MLExpressionManager.m in Sources */,
 				ACA8D72D1D1CE6240097B8C3 /* GPDaRenStepData.m in Sources */,
 				AC3826161D22585B00F2866B /* GPThirteenController.m in Sources */,
 				ACA8D7171D1BCB6D0097B8C3 /* GPDaData.m in Sources */,
 				AC0EA3471D07EB9D0041D14E /* GPEventBtn.m in Sources */,
+				ACDEF3E71D236FF700B23C43 /* GPFakeChatData.m in Sources */,
 				AC5AAE401CF54A3700EDBF99 /* GPSubTitleCell.m in Sources */,
 				AC29259E1D02B0C800726E51 /* GPFocusController.m in Sources */,
 				AC3825F81D22570500F2866B /* GPThreeController.m in Sources */,
 				ACA8D7AC1D1FC2DA0097B8C3 /* XWFilterAnimator+XWPageCurl.m in Sources */,
+				ACDEF41C1D2376F600B23C43 /* NSAttributedString+MLLabel.m in Sources */,
 				AC7A9CFD1CF2E9AE001A9550 /* GPSlideShopData.m in Sources */,
 				AC3825EF1D2255E500F2866B /* GPSuperTopicListController.m in Sources */,
+				ACDEF41E1D2376F600B23C43 /* NSString+MLLabel.m in Sources */,
 				AC2925841D02A8BA00726E51 /* YZFlowLayout.m in Sources */,
 				ACC048021CEDAA3A004E8C74 /* GPDynamicData.m in Sources */,
 				AC2925A11D02B0D900726E51 /* GPDaRenController.m in Sources */,
 				ACA8D7971D1FC2DA0097B8C3 /* XWInteractiveTransition.m in Sources */,
+				ACDEF41B1D2376F600B23C43 /* MLEmojiLabel.m in Sources */,
 				ACA8D7B11D1FC2DA0097B8C3 /* XWMagicMoveAnimator.m in Sources */,
+				ACDEF4221D2376F600B23C43 /* NSString+MLExpression.m in Sources */,
 				AC0EA2DC1D051A890041D14E /* GPEventVoteController.m in Sources */,
 				AC3826041D22578400F2866B /* GPSevenController.m in Sources */,
 				ACD585511CFC3ECA00F7942D /* GPLessonHeadView.m in Sources */,
 				AC3825EB1D22547A00F2866B /* GPTopicListController.m in Sources */,
 				AC4E72641CE1831B00E92406 /* main.m in Sources */,
+				ACDEF4211D2376F600B23C43 /* NSAttributedString+MLExpression.m in Sources */,
 				ACEABAE21CFFCA650024FC67 /* SDPhotoBrowser.m in Sources */,
+				ACDEF3F21D2374C100B23C43 /* GPChatCell.m in Sources */,
 				AC5AAE4A1CF54C0C00EDBF99 /* GPUserCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

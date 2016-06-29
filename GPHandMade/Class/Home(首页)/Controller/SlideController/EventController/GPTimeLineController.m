@@ -43,6 +43,7 @@ static NSString * const HeadCell = @"headCell";
     [self regisCell];
     [self configThame];
     [self loadData];
+    self.title = @"我的作品";
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
