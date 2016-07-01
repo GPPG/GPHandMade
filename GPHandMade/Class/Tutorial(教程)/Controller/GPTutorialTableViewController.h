@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GPTutorialTableViewController : UITableViewController
+@interface GPTutorialTableViewController : UIViewController
 
 @end

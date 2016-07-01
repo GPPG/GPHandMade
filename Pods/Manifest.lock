@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Masonry (1.0.1)
   - MJExtension (3.0.10)
   - MJRefresh (3.0.8)
   - SDWebImage (3.7.6):
@@ -23,6 +24,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Masonry
   - MJExtension
   - MJRefresh
   - SDWebImage
@@ -30,6 +32,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MJRefresh: fafde8f18f4afd66b434331a9beb67a6c0264056
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
