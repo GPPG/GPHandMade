@@ -54,7 +54,8 @@
         NavBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         [NavBtn setTitleColor:[UIColor colorWithWhite:1 alpha:0.5] forState:UIControlStateNormal];
         [NavBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-        [NavBtn addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
+        NavBtn.userInteractionEnabled = NO;
+//        [NavBtn addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.btnArray addObject:NavBtn];
         [self addSubview:NavBtn];
     }

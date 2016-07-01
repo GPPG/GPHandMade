@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GPTutoriaVideoController : UITableViewController
+@interface GPTutoriaVideoController : UIViewController
 
 @end
+
+

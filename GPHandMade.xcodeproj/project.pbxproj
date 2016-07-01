@@ -23,6 +23,9 @@
 		AC15C5751D24FD70008C473D /* icon_chose_arrow_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC15C5711D24FD70008C473D /* icon_chose_arrow_nor@2x.png */; };
 		AC15C5761D24FD70008C473D /* icon_chose_arrow_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC15C5721D24FD70008C473D /* icon_chose_arrow_sel@2x.png */; };
 		AC15C5771D24FD70008C473D /* icon_chose_bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC15C5731D24FD70008C473D /* icon_chose_bottom@2x.png */; };
+		AC1661271D261D0A00945200 /* GPTutorVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1661261D261D0A00945200 /* GPTutorVideoData.m */; };
+		AC16612B1D261D3300945200 /* GPTutorVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1661291D261D3300945200 /* GPTutorVideoCell.m */; };
+		AC16612C1D261D3300945200 /* GPTutorVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC16612A1D261D3300945200 /* GPTutorVideoCell.xib */; };
 		AC20C0631D20253D0008A060 /* GPDaRenPicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0621D20253D0008A060 /* GPDaRenPicsController.m */; };
 		AC20C0671D20B77A0008A060 /* GPDaRenPicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0651D20B77A0008A060 /* GPDaRenPicsCell.m */; };
 		AC20C0681D20B77A0008A060 /* GPDaRenPicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC20C0661D20B77A0008A060 /* GPDaRenPicsCell.xib */; };
@@ -278,6 +281,11 @@
 		AC15C5711D24FD70008C473D /* icon_chose_arrow_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_chose_arrow_nor@2x.png"; sourceTree = "<group>"; };
 		AC15C5721D24FD70008C473D /* icon_chose_arrow_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_chose_arrow_sel@2x.png"; sourceTree = "<group>"; };
 		AC15C5731D24FD70008C473D /* icon_chose_bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_chose_bottom@2x.png"; sourceTree = "<group>"; };
+		AC1661251D261D0A00945200 /* GPTutorVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTutorVideoData.h; sourceTree = "<group>"; };
+		AC1661261D261D0A00945200 /* GPTutorVideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTutorVideoData.m; sourceTree = "<group>"; };
+		AC1661281D261D3300945200 /* GPTutorVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTutorVideoCell.h; sourceTree = "<group>"; };
+		AC1661291D261D3300945200 /* GPTutorVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTutorVideoCell.m; sourceTree = "<group>"; };
+		AC16612A1D261D3300945200 /* GPTutorVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPTutorVideoCell.xib; sourceTree = "<group>"; };
 		AC20C0611D20253D0008A060 /* GPDaRenPicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicsController.h; sourceTree = "<group>"; };
 		AC20C0621D20253D0008A060 /* GPDaRenPicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenPicsController.m; sourceTree = "<group>"; };
 		AC20C0641D20B77A0008A060 /* GPDaRenPicsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicsCell.h; sourceTree = "<group>"; };
@@ -1481,6 +1489,8 @@
 			children = (
 				AC9DDD971D26059F0022277B /* GPTutoriaPicData.h */,
 				AC9DDD981D26059F0022277B /* GPTutoriaPicData.m */,
+				AC1661251D261D0A00945200 /* GPTutorVideoData.h */,
+				AC1661261D261D0A00945200 /* GPTutorVideoData.m */,
 			);
 			name = TutorpaPicData;
 			sourceTree = "<group>";
@@ -2007,6 +2017,9 @@
 				AC9DDD491D255DD20022277B /* GPTutorialPicCell.h */,
 				AC9DDD4A1D255DD20022277B /* GPTutorialPicCell.m */,
 				AC9DDD4B1D255DD20022277B /* GPTutorialPicCell.xib */,
+				AC1661281D261D3300945200 /* GPTutorVideoCell.h */,
+				AC1661291D261D3300945200 /* GPTutorVideoCell.m */,
+				AC16612A1D261D3300945200 /* GPTutorVideoCell.xib */,
 			);
 			name = TutorialBaseView;
 			sourceTree = "<group>";
@@ -2185,6 +2198,7 @@
 				AC3825E71D2211AF00F2866B /* GPFocusCell.xib in Resources */,
 				ACDEF4261D2376F600B23C43 /* LICENSE in Resources */,
 				ACA8D73C1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.xib in Resources */,
+				AC16612C1D261D3300945200 /* GPTutorVideoCell.xib in Resources */,
 				AC2925C61D0436D600726E51 /* GPSectionHeadView.xib in Resources */,
 				ACD5854B1CFBE47D00F7942D /* GPFooterAppraiseCell.xib in Resources */,
 				AC5AAE461CF54BC800EDBF99 /* GPContentCell.xib in Resources */,
@@ -2336,10 +2350,12 @@
 				AC2925821D02A8BA00726E51 /* YZDisplayTitleLabel.m in Sources */,
 				ACA8D7A31D1FC2DA0097B8C3 /* XWCoolAnimator+XWScanning.m in Sources */,
 				AC20C07C1D2127030008A060 /* GPEventData.m in Sources */,
+				AC1661271D261D0A00945200 /* GPTutorVideoData.m in Sources */,
 				AC5A534F1D13E49E0061D5D8 /* GPTimeLinePicData.m in Sources */,
 				ACB2E0F81CFAA65200D3F5EA /* GPAdViewController.m in Sources */,
 				AC7A9CF21CF2A16A001A9550 /* GPTitleBtn.m in Sources */,
 				AC4E72D11CE18CB500E92406 /* GPHandTableViewController.m in Sources */,
+				AC16612B1D261D3300945200 /* GPTutorVideoCell.m in Sources */,
 				ACA8D79D1D1FC2DA0097B8C3 /* XWCoolAnimator+XWExplode.m in Sources */,
 				AC5AAE451CF54BC800EDBF99 /* GPContentCell.m in Sources */,
 				AC5A534C1D13E3110061D5D8 /* GPTimeLineData.m in Sources */,

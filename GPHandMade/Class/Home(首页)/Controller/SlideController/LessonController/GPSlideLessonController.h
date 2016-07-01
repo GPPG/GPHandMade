@@ -10,4 +10,5 @@
 @class GPslide;
 @interface GPSlideLessonController : UITableViewController
 @property (nonatomic, strong) GPslide *slideData;
+@property (nonatomic, copy) NSString *handID;
 @end

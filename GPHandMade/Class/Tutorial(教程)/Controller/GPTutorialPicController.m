@@ -18,7 +18,7 @@
 #import "GPDaRenPicController.h"
 
 @interface GPTutorialPicController ()<DOPDropDownMenuDelegate,DOPDropDownMenuDataSource>
-@property (nonatomic, weak) DOPDropDownMenu *menu;
+@property (nonatomic, strong) DOPDropDownMenu *menu;
 @property (nonatomic, strong) NSArray *evenythingS;
 @property (nonatomic, strong) NSArray *twoSizeS;
 @property (nonatomic, strong) NSArray *thrreSizeS;
@@ -58,12 +58,16 @@ static NSString * const reuseIdentifier = @"TpicCell";
     [self addDropMenu];
     [self loadData];
 }
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.collectionView.contentInset = UIEdgeInsetsMake(GPTitlesViewH, 0, GPTabBarH,0);
+}
 #pragma mark - 初始化方法
 - (void)regisCell
 {
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([GPTutorialPicCell class]) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     self.collectionView.backgroundColor = [UIColor whiteColor];
-    self.collectionView.contentInset = UIEdgeInsetsMake(GPTitlesViewH, 0, GPTabBarH,0);
     self.gacate = @"allcate";
     self.oreder = @"hot";
 }
@@ -94,6 +98,7 @@ static NSString * const reuseIdentifier = @"TpicCell";
     // 创建menu 第一次显示 不会调用点击代理，可以用这个手动调用
     [menu selectDefalutIndexPath];
 }
+
 #pragma mark - 数据处理
 - (void)loadData
 {

@@ -24,7 +24,6 @@
 #import "SDPhotoBrowser.h"
 
 @interface GPSlideLessonController ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,SDPhotoBrowserDelegate>
-@property (nonatomic, copy) NSString *handID;
 @property (nonatomic, strong) GPLessonData *lessonData; // 课程模型
 @property (nonatomic, strong) NSMutableArray *lessonS; // 课程内容
 @property (nonatomic, strong) NSMutableArray *otherCalssS; // 其他课程模型

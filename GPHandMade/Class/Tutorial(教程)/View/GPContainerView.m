@@ -55,6 +55,7 @@
 {
     [self setContentOffset:CGPointMake(index*SCREEN_WIDTH, 0) animated:YES];
 }
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     int page = (scrollView.contentOffset.x + SCREEN_WIDTH / 2) / SCREEN_WIDTH;
