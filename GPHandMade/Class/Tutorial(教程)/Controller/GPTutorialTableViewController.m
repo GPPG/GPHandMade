@@ -12,6 +12,7 @@
 #import "GPTutoriSubController.h"
 #import "GPTutoriaVideoController.h"
 #import "GPTutorialPicController.h"
+#import "GPTopicListController.h"
 @interface GPTutorialTableViewController ()
 @property (nonatomic, strong) GPTutorialPicController *picVc;
 @property (nonatomic, strong) GPTutoriaVideoController *videoVc;

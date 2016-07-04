@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		58CC0E0C6DA2CFD3D6C01045 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0365791F1F4DC0A104E49C7 /* libPods.a */; };
+		AC0DFE351D2A3B1F007B4A7D /* GPTutoriSubController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0DFE341D2A3B1F007B4A7D /* GPTutoriSubController.m */; };
 		AC0EA2D51D051A130041D14E /* GPSlideEventController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2D21D051A130041D14E /* GPSlideEventController.m */; };
 		AC0EA2D61D051A130041D14E /* GPSlideSuperController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2D41D051A130041D14E /* GPSlideSuperController.m */; };
 		AC0EA2D91D051A750041D14E /* GPEventNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EA2D81D051A750041D14E /* GPEventNewController.m */; };
@@ -229,7 +230,6 @@
 		ACDEF42F1D24B42B00B23C43 /* GPContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF42E1D24B42B00B23C43 /* GPContainerView.m */; };
 		ACDEF4321D24CE5E00B23C43 /* GPTutorialPicController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4311D24CE5E00B23C43 /* GPTutorialPicController.m */; };
 		ACDEF4351D24CE8000B23C43 /* GPTutoriaVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4341D24CE8000B23C43 /* GPTutoriaVideoController.m */; };
-		ACDEF4381D24CEB500B23C43 /* GPTutoriSubController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDEF4371D24CEB500B23C43 /* GPTutoriSubController.m */; };
 		ACEABAE11CFFCA650024FC67 /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABADB1CFFCA650024FC67 /* SDBrowserImageView.m */; };
 		ACEABAE21CFFCA650024FC67 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABADD1CFFCA650024FC67 /* SDPhotoBrowser.m */; };
 		ACEABAE31CFFCA650024FC67 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABAE01CFFCA650024FC67 /* SDWaitingView.m */; };
@@ -254,6 +254,8 @@
 
 /* Begin PBXFileReference section */
 		22784EE1E27D1BD08E7B4447 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0DFE331D2A3B1F007B4A7D /* GPTutoriSubController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTutoriSubController.h; sourceTree = "<group>"; };
+		AC0DFE341D2A3B1F007B4A7D /* GPTutoriSubController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTutoriSubController.m; sourceTree = "<group>"; };
 		AC0EA2D11D051A130041D14E /* GPSlideEventController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSlideEventController.h; sourceTree = "<group>"; };
 		AC0EA2D21D051A130041D14E /* GPSlideEventController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSlideEventController.m; sourceTree = "<group>"; };
 		AC0EA2D31D051A130041D14E /* GPSlideSuperController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSlideSuperController.h; sourceTree = "<group>"; };
@@ -663,8 +665,6 @@
 		ACDEF4311D24CE5E00B23C43 /* GPTutorialPicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTutorialPicController.m; sourceTree = "<group>"; };
 		ACDEF4331D24CE8000B23C43 /* GPTutoriaVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTutoriaVideoController.h; sourceTree = "<group>"; };
 		ACDEF4341D24CE8000B23C43 /* GPTutoriaVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTutoriaVideoController.m; sourceTree = "<group>"; };
-		ACDEF4361D24CEB500B23C43 /* GPTutoriSubController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTutoriSubController.h; sourceTree = "<group>"; };
-		ACDEF4371D24CEB500B23C43 /* GPTutoriSubController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTutoriSubController.m; sourceTree = "<group>"; };
 		ACEABADA1CFFCA650024FC67 /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
 		ACEABADB1CFFCA650024FC67 /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
 		ACEABADC1CFFCA650024FC67 /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
@@ -2031,8 +2031,8 @@
 				ACDEF4311D24CE5E00B23C43 /* GPTutorialPicController.m */,
 				ACDEF4331D24CE8000B23C43 /* GPTutoriaVideoController.h */,
 				ACDEF4341D24CE8000B23C43 /* GPTutoriaVideoController.m */,
-				ACDEF4361D24CEB500B23C43 /* GPTutoriSubController.h */,
-				ACDEF4371D24CEB500B23C43 /* GPTutoriSubController.m */,
+				AC0DFE331D2A3B1F007B4A7D /* GPTutoriSubController.h */,
+				AC0DFE341D2A3B1F007B4A7D /* GPTutoriSubController.m */,
 			);
 			name = GPTutorialTopicVc;
 			sourceTree = "<group>";
@@ -2312,6 +2312,7 @@
 				ACB2E0FC1CFABC9A00D3F5EA /* GPJianDaoHeader.m in Sources */,
 				ACA8D7B41D1FC76E0097B8C3 /* GPMainWebController.m in Sources */,
 				ACC047FB1CEDA9EA004E8C74 /* GPData.m in Sources */,
+				AC0DFE351D2A3B1F007B4A7D /* GPTutoriSubController.m in Sources */,
 				ACDA285F1D18E30900BE1579 /* GPTimeLineHeadCell.m in Sources */,
 				ACDDCCDB1D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				AC3826221D22672500F2866B /* GPTopicListCell.m in Sources */,
@@ -2320,7 +2321,6 @@
 				ACA8D7AB1D1FC2DA0097B8C3 /* XWFilterAnimator+XWMod.m in Sources */,
 				AC5AAE2E1CF5443A00EDBF99 /* GPTools.m in Sources */,
 				ACEABAE31CFFCA650024FC67 /* SDWaitingView.m in Sources */,
-				ACDEF4381D24CEB500B23C43 /* GPTutoriSubController.m in Sources */,
 				ACD5854A1CFBE47D00F7942D /* GPFooterAppraiseCell.m in Sources */,
 				AC20C0671D20B77A0008A060 /* GPDaRenPicsCell.m in Sources */,
 				AC15C5741D24FD70008C473D /* DOPDropDownMenu.m in Sources */,

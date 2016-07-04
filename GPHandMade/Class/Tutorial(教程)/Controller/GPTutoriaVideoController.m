@@ -56,6 +56,7 @@ static NSString * const videoCellID = @"tutorVideoCell";
     self.cate = @"0";
     self.price = @"0";
     self.sort = @"1";
+    self.page = @"2";
 }
 
 #pragma mark - 初始化
@@ -141,7 +142,6 @@ static NSString * const videoCellID = @"tutorVideoCell";
     [self.DataS removeAllObjects];
     // 2.发起请求
     [GPHttpTool get:HomeBaseURl params:params success:^(id responseObj) {
-        self.page = @"2";
 
         weakSelf.DataS = [GPTutorVideoData mj_objectArrayWithKeyValuesArray:responseObj[@"data"]];
         [self.tableView reloadData];
