@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class GPContainerView;
 @interface GPTutorialTableViewController : UIViewController
-
+@property (nonatomic, strong) GPContainerView *containView;
 @end

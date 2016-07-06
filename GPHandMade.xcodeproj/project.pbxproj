@@ -27,6 +27,7 @@
 		AC1661271D261D0A00945200 /* GPTutorVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1661261D261D0A00945200 /* GPTutorVideoData.m */; };
 		AC16612B1D261D3300945200 /* GPTutorVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1661291D261D3300945200 /* GPTutorVideoCell.m */; };
 		AC16612C1D261D3300945200 /* GPTutorVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC16612A1D261D3300945200 /* GPTutorVideoCell.xib */; };
+		AC1770B31D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1770B21D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.m */; };
 		AC20C0631D20253D0008A060 /* GPDaRenPicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0621D20253D0008A060 /* GPDaRenPicsController.m */; };
 		AC20C0671D20B77A0008A060 /* GPDaRenPicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0651D20B77A0008A060 /* GPDaRenPicsCell.m */; };
 		AC20C0681D20B77A0008A060 /* GPDaRenPicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC20C0661D20B77A0008A060 /* GPDaRenPicsCell.xib */; };
@@ -288,6 +289,8 @@
 		AC1661281D261D3300945200 /* GPTutorVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTutorVideoCell.h; sourceTree = "<group>"; };
 		AC1661291D261D3300945200 /* GPTutorVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTutorVideoCell.m; sourceTree = "<group>"; };
 		AC16612A1D261D3300945200 /* GPTutorVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPTutorVideoCell.xib; sourceTree = "<group>"; };
+		AC1770B11D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXReorderableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		AC1770B21D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXReorderableCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		AC20C0611D20253D0008A060 /* GPDaRenPicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicsController.h; sourceTree = "<group>"; };
 		AC20C0621D20253D0008A060 /* GPDaRenPicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenPicsController.m; sourceTree = "<group>"; };
 		AC20C0641D20B77A0008A060 /* GPDaRenPicsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicsCell.h; sourceTree = "<group>"; };
@@ -727,6 +730,8 @@
 		AC0EA3261D06D12D0041D14E /* Other(其他) */ = {
 			isa = PBXGroup;
 			children = (
+				AC1770B11D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.h */,
+				AC1770B21D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.m */,
 				ACA236511D11508C00489F96 /* GPLayout.h */,
 				ACA236521D11508C00489F96 /* GPLayout.m */,
 				AC0EA3271D06D12D0041D14E /* Controller */,
@@ -2458,6 +2463,7 @@
 				AC0EA3471D07EB9D0041D14E /* GPEventBtn.m in Sources */,
 				ACDEF3E71D236FF700B23C43 /* GPFakeChatData.m in Sources */,
 				AC5AAE401CF54A3700EDBF99 /* GPSubTitleCell.m in Sources */,
+				AC1770B31D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.m in Sources */,
 				AC29259E1D02B0C800726E51 /* GPFocusController.m in Sources */,
 				AC3825F81D22570500F2866B /* GPThreeController.m in Sources */,
 				ACA8D7AC1D1FC2DA0097B8C3 /* XWFilterAnimator+XWPageCurl.m in Sources */,

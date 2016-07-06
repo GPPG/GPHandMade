@@ -17,7 +17,6 @@
 @property (nonatomic, strong) GPTutorialPicController *picVc;
 @property (nonatomic, strong) GPTutoriaVideoController *videoVc;
 @property (nonatomic, strong) GPTutoriSubController *subVc;
-@property (nonatomic, strong) GPContainerView *containView;
 @property (nonatomic, weak) GPNavTitleView *titleView;
 @property (nonatomic, strong) NSArray *chidVcArray;
 @end

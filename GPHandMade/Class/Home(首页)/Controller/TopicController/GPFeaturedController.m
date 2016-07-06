@@ -38,6 +38,9 @@
 #import "GPTopicListController.h"
 #import "GPChatController.h"
 #import "XWDrawerAnimator.h"
+#import "GPTabBarController.h"
+#import "GPTutorialTableViewController.h"
+#import "GPContainerView.h"
 
 @interface GPFeaturedController ()<SDCycleScrollViewDelegate>
 @property (strong,nonatomic) NSMutableArray *dataSlideArray; // 轮播图片数组
@@ -289,15 +292,22 @@ static NSString * const GPSectionHead = @"HotSectionCell";
             [self xw_presentViewController:logVc withAnimator:animator];
         }else if (indexPath.row == 1){
             GPChatController *chatVc = [[GPChatController alloc]init];
-//            [self.navigationController pushViewController:chatVc animated:YES];
             XWDrawerAnimator *animator = [XWDrawerAnimator xw_animatorWithDirection:XWDrawerAnimatorDirectionBottom moveDistance:SCREEN_HEIGHT * 0.8];
             animator.flipEnable = YES;
             [self xw_presentViewController:chatVc withAnimator:animator];
+        }else{
+            GPTabBarController *tabVc = [[GPTabBarController alloc]init];
+            tabVc.selectedIndex = 1;
+            [UIApplication sharedApplication].keyWindow.rootViewController = tabVc;
         }
     }else if (indexPath.section == 1){
         if (indexPath.row == 0) {
             GPTopicListController *topListVc = [[GPTopicListController alloc]init];
             [self.navigationController pushViewController:topListVc animated:YES];
+        }else{
+            GPTabBarController *tabVc = [[GPTabBarController alloc]init];
+            tabVc.selectedIndex = 1;
+            [UIApplication sharedApplication].keyWindow.rootViewController = tabVc;
         }
     }
 }
