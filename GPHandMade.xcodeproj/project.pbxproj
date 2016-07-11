@@ -132,6 +132,16 @@
 		AC9DDD531D25FFA60022277B /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9DDD521D25FFA60022277B /* UIColor+HEX.m */; };
 		AC9DDD991D26059F0022277B /* GPTutoriaPicData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9DDD981D26059F0022277B /* GPTutoriaPicData.m */; };
 		ACA236531D11508C00489F96 /* GPLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA236521D11508C00489F96 /* GPLayout.m */; };
+		ACA27ED91D3372E5009AF1A1 /* GPHandPulicData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27ED81D3372E5009AF1A1 /* GPHandPulicData.m */; };
+		ACA27EDE1D33732F009AF1A1 /* GPHandTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EDD1D33732F009AF1A1 /* GPHandTopicCell.m */; };
+		ACA27EE11D337836009AF1A1 /* GPHandListData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EE01D337836009AF1A1 /* GPHandListData.m */; };
+		ACA27EE41D337A98009AF1A1 /* GPHandPicData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EE31D337A98009AF1A1 /* GPHandPicData.m */; };
+		ACA27EE71D337B37009AF1A1 /* GPHandCommentData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EE61D337B37009AF1A1 /* GPHandCommentData.m */; };
+		ACA27EEA1D337BB2009AF1A1 /* GPHandlaudData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EE91D337BB2009AF1A1 /* GPHandlaudData.m */; };
+		ACA27EED1D337D86009AF1A1 /* GPHttpBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EEC1D337D86009AF1A1 /* GPHttpBase.m */; };
+		ACA27EF01D337E00009AF1A1 /* HMStatusTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EEF1D337E00009AF1A1 /* HMStatusTool.m */; };
+		ACA27EF31D337F5A009AF1A1 /* GPHandParam.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EF21D337F5A009AF1A1 /* GPHandParam.m */; };
+		ACA27EF51D3391A7009AF1A1 /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = ACA27EF41D3391A7009AF1A1 /* json.json */; };
 		ACA8D7171D1BCB6D0097B8C3 /* GPDaData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7161D1BCB6D0097B8C3 /* GPDaData.m */; };
 		ACA8D7211D1CE2130097B8C3 /* GPDaRenPicController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7201D1CE2130097B8C3 /* GPDaRenPicController.m */; };
 		ACA8D7241D1CE3D90097B8C3 /* GPDaRenPicData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7231D1CE3D90097B8C3 /* GPDaRenPicData.m */; };
@@ -495,6 +505,25 @@
 		AC9DDD981D26059F0022277B /* GPTutoriaPicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTutoriaPicData.m; sourceTree = "<group>"; };
 		ACA236511D11508C00489F96 /* GPLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPLayout.h; path = "../Home(首页)/Controller/TopicController/GPLayout.h"; sourceTree = "<group>"; };
 		ACA236521D11508C00489F96 /* GPLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPLayout.m; path = "../Home(首页)/Controller/TopicController/GPLayout.m"; sourceTree = "<group>"; };
+		ACA27ED71D3372E5009AF1A1 /* GPHandPulicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandPulicData.h; sourceTree = "<group>"; };
+		ACA27ED81D3372E5009AF1A1 /* GPHandPulicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandPulicData.m; sourceTree = "<group>"; };
+		ACA27EDC1D33732F009AF1A1 /* GPHandTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandTopicCell.h; sourceTree = "<group>"; };
+		ACA27EDD1D33732F009AF1A1 /* GPHandTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandTopicCell.m; sourceTree = "<group>"; };
+		ACA27EDF1D337836009AF1A1 /* GPHandListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandListData.h; sourceTree = "<group>"; };
+		ACA27EE01D337836009AF1A1 /* GPHandListData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandListData.m; sourceTree = "<group>"; };
+		ACA27EE21D337A98009AF1A1 /* GPHandPicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandPicData.h; sourceTree = "<group>"; };
+		ACA27EE31D337A98009AF1A1 /* GPHandPicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandPicData.m; sourceTree = "<group>"; };
+		ACA27EE51D337B37009AF1A1 /* GPHandCommentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandCommentData.h; sourceTree = "<group>"; };
+		ACA27EE61D337B37009AF1A1 /* GPHandCommentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandCommentData.m; sourceTree = "<group>"; };
+		ACA27EE81D337BB2009AF1A1 /* GPHandlaudData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandlaudData.h; sourceTree = "<group>"; };
+		ACA27EE91D337BB2009AF1A1 /* GPHandlaudData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandlaudData.m; sourceTree = "<group>"; };
+		ACA27EEB1D337D86009AF1A1 /* GPHttpBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHttpBase.h; sourceTree = "<group>"; };
+		ACA27EEC1D337D86009AF1A1 /* GPHttpBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHttpBase.m; sourceTree = "<group>"; };
+		ACA27EEE1D337E00009AF1A1 /* HMStatusTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMStatusTool.h; sourceTree = "<group>"; };
+		ACA27EEF1D337E00009AF1A1 /* HMStatusTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMStatusTool.m; sourceTree = "<group>"; };
+		ACA27EF11D337F5A009AF1A1 /* GPHandParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandParam.h; sourceTree = "<group>"; };
+		ACA27EF21D337F5A009AF1A1 /* GPHandParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandParam.m; sourceTree = "<group>"; };
+		ACA27EF41D3391A7009AF1A1 /* json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json.json; sourceTree = "<group>"; };
 		ACA8D7151D1BCB6D0097B8C3 /* GPDaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaData.h; sourceTree = "<group>"; };
 		ACA8D7161D1BCB6D0097B8C3 /* GPDaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaData.m; sourceTree = "<group>"; };
 		ACA8D71F1D1CE2130097B8C3 /* GPDaRenPicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicController.h; sourceTree = "<group>"; };
@@ -1062,6 +1091,7 @@
 		AC4E72621CE1831B00E92406 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ACA27EF41D3391A7009AF1A1 /* json.json */,
 				AC4E72631CE1831B00E92406 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -1159,6 +1189,18 @@
 		AC4E729C1CE186D800E92406 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ACA27EF11D337F5A009AF1A1 /* GPHandParam.h */,
+				ACA27EF21D337F5A009AF1A1 /* GPHandParam.m */,
+				ACA27ED71D3372E5009AF1A1 /* GPHandPulicData.h */,
+				ACA27ED81D3372E5009AF1A1 /* GPHandPulicData.m */,
+				ACA27EDF1D337836009AF1A1 /* GPHandListData.h */,
+				ACA27EE01D337836009AF1A1 /* GPHandListData.m */,
+				ACA27EE21D337A98009AF1A1 /* GPHandPicData.h */,
+				ACA27EE31D337A98009AF1A1 /* GPHandPicData.m */,
+				ACA27EE51D337B37009AF1A1 /* GPHandCommentData.h */,
+				ACA27EE61D337B37009AF1A1 /* GPHandCommentData.m */,
+				ACA27EE81D337BB2009AF1A1 /* GPHandlaudData.h */,
+				ACA27EE91D337BB2009AF1A1 /* GPHandlaudData.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1166,12 +1208,8 @@
 		AC4E729D1CE186D800E92406 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC2A1A991D2DF5DA0039096B /* GPHandMoreCell.h */,
-				AC2A1A9A1D2DF5DA0039096B /* GPHandMoreCell.m */,
-				AC2A1A9B1D2DF5DA0039096B /* GPHandMoreCell.xib */,
-				AC2A1AA11D2E06560039096B /* GPHandMoreHeadView.h */,
-				AC2A1AA21D2E06560039096B /* GPHandMoreHeadView.m */,
-				AC2A1AA31D2E06560039096B /* GPHandMoreHeadView.xib */,
+				ACA27EDA1D3372F1009AF1A1 /* TopicView */,
+				ACA27EDB1D337304009AF1A1 /* HandMoewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1331,11 +1369,15 @@
 		AC4E72C51CE18A6300E92406 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				ACA27EEE1D337E00009AF1A1 /* HMStatusTool.h */,
+				ACA27EEF1D337E00009AF1A1 /* HMStatusTool.m */,
 				AC2A1AAB1D2F69590039096B /* NSDictionary+LOG.m */,
 				AC2925BC1D02E7E600726E51 /* GPGuideTool.h */,
 				AC2925BD1D02E7E700726E51 /* GPGuideTool.m */,
 				ACDE67151CED61F500FC47DD /* GPHttpTool.h */,
 				ACDE67161CED61F500FC47DD /* GPHttpTool.m */,
+				ACA27EEB1D337D86009AF1A1 /* GPHttpBase.h */,
+				ACA27EEC1D337D86009AF1A1 /* GPHttpBase.m */,
 				ACB2E0FA1CFABC9A00D3F5EA /* GPJianDaoHeader.h */,
 				ACB2E0FB1CFABC9A00D3F5EA /* GPJianDaoHeader.m */,
 				AC2925741D015B0400726E51 /* GPAutoFooter.h */,
@@ -1544,6 +1586,28 @@
 				AC1661261D261D0A00945200 /* GPTutorVideoData.m */,
 			);
 			name = TutorpaPicData;
+			sourceTree = "<group>";
+		};
+		ACA27EDA1D3372F1009AF1A1 /* TopicView */ = {
+			isa = PBXGroup;
+			children = (
+				ACA27EDC1D33732F009AF1A1 /* GPHandTopicCell.h */,
+				ACA27EDD1D33732F009AF1A1 /* GPHandTopicCell.m */,
+			);
+			name = TopicView;
+			sourceTree = "<group>";
+		};
+		ACA27EDB1D337304009AF1A1 /* HandMoewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC2A1A991D2DF5DA0039096B /* GPHandMoreCell.h */,
+				AC2A1A9A1D2DF5DA0039096B /* GPHandMoreCell.m */,
+				AC2A1A9B1D2DF5DA0039096B /* GPHandMoreCell.xib */,
+				AC2A1AA11D2E06560039096B /* GPHandMoreHeadView.h */,
+				AC2A1AA21D2E06560039096B /* GPHandMoreHeadView.m */,
+				AC2A1AA31D2E06560039096B /* GPHandMoreHeadView.xib */,
+			);
+			name = HandMoewCell;
 			sourceTree = "<group>";
 		};
 		ACA8D71B1D1CE14B0097B8C3 /* GPDaRenController */ = {
@@ -2265,6 +2329,7 @@
 				ACD585531CFC3EE100F7942D /* GPLessonHeadView.xib in Resources */,
 				AC2925BB1D02CFE200726E51 /* GPAdvanceCell.xib in Resources */,
 				AC7A9CE61CF04F48001A9550 /* GPWebViewController.storyboard in Resources */,
+				ACA27EF51D3391A7009AF1A1 /* json.json in Resources */,
 				ACB2E0F41CF827AC00D3F5EA /* GPNewFeatureCell.xib in Resources */,
 				ACBF6BA81D1A93FC00ABE062 /* GPLoginController.storyboard in Resources */,
 				ACA8D79B1D1FC2DA0097B8C3 /* restrictedshine.tiff in Resources */,
@@ -2362,6 +2427,7 @@
 				AC2A1A9C1D2DF5DA0039096B /* GPHandMoreCell.m in Sources */,
 				ACA8D7A11D1FC2DA0097B8C3 /* XWCoolAnimator+XWPageFlip.m in Sources */,
 				AC4E72C71CE18A6300E92406 /* GPNavgationController.m in Sources */,
+				ACA27EE11D337836009AF1A1 /* GPHandListData.m in Sources */,
 				AC3826101D22583000F2866B /* GPElevenController.m in Sources */,
 				ACB2E0FC1CFABC9A00D3F5EA /* GPJianDaoHeader.m in Sources */,
 				ACA8D7B41D1FC76E0097B8C3 /* GPMainWebController.m in Sources */,
@@ -2415,6 +2481,7 @@
 				AC5AAE451CF54BC800EDBF99 /* GPContentCell.m in Sources */,
 				AC5A534C1D13E3110061D5D8 /* GPTimeLineData.m in Sources */,
 				AC7A9CF51CF2A36D001A9550 /* UIView+GPExtension.m in Sources */,
+				ACA27EE71D337B37009AF1A1 /* GPHandCommentData.m in Sources */,
 				ACA8D7271D1CE5DF0097B8C3 /* GPDaRenToolsData.m in Sources */,
 				AC561F8E1D050FEB00919703 /* SDCollectionViewCell.m in Sources */,
 				AC20C0771D21228D0008A060 /* GPEventCell.m in Sources */,
@@ -2437,10 +2504,12 @@
 				AC4E72D71CE18CCD00E92406 /* GPMyTableViewController.m in Sources */,
 				AC3825F51D2256F700F2866B /* GPTwoController.m in Sources */,
 				ACA8D72A1D1CE6000097B8C3 /* GPDaRenMaterialData.m in Sources */,
+				ACA27EEA1D337BB2009AF1A1 /* GPHandlaudData.m in Sources */,
 				ACDEF3EA1D2373FF00B23C43 /* GPChatController.m in Sources */,
 				AC2A1AA41D2E06560039096B /* GPHandMoreHeadView.m in Sources */,
 				ACDEF4251D2376F600B23C43 /* MLLinkLabel.m in Sources */,
 				ACDEF4281D2376F600B23C43 /* TTTAttributedLabel.m in Sources */,
+				ACA27EDE1D33732F009AF1A1 /* GPHandTopicCell.m in Sources */,
 				ACA8D7961D1FC2DA0097B8C3 /* UIViewController+XWTransition.m in Sources */,
 				ACA8D79F1D1FC2DA0097B8C3 /* XWCoolAnimator+XWLines.m in Sources */,
 				ACA8D7AE1D1FC2DA0097B8C3 /* XWFilterAnimator+XWSwipe.m in Sources */,
@@ -2468,6 +2537,7 @@
 				ACC048051CEDAA53004E8C74 /* GPCompetitionData.m in Sources */,
 				AC3826011D22573A00F2866B /* GPSixController.m in Sources */,
 				AC9DDD4C1D255DD20022277B /* GPTutorialPicCell.m in Sources */,
+				ACA27ED91D3372E5009AF1A1 /* GPHandPulicData.m in Sources */,
 				AC1770B71D2CAF3500EDFBC8 /* GPHandPulicController.m in Sources */,
 				AC3826131D22584500F2866B /* GPTwelveViewController.m in Sources */,
 				ACDA28501D17796600BE1579 /* GPTimeLineCommentData.m in Sources */,
@@ -2487,8 +2557,10 @@
 				AC2925C51D0436D600726E51 /* GPSectionHeadView.m in Sources */,
 				AC29259B1D02B0A400726E51 /* GPFeaturedController.m in Sources */,
 				AC38261D1D22623000F2866B /* GPTopListData.m in Sources */,
+				ACA27EF01D337E00009AF1A1 /* HMStatusTool.m in Sources */,
 				ACDA28531D179A9700BE1579 /* GPTimeLineEventCell.m in Sources */,
 				ACD5854E1CFBF31200F7942D /* GPAppraiseData.m in Sources */,
+				ACA27EED1D337D86009AF1A1 /* GPHttpBase.m in Sources */,
 				AC5AAE271CF5337600EDBF99 /* GPLessonData.m in Sources */,
 				ACC047FF1CEDAA27004E8C74 /* GPSalonData.m in Sources */,
 				ACC047FC1CEDA9EA004E8C74 /* GPslide.m in Sources */,
@@ -2531,6 +2603,7 @@
 				ACA8D7971D1FC2DA0097B8C3 /* XWInteractiveTransition.m in Sources */,
 				ACDEF41B1D2376F600B23C43 /* MLEmojiLabel.m in Sources */,
 				ACA8D7B11D1FC2DA0097B8C3 /* XWMagicMoveAnimator.m in Sources */,
+				ACA27EF31D337F5A009AF1A1 /* GPHandParam.m in Sources */,
 				ACDEF4221D2376F600B23C43 /* NSString+MLExpression.m in Sources */,
 				AC0EA2DC1D051A890041D14E /* GPEventVoteController.m in Sources */,
 				AC3826041D22578400F2866B /* GPSevenController.m in Sources */,
@@ -2538,6 +2611,7 @@
 				AC3825EB1D22547A00F2866B /* GPTopicListController.m in Sources */,
 				AC4E72641CE1831B00E92406 /* main.m in Sources */,
 				ACDEF4211D2376F600B23C43 /* NSAttributedString+MLExpression.m in Sources */,
+				ACA27EE41D337A98009AF1A1 /* GPHandPicData.m in Sources */,
 				ACEABAE21CFFCA650024FC67 /* SDPhotoBrowser.m in Sources */,
 				ACDEF3F21D2374C100B23C43 /* GPChatCell.m in Sources */,
 				AC5AAE4A1CF54C0C00EDBF99 /* GPUserCell.m in Sources */,

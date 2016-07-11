@@ -214,6 +214,10 @@ static NSString * const HandMoreHeadId = @"HandMoreHead";
 - (void)popBtn:(UIButton *)popBtn
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    if (self.BtnClick) {
+        self.BtnClick();
+    }
 }
 // 添加动画
 - (void)addAnimationLabel:(NSIndexPath *)indexPath and:(GPHandMoreCell *)cell

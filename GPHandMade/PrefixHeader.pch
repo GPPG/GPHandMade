@@ -20,7 +20,7 @@
 #import "UIColor+HEX.h"
 #import "XWCoolAnimator.h"
 #import "XWTransitionAnimator.h"
-
+#import "MJExtension.h"
 /**
  *  自定义输出
  */

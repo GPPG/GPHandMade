@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@class GPTimeLineData;
+@class GPTimeLineData,GPHandListData;
 @interface GPTimeLineHeadCell : UITableViewCell
 @property (nonatomic, strong) GPTimeLineData *timeLineData;
 @property (nonatomic, strong) NSMutableArray *picUrlArray;
 @property (nonatomic, strong) NSMutableArray *sizeArray;
+
+@property (nonatomic, strong) GPHandListData *listData;
 @end

@@ -11,6 +11,7 @@
 #import "GPPhotoContainerView.h"
 #import "UIImageView+WebCache.h"
 #import "GPTimeLineData.h"
+#import "GPHandListData.h"
 
 @interface GPTimeLineHeadCell()
 @property (nonatomic, weak) UIImageView *iconImageView;
@@ -105,6 +106,15 @@
     self.contenLabel.text = timeLineData.subject;
     self.timeLabel.text = timeLineData.add_time;
     self.nameLabel.text = timeLineData.uname;
+}
+- (void)setListData:(GPHandListData *)listData
+{
+    _listData = listData;
+    NSURL *picUrl = [NSURL URLWithString:listData.avatar];
+    [self.iconImageView sd_setImageWithURL:picUrl placeholderImage:[UIImage imageNamed:@"1"]];
+    self.contenLabel.text = listData.subject;
+    self.timeLabel.text = listData.add_time;
+    self.nameLabel.text = listData.uname;
 }
 - (void)setPicUrlArray:(NSMutableArray *)picUrlArray
 {

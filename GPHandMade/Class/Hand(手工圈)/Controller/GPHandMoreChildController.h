@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface GPHandMoreChildController : UICollectionViewController
+@property (nonatomic,copy) void(^BtnClick)();
 
 @end

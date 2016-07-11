@@ -11,6 +11,8 @@
 #import "XWCircleSpreadAnimator.h"
 #import "GPHandMoreChildController.h"
 #import "GPEventBtn.h"
+#import "GPHandDataTool.h"
+#define ONEName @"moreName"
 
 @interface GPHandTableViewController ()
 
@@ -46,16 +48,12 @@
 
 - (void)addAllChildVc
 {
-    GPHandPulicController *pulicVc = [[GPHandPulicController alloc]init];
-    pulicVc.title = @"手工课官方";
-    [self addChildViewController:pulicVc];
-    GPHandPulicController *pulicV = [[GPHandPulicController alloc]init];
-    pulicV.title = @"手工课官方";
-    [self addChildViewController:pulicV];
-    GPHandPulicController *pulic = [[GPHandPulicController alloc]init];
-    pulic.title = @"手工课官方";
-    [self addChildViewController:pulic];
-
+    NSArray *countArray = [GPHandDataTool zeroList:ONEName];
+    for (int i = 0; i < countArray.count; i ++) {
+        GPHandPulicController *pulicVc = [[GPHandPulicController alloc]init];
+        pulicVc.title = countArray[i];
+        [self addChildViewController:pulicVc];
+    }
 }
 - (void)addMoreImage
 {
@@ -70,8 +68,13 @@
 #pragma mark - 内部方法
 - (void)addMoreVc
 {
+    __weak typeof(self) weakSelf = self;
+
     XWCircleSpreadAnimator *animator = [XWCircleSpreadAnimator xw_animatorWithStartCenter:CGPointMake(SCREEN_WIDTH - 20, GPNavBarBottom + 20) radius:20];
     GPHandMoreChildController *moreVc = [[GPHandMoreChildController alloc]init];
+    moreVc.BtnClick = ^(){
+        [weakSelf addAllChildVc];
+    };
     UINavigationController *navVc = [[UINavigationController alloc]initWithRootViewController:moreVc];
     [self xw_presentViewController:navVc withAnimator:animator];
 }
