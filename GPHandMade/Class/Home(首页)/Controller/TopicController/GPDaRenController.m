@@ -136,12 +136,12 @@ static NSString * const GPDaCellID = @"GPDaRenCell";
 #pragma mark - 内部方法
 - (void)imageViewClick:(NSInteger)tagCount
 {
-    XWCoolAnimator *animator = [XWCoolAnimator xw_animatorWithType:XWCoolTransitionAnimatorTypeFoldFromRight];
+    XWCoolAnimator *animator = [XWCoolAnimator xw_animatorWithType:XWCoolTransitionAnimatorTypeScanningFromLeft];
     GPDaRenPicController *picVc = [[GPDaRenPicController alloc]init];
     picVc.tagCpunt = [NSString stringWithFormat:@"%ld",tagCount];
+//    [self.navigationController pushViewController:picVc animated:YES];
     [self xw_presentViewController:picVc withAnimator:animator];
 //    [self presentViewController:picVc animated:YES completion:nil];
-//    [self.navigationController xw_pushViewController:picVc withAnimator:animator];
 }
 #pragma mark - UItableView 代理
 
