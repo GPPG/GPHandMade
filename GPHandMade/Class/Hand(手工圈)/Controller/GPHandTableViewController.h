@@ -6,8 +6,7 @@
 //  Copyright © 2016年 dandan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@interface GPHandTableViewController : UITableViewController
+#import "YZDisplayViewController.h"
+@interface GPHandTableViewController : YZDisplayViewController
 
 @end

@@ -19,6 +19,7 @@
 #import "UIView+SDAutoLayout.h"
 #import "UIColor+HEX.h"
 #import "XWCoolAnimator.h"
+#import "XWTransitionAnimator.h"
 
 /**
  *  自定义输出

@@ -14,8 +14,7 @@
 
 @interface YZDisplayViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
-/** 整体内容View 包含标题好内容滚动视图 */
-@property (nonatomic, weak) UIView *contentView;
+
 
 /** 标题滚动视图 */
 @property (nonatomic, weak) UIScrollView *titleScrollView;
@@ -360,9 +359,10 @@
     
     // 设置标题滚动视图frame
     // 计算尺寸
+    CGFloat titleW = _titleWidth?_titleWidth:YZScreenW;
     CGFloat titleH = _titleHeight?_titleHeight:YZTitleScrollViewH;
     CGFloat titleY = _isfullScreen?contentY:0;
-    self.titleScrollView.frame = CGRectMake(0, titleY, contentW, titleH);
+    self.titleScrollView.frame = CGRectMake(0, titleY, titleW, titleH);
 
     // 设置内容滚动视图frame
     CGFloat contentScrollY = CGRectGetMaxY(self.titleScrollView.frame);
@@ -426,7 +426,6 @@
         
         totalWidth += width;
     }
-    
     if (totalWidth > YZScreenW) {
         
         _titleMargin = margin;

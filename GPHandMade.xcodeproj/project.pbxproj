@@ -28,6 +28,7 @@
 		AC16612B1D261D3300945200 /* GPTutorVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1661291D261D3300945200 /* GPTutorVideoCell.m */; };
 		AC16612C1D261D3300945200 /* GPTutorVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC16612A1D261D3300945200 /* GPTutorVideoCell.xib */; };
 		AC1770B31D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1770B21D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.m */; };
+		AC1770B71D2CAF3500EDFBC8 /* GPHandPulicController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1770B61D2CAF3500EDFBC8 /* GPHandPulicController.m */; };
 		AC20C0631D20253D0008A060 /* GPDaRenPicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0621D20253D0008A060 /* GPDaRenPicsController.m */; };
 		AC20C0671D20B77A0008A060 /* GPDaRenPicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC20C0651D20B77A0008A060 /* GPDaRenPicsCell.m */; };
 		AC20C0681D20B77A0008A060 /* GPDaRenPicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC20C0661D20B77A0008A060 /* GPDaRenPicsCell.xib */; };
@@ -56,6 +57,13 @@
 		AC2925C11D0431F600726E51 /* GPSlideHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925C01D0431F600726E51 /* GPSlideHeadView.m */; };
 		AC2925C51D0436D600726E51 /* GPSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2925C31D0436D600726E51 /* GPSectionHeadView.m */; };
 		AC2925C61D0436D600726E51 /* GPSectionHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2925C41D0436D600726E51 /* GPSectionHeadView.xib */; };
+		AC2A1A9C1D2DF5DA0039096B /* GPHandMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2A1A9A1D2DF5DA0039096B /* GPHandMoreCell.m */; };
+		AC2A1A9D1D2DF5DA0039096B /* GPHandMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2A1A9B1D2DF5DA0039096B /* GPHandMoreCell.xib */; };
+		AC2A1AA41D2E06560039096B /* GPHandMoreHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2A1AA21D2E06560039096B /* GPHandMoreHeadView.m */; };
+		AC2A1AA51D2E06560039096B /* GPHandMoreHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2A1AA31D2E06560039096B /* GPHandMoreHeadView.xib */; };
+		AC2A1AAA1D2F3F2F0039096B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2A1AA91D2F3F2F0039096B /* libsqlite3.0.tbd */; };
+		AC2A1AAC1D2F69590039096B /* NSDictionary+LOG.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2A1AAB1D2F69590039096B /* NSDictionary+LOG.m */; };
+		AC2A1AAF1D309D8F0039096B /* GPHandDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2A1AAE1D309D8F0039096B /* GPHandDataTool.m */; };
 		AC3825E61D2211AF00F2866B /* GPFocusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3825E41D2211AF00F2866B /* GPFocusCell.m */; };
 		AC3825E71D2211AF00F2866B /* GPFocusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3825E51D2211AF00F2866B /* GPFocusCell.xib */; };
 		AC3825EB1D22547A00F2866B /* GPTopicListController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3825EA1D22547A00F2866B /* GPTopicListController.m */; };
@@ -110,6 +118,7 @@
 		AC5AAE4A1CF54C0C00EDBF99 /* GPUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5AAE481CF54C0C00EDBF99 /* GPUserCell.m */; };
 		AC5AAE4B1CF54C0C00EDBF99 /* GPUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5AAE491CF54C0C00EDBF99 /* GPUserCell.xib */; };
 		AC5AAE511CF5F69100EDBF99 /* CALayer+GPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5AAE501CF5F69100EDBF99 /* CALayer+GPExtension.m */; };
+		AC6FE4A51D2CDC7600FAD05B /* GPHandMoreChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6FE4A41D2CDC7600FAD05B /* GPHandMoreChildController.m */; };
 		AC7A9CE11CF008C1001A9550 /* GPHotData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A9CE01CF008C1001A9550 /* GPHotData.m */; };
 		AC7A9CE41CF04F17001A9550 /* GPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A9CE31CF04F17001A9550 /* GPWebViewController.m */; };
 		AC7A9CE61CF04F48001A9550 /* GPWebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7A9CE51CF04F48001A9550 /* GPWebViewController.storyboard */; };
@@ -291,6 +300,8 @@
 		AC16612A1D261D3300945200 /* GPTutorVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPTutorVideoCell.xib; sourceTree = "<group>"; };
 		AC1770B11D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXReorderableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		AC1770B21D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXReorderableCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		AC1770B51D2CAF3500EDFBC8 /* GPHandPulicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandPulicController.h; sourceTree = "<group>"; };
+		AC1770B61D2CAF3500EDFBC8 /* GPHandPulicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandPulicController.m; sourceTree = "<group>"; };
 		AC20C0611D20253D0008A060 /* GPDaRenPicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicsController.h; sourceTree = "<group>"; };
 		AC20C0621D20253D0008A060 /* GPDaRenPicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDaRenPicsController.m; sourceTree = "<group>"; };
 		AC20C0641D20B77A0008A060 /* GPDaRenPicsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDaRenPicsCell.h; sourceTree = "<group>"; };
@@ -343,6 +354,16 @@
 		AC2925C21D0436D600726E51 /* GPSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSectionHeadView.h; sourceTree = "<group>"; };
 		AC2925C31D0436D600726E51 /* GPSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSectionHeadView.m; sourceTree = "<group>"; };
 		AC2925C41D0436D600726E51 /* GPSectionHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPSectionHeadView.xib; sourceTree = "<group>"; };
+		AC2A1A991D2DF5DA0039096B /* GPHandMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandMoreCell.h; sourceTree = "<group>"; };
+		AC2A1A9A1D2DF5DA0039096B /* GPHandMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandMoreCell.m; sourceTree = "<group>"; };
+		AC2A1A9B1D2DF5DA0039096B /* GPHandMoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPHandMoreCell.xib; sourceTree = "<group>"; };
+		AC2A1AA11D2E06560039096B /* GPHandMoreHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandMoreHeadView.h; sourceTree = "<group>"; };
+		AC2A1AA21D2E06560039096B /* GPHandMoreHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandMoreHeadView.m; sourceTree = "<group>"; };
+		AC2A1AA31D2E06560039096B /* GPHandMoreHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPHandMoreHeadView.xib; sourceTree = "<group>"; };
+		AC2A1AA91D2F3F2F0039096B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		AC2A1AAB1D2F69590039096B /* NSDictionary+LOG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LOG.m"; sourceTree = "<group>"; };
+		AC2A1AAD1D309D8F0039096B /* GPHandDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandDataTool.h; sourceTree = "<group>"; };
+		AC2A1AAE1D309D8F0039096B /* GPHandDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandDataTool.m; sourceTree = "<group>"; };
 		AC3825E31D2211AF00F2866B /* GPFocusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFocusCell.h; sourceTree = "<group>"; };
 		AC3825E41D2211AF00F2866B /* GPFocusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFocusCell.m; sourceTree = "<group>"; };
 		AC3825E51D2211AF00F2866B /* GPFocusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFocusCell.xib; sourceTree = "<group>"; };
@@ -449,6 +470,8 @@
 		AC5AAE491CF54C0C00EDBF99 /* GPUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPUserCell.xib; sourceTree = "<group>"; };
 		AC5AAE4F1CF5F69100EDBF99 /* CALayer+GPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+GPExtension.h"; sourceTree = "<group>"; };
 		AC5AAE501CF5F69100EDBF99 /* CALayer+GPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+GPExtension.m"; sourceTree = "<group>"; };
+		AC6FE4A31D2CDC7600FAD05B /* GPHandMoreChildController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandMoreChildController.h; sourceTree = "<group>"; };
+		AC6FE4A41D2CDC7600FAD05B /* GPHandMoreChildController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandMoreChildController.m; sourceTree = "<group>"; };
 		AC7A9CDF1CF008C1001A9550 /* GPHotData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHotData.h; sourceTree = "<group>"; };
 		AC7A9CE01CF008C1001A9550 /* GPHotData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHotData.m; sourceTree = "<group>"; };
 		AC7A9CE21CF04F17001A9550 /* GPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPWebViewController.h; sourceTree = "<group>"; };
@@ -684,6 +707,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2A1AAA1D2F3F2F0039096B /* libsqlite3.0.tbd in Frameworks */,
 				58CC0E0C6DA2CFD3D6C01045 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -708,6 +732,7 @@
 		93D932B3CDC6FF23666472CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC2A1AA91D2F3F2F0039096B /* libsqlite3.0.tbd */,
 				F0365791F1F4DC0A104E49C7 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -794,6 +819,15 @@
 				AC15C5731D24FD70008C473D /* icon_chose_bottom@2x.png */,
 			);
 			path = "DOPDropDownMenu - Enhanced";
+			sourceTree = "<group>";
+		};
+		AC1770B41D2CAEE800EDFBC8 /* TopicVc */ = {
+			isa = PBXGroup;
+			children = (
+				AC1770B51D2CAF3500EDFBC8 /* GPHandPulicController.h */,
+				AC1770B61D2CAF3500EDFBC8 /* GPHandPulicController.m */,
+			);
+			name = TopicVc;
 			sourceTree = "<group>";
 		};
 		AC20C0731D2122550008A060 /* EventView */ = {
@@ -1115,6 +1149,9 @@
 			children = (
 				AC4E72CF1CE18CB500E92406 /* GPHandTableViewController.h */,
 				AC4E72D01CE18CB500E92406 /* GPHandTableViewController.m */,
+				AC6FE4A31D2CDC7600FAD05B /* GPHandMoreChildController.h */,
+				AC6FE4A41D2CDC7600FAD05B /* GPHandMoreChildController.m */,
+				AC1770B41D2CAEE800EDFBC8 /* TopicVc */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1129,6 +1166,12 @@
 		AC4E729D1CE186D800E92406 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC2A1A991D2DF5DA0039096B /* GPHandMoreCell.h */,
+				AC2A1A9A1D2DF5DA0039096B /* GPHandMoreCell.m */,
+				AC2A1A9B1D2DF5DA0039096B /* GPHandMoreCell.xib */,
+				AC2A1AA11D2E06560039096B /* GPHandMoreHeadView.h */,
+				AC2A1AA21D2E06560039096B /* GPHandMoreHeadView.m */,
+				AC2A1AA31D2E06560039096B /* GPHandMoreHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1288,6 +1331,7 @@
 		AC4E72C51CE18A6300E92406 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				AC2A1AAB1D2F69590039096B /* NSDictionary+LOG.m */,
 				AC2925BC1D02E7E600726E51 /* GPGuideTool.h */,
 				AC2925BD1D02E7E700726E51 /* GPGuideTool.m */,
 				ACDE67151CED61F500FC47DD /* GPHttpTool.h */,
@@ -1296,6 +1340,8 @@
 				ACB2E0FB1CFABC9A00D3F5EA /* GPJianDaoHeader.m */,
 				AC2925741D015B0400726E51 /* GPAutoFooter.h */,
 				AC2925751D015B0400726E51 /* GPAutoFooter.m */,
+				AC2A1AAD1D309D8F0039096B /* GPHandDataTool.h */,
+				AC2A1AAE1D309D8F0039096B /* GPHandDataTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -2208,6 +2254,7 @@
 				ACD5854B1CFBE47D00F7942D /* GPFooterAppraiseCell.xib in Resources */,
 				AC5AAE461CF54BC800EDBF99 /* GPContentCell.xib in Resources */,
 				AC5AAE4B1CF54C0C00EDBF99 /* GPUserCell.xib in Resources */,
+				AC2A1A9D1D2DF5DA0039096B /* GPHandMoreCell.xib in Resources */,
 				ACC0480F1CEDBC2A004E8C74 /* GPHotCell.xib in Resources */,
 				AC15C5771D24FD70008C473D /* icon_chose_bottom@2x.png in Resources */,
 				ACDEF4191D2376F600B23C43 /* MLEmoji_Expression.plist in Resources */,
@@ -2224,6 +2271,7 @@
 				ACA8D79A1D1FC2DA0097B8C3 /* mask.jpg in Resources */,
 				ACA8D7B61D1FC7950097B8C3 /* GPMainWebController.storyboard in Resources */,
 				AC7A9CFA1CF2E060001A9550 /* GPSlideCollectionViewCell.xib in Resources */,
+				AC2A1AA51D2E06560039096B /* GPHandMoreHeadView.xib in Resources */,
 				AC20C0681D20B77A0008A060 /* GPDaRenPicsCell.xib in Resources */,
 				ACDEF41A1D2376F600B23C43 /* MLEmoji_ExpressionImage.plist in Resources */,
 				AC15C5761D24FD70008C473D /* icon_chose_arrow_sel@2x.png in Resources */,
@@ -2311,6 +2359,7 @@
 				ACA8D7A91D1FC2DA0097B8C3 /* XWFilterAnimator+XWFlash.m in Sources */,
 				ACA8D7A01D1FC2DA0097B8C3 /* XWCoolAnimator+XWMiddlePageFlip.m in Sources */,
 				AC2925BE1D02E7E700726E51 /* GPGuideTool.m in Sources */,
+				AC2A1A9C1D2DF5DA0039096B /* GPHandMoreCell.m in Sources */,
 				ACA8D7A11D1FC2DA0097B8C3 /* XWCoolAnimator+XWPageFlip.m in Sources */,
 				AC4E72C71CE18A6300E92406 /* GPNavgationController.m in Sources */,
 				AC3826101D22583000F2866B /* GPElevenController.m in Sources */,
@@ -2323,6 +2372,7 @@
 				AC3826221D22672500F2866B /* GPTopicListCell.m in Sources */,
 				AC561F8F1D050FEB00919703 /* SDCycleScrollView.m in Sources */,
 				ACA8D7361D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.m in Sources */,
+				AC2A1AAF1D309D8F0039096B /* GPHandDataTool.m in Sources */,
 				ACA8D7AB1D1FC2DA0097B8C3 /* XWFilterAnimator+XWMod.m in Sources */,
 				AC5AAE2E1CF5443A00EDBF99 /* GPTools.m in Sources */,
 				ACEABAE31CFFCA650024FC67 /* SDWaitingView.m in Sources */,
@@ -2371,6 +2421,7 @@
 				AC2925B51D02CFC600726E51 /* GPNavigationCell.m in Sources */,
 				AC4E72671CE1831B00E92406 /* AppDelegate.m in Sources */,
 				ACA8D7211D1CE2130097B8C3 /* GPDaRenPicController.m in Sources */,
+				AC6FE4A51D2CDC7600FAD05B /* GPHandMoreChildController.m in Sources */,
 				ACA8D7241D1CE3D90097B8C3 /* GPDaRenPicData.m in Sources */,
 				AC38260D1D2257F900F2866B /* GPTenController.m in Sources */,
 				AC5AAE2B1CF5442A00EDBF99 /* GPMaterial.m in Sources */,
@@ -2387,6 +2438,7 @@
 				AC3825F51D2256F700F2866B /* GPTwoController.m in Sources */,
 				ACA8D72A1D1CE6000097B8C3 /* GPDaRenMaterialData.m in Sources */,
 				ACDEF3EA1D2373FF00B23C43 /* GPChatController.m in Sources */,
+				AC2A1AA41D2E06560039096B /* GPHandMoreHeadView.m in Sources */,
 				ACDEF4251D2376F600B23C43 /* MLLinkLabel.m in Sources */,
 				ACDEF4281D2376F600B23C43 /* TTTAttributedLabel.m in Sources */,
 				ACA8D7961D1FC2DA0097B8C3 /* UIViewController+XWTransition.m in Sources */,
@@ -2416,6 +2468,7 @@
 				ACC048051CEDAA53004E8C74 /* GPCompetitionData.m in Sources */,
 				AC3826011D22573A00F2866B /* GPSixController.m in Sources */,
 				AC9DDD4C1D255DD20022277B /* GPTutorialPicCell.m in Sources */,
+				AC1770B71D2CAF3500EDFBC8 /* GPHandPulicController.m in Sources */,
 				AC3826131D22584500F2866B /* GPTwelveViewController.m in Sources */,
 				ACDA28501D17796600BE1579 /* GPTimeLineCommentData.m in Sources */,
 				ACEABAE11CFFCA650024FC67 /* SDBrowserImageView.m in Sources */,
@@ -2454,6 +2507,7 @@
 				ACDEF42C1D23ADFE00B23C43 /* GPNavTitleView.m in Sources */,
 				ACB2E0F31CF827AC00D3F5EA /* GPNewFeatureCell.m in Sources */,
 				AC9DDD991D26059F0022277B /* GPTutoriaPicData.m in Sources */,
+				AC2A1AAC1D2F69590039096B /* NSDictionary+LOG.m in Sources */,
 				ACDA28651D191AEB00BE1579 /* UIImage+RoundedCorner.m in Sources */,
 				ACC048091CEDBC14004E8C74 /* GPLookCell.m in Sources */,
 				ACDEF41F1D2376F600B23C43 /* MLExpressionManager.m in Sources */,

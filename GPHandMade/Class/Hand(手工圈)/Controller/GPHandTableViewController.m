@@ -7,6 +7,10 @@
 //
 
 #import "GPHandTableViewController.h"
+#import "GPHandPulicController.h"
+#import "XWCircleSpreadAnimator.h"
+#import "GPHandMoreChildController.h"
+#import "GPEventBtn.h"
 
 @interface GPHandTableViewController ()
 
@@ -16,81 +20,59 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self setupView];
+    [self addAllChildVc];
+    [self addMoreImage];
+}
+#pragma mark - 初始化子控件
+- (void)setupView
+{
+    self.titleWidth = SCREEN_WIDTH - GPTitlesViewH;
+    self.titleScrollViewColor = GPCommonBgColor;
+    self.view.backgroundColor = GPCommonBgColor;
+    // 设置标题栏样式
+    [self setUpTitleEffect:^(UIColor *__autoreleasing *titleScrollViewColor, UIColor *__autoreleasing *norColor, UIColor *__autoreleasing *selColor, UIFont *__autoreleasing *titleFont, CGFloat *titleHeight) {
+        *titleScrollViewColor = [UIColor whiteColor];
+        *norColor = [UIColor darkGrayColor];
+        *selColor = [UIColor redColor];
+        *titleHeight = GPTitlesViewH;
+    }];
+    // 设置下标
+    [self setUpUnderLineEffect:^(BOOL *isShowUnderLine, BOOL *isDelayScroll, CGFloat *underLineH, UIColor *__autoreleasing *underLineColor) {
+        *isShowUnderLine = YES;
+        *underLineColor = [UIColor redColor];
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)addAllChildVc
+{
+    GPHandPulicController *pulicVc = [[GPHandPulicController alloc]init];
+    pulicVc.title = @"手工课官方";
+    [self addChildViewController:pulicVc];
+    GPHandPulicController *pulicV = [[GPHandPulicController alloc]init];
+    pulicV.title = @"手工课官方";
+    [self addChildViewController:pulicV];
+    GPHandPulicController *pulic = [[GPHandPulicController alloc]init];
+    pulic.title = @"手工课官方";
+    [self addChildViewController:pulic];
+
 }
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+- (void)addMoreImage
+{
+    UIImageView *moreImageView = [[UIImageView alloc]init];
+    moreImageView.userInteractionEnabled = YES;
+    moreImageView.image = [UIImage imageNamed:@"jia"];
+    moreImageView.frame = CGRectMake(SCREEN_WIDTH - GPTitlesViewH, 0, GPTitlesViewH, GPTitlesViewH);
+    UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(addMoreVc)];
+    [moreImageView addGestureRecognizer:tapGes];
+    [self.contentView addSubview:moreImageView];
 }
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+#pragma mark - 内部方法
+- (void)addMoreVc
+{
+    XWCircleSpreadAnimator *animator = [XWCircleSpreadAnimator xw_animatorWithStartCenter:CGPointMake(SCREEN_WIDTH - 20, GPNavBarBottom + 20) radius:20];
+    GPHandMoreChildController *moreVc = [[GPHandMoreChildController alloc]init];
+    UINavigationController *navVc = [[UINavigationController alloc]initWithRootViewController:moreVc];
+    [self xw_presentViewController:navVc withAnimator:animator];
 }
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

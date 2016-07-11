@@ -120,10 +120,6 @@
     [self presentViewController:loginVc animated:YES completion:nil];
 }
 #pragma mark - 生命周期
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
 -(void)dealloc
 {
     [[NSNotificationCenter defaultCenter]removeObserver:self];

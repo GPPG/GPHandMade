@@ -41,9 +41,8 @@ typedef enum : NSUInteger {
 
 @interface YZDisplayViewController : UIViewController
 
-
-
-
+/** 整体内容View 包含标题好内容滚动视图 */
+@property (nonatomic, weak) UIView *contentView;
 /**************************************内容************************************/
 /**
     内容是否需要全屏展示
@@ -81,6 +80,10 @@ typedef enum : NSUInteger {
     标题高度
  */
 @property (nonatomic, assign) CGFloat titleHeight;
+/**
+ 标题宽度
+ */
+@property (nonatomic, assign) CGFloat titleWidth;
 
 /**
     正常标题颜色
