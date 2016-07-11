@@ -48,9 +48,10 @@
 
 - (void)addAllChildVc
 {
-    for (int i = 0; i < 8; i ++) {
+    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"综合圈",@"布艺",@"皮艺",@"木艺",@"编织",@"饰品",@"文艺",@"刺绣",@"模型",@"羊毛毡",@"橡皮章",@"黏土陶艺",@"园艺多肉",@"手绘印刷",@"手工护肤",@"美食烘焙",@"旧物改造",@"滴胶热缩",@"电子科技",@"雕塑雕刻",@"金属工艺",@"文玩设计",@"玉石琥珀",@"游泳池",@"沙龙活动",@"古风首饰",@"服装裁剪",@"以物易物",@"亲子手工",@"护肤美妆",@"人形娃娃",@"拼布",@"滴胶热缩圈",@"首饰",@"串珠",@"手帐",@"金工",@"绕线", nil];
+    for (int i = 0; i < array.count; i ++) {
         GPHandPulicController *pulicVc = [[GPHandPulicController alloc]init];
-        pulicVc.title = @"手工课官方";
+        pulicVc.title = array[i];
         [self addChildViewController:pulicVc];
     }
 }
@@ -67,8 +68,6 @@
 #pragma mark - 内部方法
 - (void)addMoreVc
 {
-    __weak typeof(self) weakSelf = self;
-
     XWCircleSpreadAnimator *animator = [XWCircleSpreadAnimator xw_animatorWithStartCenter:CGPointMake(SCREEN_WIDTH - 20, GPNavBarBottom + 20) radius:20];
     GPHandMoreChildController *moreVc = [[GPHandMoreChildController alloc]init];
     UINavigationController *navVc = [[UINavigationController alloc]initWithRootViewController:moreVc];
