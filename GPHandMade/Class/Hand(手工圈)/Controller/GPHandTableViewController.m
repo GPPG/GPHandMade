@@ -48,10 +48,9 @@
 
 - (void)addAllChildVc
 {
-    NSArray *countArray = [GPHandDataTool zeroList:ONEName];
-    for (int i = 0; i < countArray.count; i ++) {
+    for (int i = 0; i < 8; i ++) {
         GPHandPulicController *pulicVc = [[GPHandPulicController alloc]init];
-        pulicVc.title = countArray[i];
+        pulicVc.title = @"手工课官方";
         [self addChildViewController:pulicVc];
     }
 }
@@ -72,9 +71,6 @@
 
     XWCircleSpreadAnimator *animator = [XWCircleSpreadAnimator xw_animatorWithStartCenter:CGPointMake(SCREEN_WIDTH - 20, GPNavBarBottom + 20) radius:20];
     GPHandMoreChildController *moreVc = [[GPHandMoreChildController alloc]init];
-    moreVc.BtnClick = ^(){
-        [weakSelf addAllChildVc];
-    };
     UINavigationController *navVc = [[UINavigationController alloc]initWithRootViewController:moreVc];
     [self xw_presentViewController:navVc withAnimator:animator];
 }
