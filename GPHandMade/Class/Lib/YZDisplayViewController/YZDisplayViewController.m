@@ -209,7 +209,7 @@
         // 设置内容滚动视图
         _contentScrollView.pagingEnabled = YES;
         _contentScrollView.showsHorizontalScrollIndicator = NO;
-        _contentScrollView.bounces = NO;
+        _contentScrollView.bounces = YES;
         _contentScrollView.delegate = self;
         _contentScrollView.dataSource = self;
         [self.contentView insertSubview:contentScrollView belowSubview:self.titleScrollView];

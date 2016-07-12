@@ -7,8 +7,14 @@
 //
 
 #import "GPFairTableViewController.h"
+#import "GPSuperTiltleView.h"
+#import "GPContainerView.h"
+#import "GPFariMeturController.h"
+#import "GPFariGoodsController.h"
 
 @interface GPFairTableViewController ()
+@property (nonatomic, strong) GPSuperTiltleView *titleView;
+@property (nonatomic, strong) NSArray *childVcArray;
 
 @end
 
@@ -17,80 +23,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self addTitleView];
+    [self addChildVc];
+    [self addConterView];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)addTitleView
+{
+    NSArray *titleS = @[@"材料",@"成品"];
+    GPSuperTiltleView *titleView = [[GPSuperTiltleView alloc]initWithChildControllerS: titleS];
+    self.titleView = titleView;
+    self.navigationItem.titleView = titleView;
 }
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+- (void)addChildVc
+{
+    GPFariMeturController *meturVc = [[GPFariMeturController alloc]init];
+    GPFariGoodsController *goodsVc = [[GPFariGoodsController alloc]init];
+    self.childVcArray = @[meturVc,goodsVc];
+    [self addChildViewController:meturVc];
+    [self addChildViewController:goodsVc];
 }
+- (void)addConterView
+{
+    __weak typeof(self) weakSelf = self;
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    GPContainerView *conterView = [[GPContainerView alloc]initWithChildControllerS:self.childVcArray selectBlock:^(int index) {
+        [weakSelf.titleView updateSelecterToolsIndex:index];
+    }];
+    [self.view addSubview:conterView];
+    conterView.sd_layout.spaceToSuperView(UIEdgeInsetsZero);
 }
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

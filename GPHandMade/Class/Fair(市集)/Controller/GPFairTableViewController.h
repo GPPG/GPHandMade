@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GPFairTableViewController : UITableViewController
+@interface GPFairTableViewController : UIViewController
 
 @end

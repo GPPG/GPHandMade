@@ -52,11 +52,11 @@ static NSString * const videoCellID = @"tutorVideoCell";
     [self addDropMenu];
     [self loadData];
     
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, GPTabBarH + GPTitlesViewH,0);
     self.cate = @"0";
     self.price = @"0";
     self.sort = @"1";
     self.page = @"2";
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, GPTabBarH + GPTitlesViewH,0);
 }
 
 #pragma mark - 初始化

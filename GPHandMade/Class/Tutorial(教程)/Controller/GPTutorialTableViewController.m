@@ -28,8 +28,11 @@
     [self addNavTitleView];
     [self addChildVc];
     [self addConterView];
+//    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(setGes) name:@"dawang" object:nil];
 }
-
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
 #pragma mark - 初始化
 - (void)addNavTitleView
 {
@@ -61,5 +64,11 @@
     [self.view addSubview:self.containView];
     self.containView.sd_layout.spaceToSuperView(UIEdgeInsetsZero);
 }
+
+//// 手势冲突
+//- (void)setGes
+//{
+//    [self.containView updateVCViewFromIndex:1];
+//}
 
 @end
