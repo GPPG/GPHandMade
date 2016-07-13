@@ -21,6 +21,10 @@
 #import "GPFariNetwork.h"
 #import <SVProgressHUD.h>
 #import "GPFairSectionHeadView.h"
+#import "GPWebViewController.h"
+#import "GPTabBarController.h"
+#import "GPMainWebController.h"
+#import "GPTopicListController.h"
 
 #define SectionCouton 4
 
@@ -198,6 +202,7 @@ static NSString * const fairHeadID = @"FairHeadView";
     }
     return size;
 }
+
 #pragma mark - UICollectionView 布局
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -218,5 +223,38 @@ static NSString * const fairHeadID = @"FairHeadView";
     }
     return size;
 }
+
+#pragma mark - UICollectionView 代理
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        if (indexPath.row == 2) {
+            GPWebViewController *webVC = [UIStoryboard storyboardWithName:NSStringFromClass([GPWebViewController class]) bundle:nil].instantiateInitialViewController;
+            webVC.hotData = self.hotArray[indexPath.row];
+            [self.navigationController pushViewController:webVC animated:YES];
+        }else{
+            GPTabBarController *tabVc = [[GPTabBarController alloc]init];
+            tabVc.selectedIndex = 1;
+            [UIApplication sharedApplication].keyWindow.rootViewController = tabVc;
+        }
+    }
+    else if (indexPath.section == 1){
+        XWCoolAnimator *animator = [XWCoolAnimator xw_animatorWithType:XWCoolTransitionAnimatorTypePortal];
+        GPMainWebController *webVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPMainWebController class]) bundle:nil].instantiateInitialViewController;
+        webVc.bestData = self.bestArray[indexPath.row];
+        [self xw_presentViewController:webVc withAnimator:animator];
+    }
+    else if (indexPath.section == 2){
+        GPTopicListController *topListVc = [[GPTopicListController alloc]init];
+        [self.navigationController pushViewController:topListVc animated:YES];
+    }
+    else {
+        XWCoolAnimator *animator = [XWCoolAnimator xw_animatorWithType:XWCoolTransitionAnimatorTypePortal];
+        GPMainWebController *webVc = [UIStoryboard storyboardWithName:NSStringFromClass([GPMainWebController class]) bundle:nil].instantiateInitialViewController;
+        webVc.topicData = self.topicArray[indexPath.row];
+        [self xw_presentViewController:webVc withAnimator:animator];
+    }
+}
+
 
 @end

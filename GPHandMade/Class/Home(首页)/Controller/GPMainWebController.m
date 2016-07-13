@@ -8,6 +8,8 @@
 
 #import "GPMainWebController.h"
 #import "GPHotData.h"
+#import "GPFariBestData.h"
+#import "GPFariTopicData.h"
 
 @interface GPMainWebController ()
 - (IBAction)btnClcik:(id)sender;
@@ -21,10 +23,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// 市集
+- (void)setTopicData:(GPFariTopicData *)topicData
+{
+    _topicData = topicData;
+    NSString *str = [NSString stringWithFormat:@"http://www.shougongke.com/index.php?m=Topic&a=topicDetail&topic_id=%@&topic_type=shiji",topicData.topic_id];
+    [self loadSlidDataType:str title:@"专题详情"];
+}
+// 购买
+- (void)setBestData:(GPFariBestData *)bestData
+{
+    _bestData = bestData;
+    NSString *str = [NSString stringWithFormat:@"http://market.shougongke.com//index.php?c=index&a=shop&open_iid=%@",bestData.open_iid];
+    [self loadSlidDataType:str title:nil];
 }
 
 // 热帖

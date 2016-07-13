@@ -11,6 +11,7 @@
 #import "GPEventBtn.h"
 #import "GPNavigationData.h"
 #import "GPTopListData.h"
+#import "GPFariHotData.h"
 
 @interface GPWebViewController()<UIWebViewDelegate,UIScrollViewDelegate>
 
@@ -31,6 +32,12 @@
     self.loadWebView.scrollView.bounces = NO;
 }
 #pragma mark - 数据处理
+- (void)setHotData:(GPFariHotData *)hotData
+{
+    _hotData = hotData;
+    if (hotData.special_id.length) {
+        [self loadSlidDataType:hotData.special_id title:@"专题详情"];}
+}
 // 市集
 - (void)setListData:(GPTopListData *)listData
 {

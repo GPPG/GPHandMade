@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@class GPHotData;
+@class GPHotData,GPFariBestData,GPFariTopicData;
 @interface GPMainWebController : UIViewController
 @property (nonatomic, strong) GPHotData *hotData;
-
+@property (nonatomic, strong) GPFariBestData *bestData;
+@property (nonatomic, strong) GPFariTopicData *topicData;
 @end
