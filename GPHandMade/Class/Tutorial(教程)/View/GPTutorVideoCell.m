@@ -23,6 +23,7 @@
 }
 - (void)setVideoData:(GPTutorVideoData *)videoData
 {
+    _videoData = videoData;
     NSURL *bgImageUrl = [NSURL URLWithString:videoData.host_pic];
     [self.bgImageView sd_setImageWithURL:bgImageUrl placeholderImage:[UIImage imageNamed:@"03"]];
     [self.subTitle setTitle:videoData.subject forState:UIControlStateNormal];

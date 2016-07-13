@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.product = @"product";
+    self.page = @"product";
 }
 
 

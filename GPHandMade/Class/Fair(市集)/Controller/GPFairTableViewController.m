@@ -9,8 +9,9 @@
 #import "GPFairTableViewController.h"
 #import "GPSuperTiltleView.h"
 #import "GPContainerView.h"
-#import "GPFariMeturController.h"
+#import "GPMeturController.h"
 #import "GPFariGoodsController.h"
+#import "GPMeturController.h"
 
 @interface GPFairTableViewController ()
 @property (nonatomic, strong) GPSuperTiltleView *titleView;
@@ -36,7 +37,7 @@
 }
 - (void)addChildVc
 {
-    GPFariMeturController *meturVc = [[GPFariMeturController alloc]init];
+    GPMeturController *meturVc = [[GPMeturController alloc]init];
     GPFariGoodsController *goodsVc = [[GPFariGoodsController alloc]init];
     self.childVcArray = @[meturVc,goodsVc];
     [self addChildViewController:meturVc];
@@ -52,4 +53,5 @@
     [self.view addSubview:conterView];
     conterView.sd_layout.spaceToSuperView(UIEdgeInsetsZero);
 }
+
 @end

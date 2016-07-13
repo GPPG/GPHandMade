@@ -10,4 +10,9 @@
 
 @interface GPFariData : NSObject
 
+@property (nonatomic, strong) NSArray *hot;
+@property (nonatomic, strong) NSArray *best;
+@property (nonatomic, strong) NSArray *topicBest;
+@property (nonatomic, strong) NSArray *topic;
+
 @end

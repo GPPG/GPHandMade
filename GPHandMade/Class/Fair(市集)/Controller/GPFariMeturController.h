@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GPFariMeturController : UITableViewController
+@interface GPFariMeturController : UICollectionViewController
+@property (nonatomic,copy) NSString *product;
+@property (nonatomic,copy) NSString *page;
 
 @end

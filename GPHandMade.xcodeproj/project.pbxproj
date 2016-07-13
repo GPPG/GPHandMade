@@ -64,6 +64,21 @@
 		AC2A1AAA1D2F3F2F0039096B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2A1AA91D2F3F2F0039096B /* libsqlite3.0.tbd */; };
 		AC2A1AAC1D2F69590039096B /* NSDictionary+LOG.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2A1AAB1D2F69590039096B /* NSDictionary+LOG.m */; };
 		AC2A1AAF1D309D8F0039096B /* GPHandDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2A1AAE1D309D8F0039096B /* GPHandDataTool.m */; };
+		AC3299771D34DA7A003CADDC /* GPFariHotData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3299761D34DA7A003CADDC /* GPFariHotData.m */; };
+		AC32997A1D34DA8A003CADDC /* GPFariBestData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3299791D34DA8A003CADDC /* GPFariBestData.m */; };
+		AC3299801D34DAA9003CADDC /* GPFariTopicData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC32997F1D34DAA9003CADDC /* GPFariTopicData.m */; };
+		AC3299891D34E686003CADDC /* GPFairHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3299871D34E686003CADDC /* GPFairHotCell.m */; };
+		AC32998A1D34E686003CADDC /* GPFairHotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3299881D34E686003CADDC /* GPFairHotCell.xib */; };
+		AC32998E1D34E6BE003CADDC /* GPFairBestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC32998C1D34E6BE003CADDC /* GPFairBestCell.m */; };
+		AC32998F1D34E6BE003CADDC /* GPFairBestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC32998D1D34E6BE003CADDC /* GPFairBestCell.xib */; };
+		AC3299931D34E6D5003CADDC /* GPFariTopicBestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3299911D34E6D5003CADDC /* GPFariTopicBestCell.m */; };
+		AC3299941D34E6D5003CADDC /* GPFariTopicBestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3299921D34E6D5003CADDC /* GPFariTopicBestCell.xib */; };
+		AC3299981D34E6F6003CADDC /* GPFariTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3299961D34E6F6003CADDC /* GPFariTopicCell.m */; };
+		AC3299991D34E6F6003CADDC /* GPFariTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3299971D34E6F6003CADDC /* GPFariTopicCell.xib */; };
+		AC32999C1D35339B003CADDC /* GPFariNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = AC32999B1D35339B003CADDC /* GPFariNetwork.m */; };
+		AC3299A01D35EE50003CADDC /* GPFairSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC32999E1D35EE50003CADDC /* GPFairSectionHeadView.m */; };
+		AC3299A11D35EE50003CADDC /* GPFairSectionHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC32999F1D35EE50003CADDC /* GPFairSectionHeadView.xib */; };
+		AC3299A41D361360003CADDC /* GPMeturController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3299A31D361360003CADDC /* GPMeturController.m */; };
 		AC3825E61D2211AF00F2866B /* GPFocusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3825E41D2211AF00F2866B /* GPFocusCell.m */; };
 		AC3825E71D2211AF00F2866B /* GPFocusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3825E51D2211AF00F2866B /* GPFocusCell.xib */; };
 		AC3825EB1D22547A00F2866B /* GPTopicListController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3825EA1D22547A00F2866B /* GPTopicListController.m */; };
@@ -379,6 +394,31 @@
 		AC2A1AAB1D2F69590039096B /* NSDictionary+LOG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LOG.m"; sourceTree = "<group>"; };
 		AC2A1AAD1D309D8F0039096B /* GPHandDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandDataTool.h; sourceTree = "<group>"; };
 		AC2A1AAE1D309D8F0039096B /* GPHandDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandDataTool.m; sourceTree = "<group>"; };
+		AC3299751D34DA7A003CADDC /* GPFariHotData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFariHotData.h; sourceTree = "<group>"; };
+		AC3299761D34DA7A003CADDC /* GPFariHotData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFariHotData.m; sourceTree = "<group>"; };
+		AC3299781D34DA8A003CADDC /* GPFariBestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFariBestData.h; sourceTree = "<group>"; };
+		AC3299791D34DA8A003CADDC /* GPFariBestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFariBestData.m; sourceTree = "<group>"; };
+		AC32997E1D34DAA9003CADDC /* GPFariTopicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFariTopicData.h; sourceTree = "<group>"; };
+		AC32997F1D34DAA9003CADDC /* GPFariTopicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFariTopicData.m; sourceTree = "<group>"; };
+		AC3299861D34E686003CADDC /* GPFairHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFairHotCell.h; sourceTree = "<group>"; };
+		AC3299871D34E686003CADDC /* GPFairHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFairHotCell.m; sourceTree = "<group>"; };
+		AC3299881D34E686003CADDC /* GPFairHotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFairHotCell.xib; sourceTree = "<group>"; };
+		AC32998B1D34E6BE003CADDC /* GPFairBestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFairBestCell.h; sourceTree = "<group>"; };
+		AC32998C1D34E6BE003CADDC /* GPFairBestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFairBestCell.m; sourceTree = "<group>"; };
+		AC32998D1D34E6BE003CADDC /* GPFairBestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFairBestCell.xib; sourceTree = "<group>"; };
+		AC3299901D34E6D5003CADDC /* GPFariTopicBestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFariTopicBestCell.h; sourceTree = "<group>"; };
+		AC3299911D34E6D5003CADDC /* GPFariTopicBestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFariTopicBestCell.m; sourceTree = "<group>"; };
+		AC3299921D34E6D5003CADDC /* GPFariTopicBestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFariTopicBestCell.xib; sourceTree = "<group>"; };
+		AC3299951D34E6F6003CADDC /* GPFariTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFariTopicCell.h; sourceTree = "<group>"; };
+		AC3299961D34E6F6003CADDC /* GPFariTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFariTopicCell.m; sourceTree = "<group>"; };
+		AC3299971D34E6F6003CADDC /* GPFariTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFariTopicCell.xib; sourceTree = "<group>"; };
+		AC32999A1D35339B003CADDC /* GPFariNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFariNetwork.h; sourceTree = "<group>"; };
+		AC32999B1D35339B003CADDC /* GPFariNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFariNetwork.m; sourceTree = "<group>"; };
+		AC32999D1D35EE50003CADDC /* GPFairSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFairSectionHeadView.h; sourceTree = "<group>"; };
+		AC32999E1D35EE50003CADDC /* GPFairSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFairSectionHeadView.m; sourceTree = "<group>"; };
+		AC32999F1D35EE50003CADDC /* GPFairSectionHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFairSectionHeadView.xib; sourceTree = "<group>"; };
+		AC3299A21D361360003CADDC /* GPMeturController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMeturController.h; sourceTree = "<group>"; };
+		AC3299A31D361360003CADDC /* GPMeturController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMeturController.m; sourceTree = "<group>"; };
 		AC3825E31D2211AF00F2866B /* GPFocusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFocusCell.h; sourceTree = "<group>"; };
 		AC3825E41D2211AF00F2866B /* GPFocusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFocusCell.m; sourceTree = "<group>"; };
 		AC3825E51D2211AF00F2866B /* GPFocusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFocusCell.xib; sourceTree = "<group>"; };
@@ -989,6 +1029,19 @@
 			name = "OutOfDate(报废View)";
 			sourceTree = "<group>";
 		};
+		AC3299741D34DA56003CADDC /* FariTopicData */ = {
+			isa = PBXGroup;
+			children = (
+				AC3299751D34DA7A003CADDC /* GPFariHotData.h */,
+				AC3299761D34DA7A003CADDC /* GPFariHotData.m */,
+				AC3299781D34DA8A003CADDC /* GPFariBestData.h */,
+				AC3299791D34DA8A003CADDC /* GPFariBestData.m */,
+				AC32997E1D34DAA9003CADDC /* GPFariTopicData.h */,
+				AC32997F1D34DAA9003CADDC /* GPFariTopicData.m */,
+			);
+			name = FariTopicData;
+			sourceTree = "<group>";
+		};
 		AC3825E21D220E0000F2866B /* FocusView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1169,10 +1222,13 @@
 		AC4E72981CE186D800E92406 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AC32999A1D35339B003CADDC /* GPFariNetwork.h */,
+				AC32999B1D35339B003CADDC /* GPFariNetwork.m */,
 				AC538C491D34983600314774 /* GPFariParmer.h */,
 				AC538C4A1D34983600314774 /* GPFariParmer.m */,
 				AC538C4C1D34984400314774 /* GPFariData.h */,
 				AC538C4D1D34984400314774 /* GPFariData.m */,
+				AC3299741D34DA56003CADDC /* FariTopicData */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1180,6 +1236,21 @@
 		AC4E72991CE186D800E92406 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC3299861D34E686003CADDC /* GPFairHotCell.h */,
+				AC3299871D34E686003CADDC /* GPFairHotCell.m */,
+				AC3299881D34E686003CADDC /* GPFairHotCell.xib */,
+				AC32998B1D34E6BE003CADDC /* GPFairBestCell.h */,
+				AC32998C1D34E6BE003CADDC /* GPFairBestCell.m */,
+				AC32998D1D34E6BE003CADDC /* GPFairBestCell.xib */,
+				AC3299901D34E6D5003CADDC /* GPFariTopicBestCell.h */,
+				AC3299911D34E6D5003CADDC /* GPFariTopicBestCell.m */,
+				AC3299921D34E6D5003CADDC /* GPFariTopicBestCell.xib */,
+				AC3299951D34E6F6003CADDC /* GPFariTopicCell.h */,
+				AC3299961D34E6F6003CADDC /* GPFariTopicCell.m */,
+				AC3299971D34E6F6003CADDC /* GPFariTopicCell.xib */,
+				AC32999D1D35EE50003CADDC /* GPFairSectionHeadView.h */,
+				AC32999E1D35EE50003CADDC /* GPFairSectionHeadView.m */,
+				AC32999F1D35EE50003CADDC /* GPFairSectionHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1425,6 +1496,8 @@
 				AC538C441D3497D500314774 /* GPFariMeturController.m */,
 				AC538C461D34980B00314774 /* GPFariGoodsController.h */,
 				AC538C471D34980B00314774 /* GPFariGoodsController.m */,
+				AC3299A21D361360003CADDC /* GPMeturController.h */,
+				AC3299A31D361360003CADDC /* GPMeturController.m */,
 			);
 			name = GPFairVc;
 			sourceTree = "<group>";
@@ -2338,14 +2411,18 @@
 				AC5AAE411CF54A3700EDBF99 /* GPSubTitleCell.xib in Resources */,
 				ACDEF4181D2376F600B23C43 /* MLEmoji_Expression.bundle in Resources */,
 				AC4E726F1CE1831B00E92406 /* Assets.xcassets in Resources */,
+				AC3299941D34E6D5003CADDC /* GPFariTopicBestCell.xib in Resources */,
 				AC9DDD4D1D255DD20022277B /* GPTutorialPicCell.xib in Resources */,
 				ACCF53E31D1BC3600085BA3D /* GPDarenCell.xib in Resources */,
+				AC32998A1D34E686003CADDC /* GPFairHotCell.xib in Resources */,
 				ACA8D7991D1FC2DA0097B8C3 /* line.png in Resources */,
 				ACD585461CFBE45400F7942D /* GPFooterClassCell.xib in Resources */,
 				ACC0480A1CEDBC14004E8C74 /* GPLookCell.xib in Resources */,
+				AC3299991D34E6F6003CADDC /* GPFariTopicCell.xib in Resources */,
 				AC3825E71D2211AF00F2866B /* GPFocusCell.xib in Resources */,
 				ACDEF4261D2376F600B23C43 /* LICENSE in Resources */,
 				ACA8D73C1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.xib in Resources */,
+				AC3299A11D35EE50003CADDC /* GPFairSectionHeadView.xib in Resources */,
 				AC16612C1D261D3300945200 /* GPTutorVideoCell.xib in Resources */,
 				AC2925C61D0436D600726E51 /* GPSectionHeadView.xib in Resources */,
 				ACD5854B1CFBE47D00F7942D /* GPFooterAppraiseCell.xib in Resources */,
@@ -2376,6 +2453,7 @@
 				ACA8D7371D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.xib in Resources */,
 				ACA8D74B1D1E87B90097B8C3 /* GPStepTableViewCell.xib in Resources */,
 				AC3826231D22672500F2866B /* GPTopicListCell.xib in Resources */,
+				AC32998F1D34E6BE003CADDC /* GPFairBestCell.xib in Resources */,
 				ACB2E0F91CFAA65200D3F5EA /* GPAdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2449,9 +2527,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC32998E1D34E6BE003CADDC /* GPFairBestCell.m in Sources */,
 				ACDA28591D179AC600BE1579 /* GPTimeLIneCommentCell.m in Sources */,
 				ACDEF4241D2376F600B23C43 /* MLLabel.m in Sources */,
 				ACA8D74A1D1E87B90097B8C3 /* GPStepTableViewCell.m in Sources */,
+				AC3299891D34E686003CADDC /* GPFairHotCell.m in Sources */,
 				AC4E72CE1CE18CA700E92406 /* GPTutorialTableViewController.m in Sources */,
 				AC0EA33F1D0708D10041D14E /* HYBBaseTransition.m in Sources */,
 				AC538C4B1D34983600314774 /* GPFariParmer.m in Sources */,
@@ -2465,6 +2545,7 @@
 				AC3826101D22583000F2866B /* GPElevenController.m in Sources */,
 				ACB2E0FC1CFABC9A00D3F5EA /* GPJianDaoHeader.m in Sources */,
 				ACA8D7B41D1FC76E0097B8C3 /* GPMainWebController.m in Sources */,
+				AC3299771D34DA7A003CADDC /* GPFariHotData.m in Sources */,
 				ACC047FB1CEDA9EA004E8C74 /* GPData.m in Sources */,
 				AC0DFE351D2A3B1F007B4A7D /* GPTutoriSubController.m in Sources */,
 				ACDA285F1D18E30900BE1579 /* GPTimeLineHeadCell.m in Sources */,
@@ -2550,6 +2631,7 @@
 				ACA8D79F1D1FC2DA0097B8C3 /* XWCoolAnimator+XWLines.m in Sources */,
 				ACA8D7AE1D1FC2DA0097B8C3 /* XWFilterAnimator+XWSwipe.m in Sources */,
 				AC2925C11D0431F600726E51 /* GPSlideHeadView.m in Sources */,
+				AC3299981D34E6F6003CADDC /* GPFariTopicCell.m in Sources */,
 				ACA8D7A51D1FC2DA0097B8C3 /* XWDrawerAnimator.m in Sources */,
 				ACDEF4231D2376F600B23C43 /* MLLabelLayoutManager.m in Sources */,
 				AC0EA2D51D051A130041D14E /* GPSlideEventController.m in Sources */,
@@ -2564,6 +2646,7 @@
 				ACD585451CFBE45400F7942D /* GPFooterClassCell.m in Sources */,
 				ACA8D7981D1FC2DA0097B8C3 /* XWTransitionAnimator.m in Sources */,
 				AC2925811D02A8BA00726E51 /* UIView+Frame.m in Sources */,
+				AC3299801D34DAA9003CADDC /* GPFariTopicData.m in Sources */,
 				ACA8D7A21D1FC2DA0097B8C3 /* XWCoolAnimator+XWPortal.m in Sources */,
 				AC2925A71D02B1F200726E51 /* GPHomController.m in Sources */,
 				ACDEF4201D2376F600B23C43 /* MLTextAttachment.m in Sources */,
@@ -2574,6 +2657,7 @@
 				ACC048051CEDAA53004E8C74 /* GPCompetitionData.m in Sources */,
 				AC3826011D22573A00F2866B /* GPSixController.m in Sources */,
 				AC9DDD4C1D255DD20022277B /* GPTutorialPicCell.m in Sources */,
+				AC3299A41D361360003CADDC /* GPMeturController.m in Sources */,
 				ACA27ED91D3372E5009AF1A1 /* GPHandPulicData.m in Sources */,
 				AC1770B71D2CAF3500EDFBC8 /* GPHandPulicController.m in Sources */,
 				AC3826131D22584500F2866B /* GPTwelveViewController.m in Sources */,
@@ -2612,11 +2696,14 @@
 				AC2925831D02A8BA00726E51 /* YZDisplayViewController.m in Sources */,
 				ACB2E0EF1CF8278A00D3F5EA /* GPNewFeatureController.m in Sources */,
 				ACDE67171CED61F500FC47DD /* GPHttpTool.m in Sources */,
+				AC3299931D34E6D5003CADDC /* GPFariTopicBestCell.m in Sources */,
 				ACDEF41D1D2376F600B23C43 /* NSMutableAttributedString+MLLabel.m in Sources */,
 				ACDEF42C1D23ADFE00B23C43 /* GPNavTitleView.m in Sources */,
+				AC32999C1D35339B003CADDC /* GPFariNetwork.m in Sources */,
 				ACB2E0F31CF827AC00D3F5EA /* GPNewFeatureCell.m in Sources */,
 				AC9DDD991D26059F0022277B /* GPTutoriaPicData.m in Sources */,
 				AC2A1AAC1D2F69590039096B /* NSDictionary+LOG.m in Sources */,
+				AC3299A01D35EE50003CADDC /* GPFairSectionHeadView.m in Sources */,
 				ACDA28651D191AEB00BE1579 /* UIImage+RoundedCorner.m in Sources */,
 				ACC048091CEDBC14004E8C74 /* GPLookCell.m in Sources */,
 				ACDEF41F1D2376F600B23C43 /* MLExpressionManager.m in Sources */,
@@ -2639,6 +2726,7 @@
 				AC2925A11D02B0D900726E51 /* GPDaRenController.m in Sources */,
 				ACA8D7971D1FC2DA0097B8C3 /* XWInteractiveTransition.m in Sources */,
 				ACDEF41B1D2376F600B23C43 /* MLEmojiLabel.m in Sources */,
+				AC32997A1D34DA8A003CADDC /* GPFariBestData.m in Sources */,
 				ACA8D7B11D1FC2DA0097B8C3 /* XWMagicMoveAnimator.m in Sources */,
 				ACA27EF31D337F5A009AF1A1 /* GPHandParam.m in Sources */,
 				ACDEF4221D2376F600B23C43 /* NSString+MLExpression.m in Sources */,

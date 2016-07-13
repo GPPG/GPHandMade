@@ -7,7 +7,19 @@
 //
 
 #import "GPFariData.h"
+#import "MJExtension.h"
+#import "GPFariHotData.h"
+#import "GPFariBestData.h"
+#import "GPFariTopicData.h"
 
 @implementation GPFariData
 
++ (NSDictionary *)mj_objectClassInArray
+{
+    return @{
+             @"hot" : [GPFariHotData class],
+             @"best" : [GPFariBestData class],
+             @"topic" : [GPFariTopicData class],
+             };
+}
 @end

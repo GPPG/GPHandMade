@@ -48,10 +48,10 @@
         [self addSubview:btn];
         if (lastBtn) {
             btn.sd_layout
-            .leftSpaceToView(lastBtn,30)
-            .topEqualToView(lastBtn)
-            .bottomEqualToView(lastBtn)
-            .rightSpaceToView(self,0);
+            .leftSpaceToView(lastBtn,40)
+            .topSpaceToView(lastBtn,0)
+            .bottomSpaceToView(lastBtn,0)
+            .widthIs(40);
         }else{
             btn.sd_layout
             .leftSpaceToView(self,0)

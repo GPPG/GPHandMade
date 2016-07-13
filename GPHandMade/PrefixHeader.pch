@@ -21,6 +21,7 @@
 #import "XWCoolAnimator.h"
 #import "XWTransitionAnimator.h"
 #import "MJExtension.h"
+#import "UIImageView+WebCache.h"
 /**
  *  自定义输出
  */
