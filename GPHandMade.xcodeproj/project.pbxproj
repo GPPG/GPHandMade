@@ -109,7 +109,6 @@
 		AC4E72CE1CE18CA700E92406 /* GPTutorialTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4E72CD1CE18CA700E92406 /* GPTutorialTableViewController.m */; };
 		AC4E72D11CE18CB500E92406 /* GPHandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4E72D01CE18CB500E92406 /* GPHandTableViewController.m */; };
 		AC4E72D41CE18CC100E92406 /* GPFairTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4E72D31CE18CC100E92406 /* GPFairTableViewController.m */; };
-		AC4E72D71CE18CCD00E92406 /* GPMyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4E72D61CE18CCD00E92406 /* GPMyTableViewController.m */; };
 		AC538C411D3480B700314774 /* GPSuperTiltleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC538C401D3480B700314774 /* GPSuperTiltleView.m */; };
 		AC538C451D3497D500314774 /* GPFariMeturController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC538C441D3497D500314774 /* GPFariMeturController.m */; };
 		AC538C481D34980B00314774 /* GPFariGoodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC538C471D34980B00314774 /* GPFariGoodsController.m */; };
@@ -147,6 +146,9 @@
 		AC7A9CF91CF2E060001A9550 /* GPSlideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A9CF71CF2E060001A9550 /* GPSlideCollectionViewCell.m */; };
 		AC7A9CFA1CF2E060001A9550 /* GPSlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7A9CF81CF2E060001A9550 /* GPSlideCollectionViewCell.xib */; };
 		AC7A9CFD1CF2E9AE001A9550 /* GPSlideShopData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A9CFC1CF2E9AE001A9550 /* GPSlideShopData.m */; };
+		AC80BBFC1D37D68E00E98D2A /* GPMyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC80BBFB1D37D68E00E98D2A /* GPMyTableViewController.m */; };
+		AC80BBFF1D37DCF100E98D2A /* GPMyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC80BBFE1D37DCF100E98D2A /* GPMyHeadView.m */; };
+		AC80BC011D37DD0900E98D2A /* GPMyHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC80BC001D37DD0900E98D2A /* GPMyHeadView.xib */; };
 		AC9DDD4C1D255DD20022277B /* GPTutorialPicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9DDD4A1D255DD20022277B /* GPTutorialPicCell.m */; };
 		AC9DDD4D1D255DD20022277B /* GPTutorialPicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9DDD4B1D255DD20022277B /* GPTutorialPicCell.xib */; };
 		AC9DDD531D25FFA60022277B /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9DDD521D25FFA60022277B /* UIColor+HEX.m */; };
@@ -273,6 +275,11 @@
 		ACEABAE11CFFCA650024FC67 /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABADB1CFFCA650024FC67 /* SDBrowserImageView.m */; };
 		ACEABAE21CFFCA650024FC67 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABADD1CFFCA650024FC67 /* SDPhotoBrowser.m */; };
 		ACEABAE31CFFCA650024FC67 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEABAE01CFFCA650024FC67 /* SDWaitingView.m */; };
+		ACF172D01D372CD100D5E9A1 /* GPSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF172CF1D372CD000D5E9A1 /* GPSettingController.m */; };
+		ACF172D31D372D2C00D5E9A1 /* GPSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF172D21D372D2C00D5E9A1 /* GPSettingGroup.m */; };
+		ACF172D61D372D9D00D5E9A1 /* GPSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF172D51D372D9D00D5E9A1 /* GPSettingItem.m */; };
+		ACF172D91D372E6A00D5E9A1 /* GPSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF172D81D372E6A00D5E9A1 /* GPSettingCell.m */; };
+		ACF172DC1D372EEF00D5E9A1 /* GPSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF172DB1D372EEF00D5E9A1 /* GPSettingArrowItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -479,8 +486,6 @@
 		AC4E72D01CE18CB500E92406 /* GPHandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandTableViewController.m; sourceTree = "<group>"; };
 		AC4E72D21CE18CC100E92406 /* GPFairTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFairTableViewController.h; sourceTree = "<group>"; };
 		AC4E72D31CE18CC100E92406 /* GPFairTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFairTableViewController.m; sourceTree = "<group>"; };
-		AC4E72D51CE18CCD00E92406 /* GPMyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMyTableViewController.h; sourceTree = "<group>"; };
-		AC4E72D61CE18CCD00E92406 /* GPMyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMyTableViewController.m; sourceTree = "<group>"; };
 		AC4E72D81CE18D7200E92406 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		AC538C3F1D3480B700314774 /* GPSuperTiltleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSuperTiltleView.h; path = "../../Class/Fair(市集)/View/GPSuperTiltleView.h"; sourceTree = "<group>"; };
 		AC538C401D3480B700314774 /* GPSuperTiltleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPSuperTiltleView.m; path = "../../Class/Fair(市集)/View/GPSuperTiltleView.m"; sourceTree = "<group>"; };
@@ -551,6 +556,11 @@
 		AC7A9CF81CF2E060001A9550 /* GPSlideCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPSlideCollectionViewCell.xib; sourceTree = "<group>"; };
 		AC7A9CFB1CF2E9AE001A9550 /* GPSlideShopData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSlideShopData.h; sourceTree = "<group>"; };
 		AC7A9CFC1CF2E9AE001A9550 /* GPSlideShopData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSlideShopData.m; sourceTree = "<group>"; };
+		AC80BBFA1D37D68E00E98D2A /* GPMyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMyTableViewController.h; sourceTree = "<group>"; };
+		AC80BBFB1D37D68E00E98D2A /* GPMyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMyTableViewController.m; sourceTree = "<group>"; };
+		AC80BBFD1D37DCF100E98D2A /* GPMyHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMyHeadView.h; sourceTree = "<group>"; };
+		AC80BBFE1D37DCF100E98D2A /* GPMyHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMyHeadView.m; sourceTree = "<group>"; };
+		AC80BC001D37DD0900E98D2A /* GPMyHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPMyHeadView.xib; sourceTree = "<group>"; };
 		AC9DDD491D255DD20022277B /* GPTutorialPicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTutorialPicCell.h; sourceTree = "<group>"; };
 		AC9DDD4A1D255DD20022277B /* GPTutorialPicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTutorialPicCell.m; sourceTree = "<group>"; };
 		AC9DDD4B1D255DD20022277B /* GPTutorialPicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPTutorialPicCell.xib; sourceTree = "<group>"; };
@@ -782,6 +792,16 @@
 		ACEABADE1CFFCA650024FC67 /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
 		ACEABADF1CFFCA650024FC67 /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
 		ACEABAE01CFFCA650024FC67 /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
+		ACF172CE1D372CD000D5E9A1 /* GPSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSettingController.h; sourceTree = "<group>"; };
+		ACF172CF1D372CD000D5E9A1 /* GPSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSettingController.m; sourceTree = "<group>"; };
+		ACF172D11D372D2C00D5E9A1 /* GPSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSettingGroup.h; path = "GPHandMade/Main(主要)/Controller/GPSettingGroup.h"; sourceTree = SOURCE_ROOT; };
+		ACF172D21D372D2C00D5E9A1 /* GPSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPSettingGroup.m; path = "GPHandMade/Main(主要)/Controller/GPSettingGroup.m"; sourceTree = SOURCE_ROOT; };
+		ACF172D41D372D9D00D5E9A1 /* GPSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSettingItem.h; path = "GPHandMade/Main(主要)/Controller/GPSettingItem.h"; sourceTree = SOURCE_ROOT; };
+		ACF172D51D372D9D00D5E9A1 /* GPSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPSettingItem.m; path = "GPHandMade/Main(主要)/Controller/GPSettingItem.m"; sourceTree = SOURCE_ROOT; };
+		ACF172D71D372E6A00D5E9A1 /* GPSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSettingCell.h; path = "GPHandMade/Main(主要)/Controller/GPSettingCell.h"; sourceTree = SOURCE_ROOT; };
+		ACF172D81D372E6A00D5E9A1 /* GPSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPSettingCell.m; path = "GPHandMade/Main(主要)/Controller/GPSettingCell.m"; sourceTree = SOURCE_ROOT; };
+		ACF172DA1D372EEF00D5E9A1 /* GPSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSettingArrowItem.h; path = "GPHandMade/Main(主要)/Controller/GPSettingArrowItem.h"; sourceTree = SOURCE_ROOT; };
+		ACF172DB1D372EEF00D5E9A1 /* GPSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPSettingArrowItem.m; path = "GPHandMade/Main(主要)/Controller/GPSettingArrowItem.m"; sourceTree = SOURCE_ROOT; };
 		B96493708576BC9A5FDD307A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F0365791F1F4DC0A104E49C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1354,8 +1374,8 @@
 		AC4E72A91CE186D800E92406 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AC4E72D51CE18CCD00E92406 /* GPMyTableViewController.h */,
-				AC4E72D61CE18CCD00E92406 /* GPMyTableViewController.m */,
+				AC80BBFA1D37D68E00E98D2A /* GPMyTableViewController.h */,
+				AC80BBFB1D37D68E00E98D2A /* GPMyTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1370,6 +1390,9 @@
 		AC4E72AB1CE186D800E92406 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC80BBFD1D37DCF100E98D2A /* GPMyHeadView.h */,
+				AC80BBFE1D37DCF100E98D2A /* GPMyHeadView.m */,
+				AC80BC001D37DD0900E98D2A /* GPMyHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1446,6 +1469,8 @@
 				AC4E72C31CE18A6300E92406 /* GPTabBarController.m */,
 				AC7A9CE21CF04F17001A9550 /* GPWebViewController.h */,
 				AC7A9CE31CF04F17001A9550 /* GPWebViewController.m */,
+				ACF172CE1D372CD000D5E9A1 /* GPSettingController.h */,
+				ACF172CF1D372CD000D5E9A1 /* GPSettingController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1453,6 +1478,12 @@
 		AC4E72C41CE18A6300E92406 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ACF172D11D372D2C00D5E9A1 /* GPSettingGroup.h */,
+				ACF172D21D372D2C00D5E9A1 /* GPSettingGroup.m */,
+				ACF172D41D372D9D00D5E9A1 /* GPSettingItem.h */,
+				ACF172D51D372D9D00D5E9A1 /* GPSettingItem.m */,
+				ACF172DA1D372EEF00D5E9A1 /* GPSettingArrowItem.h */,
+				ACF172DB1D372EEF00D5E9A1 /* GPSettingArrowItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1485,6 +1516,8 @@
 			isa = PBXGroup;
 			children = (
 				AC7A9CE51CF04F48001A9550 /* GPWebViewController.storyboard */,
+				ACF172D71D372E6A00D5E9A1 /* GPSettingCell.h */,
+				ACF172D81D372E6A00D5E9A1 /* GPSettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2419,6 +2452,7 @@
 				ACD585461CFBE45400F7942D /* GPFooterClassCell.xib in Resources */,
 				ACC0480A1CEDBC14004E8C74 /* GPLookCell.xib in Resources */,
 				AC3299991D34E6F6003CADDC /* GPFariTopicCell.xib in Resources */,
+				AC80BC011D37DD0900E98D2A /* GPMyHeadView.xib in Resources */,
 				AC3825E71D2211AF00F2866B /* GPFocusCell.xib in Resources */,
 				ACDEF4261D2376F600B23C43 /* LICENSE in Resources */,
 				ACA8D73C1D1D0A6D0097B8C3 /* GPDaRenStepThreeCell.xib in Resources */,
@@ -2550,9 +2584,11 @@
 				AC0DFE351D2A3B1F007B4A7D /* GPTutoriSubController.m in Sources */,
 				ACDA285F1D18E30900BE1579 /* GPTimeLineHeadCell.m in Sources */,
 				ACDDCCDB1D192EEE00E4615D /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				AC80BBFF1D37DCF100E98D2A /* GPMyHeadView.m in Sources */,
 				AC3826221D22672500F2866B /* GPTopicListCell.m in Sources */,
 				AC561F8F1D050FEB00919703 /* SDCycleScrollView.m in Sources */,
 				ACA8D7361D1D0A3E0097B8C3 /* GPDaRenStepTwoCell.m in Sources */,
+				ACF172DC1D372EEF00D5E9A1 /* GPSettingArrowItem.m in Sources */,
 				AC2A1AAF1D309D8F0039096B /* GPHandDataTool.m in Sources */,
 				ACA8D7AB1D1FC2DA0097B8C3 /* XWFilterAnimator+XWMod.m in Sources */,
 				AC5AAE2E1CF5443A00EDBF99 /* GPTools.m in Sources */,
@@ -2618,7 +2654,6 @@
 				AC561F901D050FEB00919703 /* UIView+SDExtension.m in Sources */,
 				AC538C481D34980B00314774 /* GPFariGoodsController.m in Sources */,
 				ACA8D7A81D1FC2DA0097B8C3 /* XWFilterAnimator+XWCopyMachine.m in Sources */,
-				AC4E72D71CE18CCD00E92406 /* GPMyTableViewController.m in Sources */,
 				AC3825F51D2256F700F2866B /* GPTwoController.m in Sources */,
 				ACA8D72A1D1CE6000097B8C3 /* GPDaRenMaterialData.m in Sources */,
 				ACA27EEA1D337BB2009AF1A1 /* GPHandlaudData.m in Sources */,
@@ -2640,6 +2675,7 @@
 				AC5A533C1D13E1260061D5D8 /* GPTimeLineController.m in Sources */,
 				ACA8D7951D1FC2DA0097B8C3 /* UINavigationController+XWTransition.m in Sources */,
 				ACBF6BA61D1A93F500ABE062 /* GPLoginController.m in Sources */,
+				ACF172D01D372CD100D5E9A1 /* GPSettingController.m in Sources */,
 				ACA8D7A61D1FC2DA0097B8C3 /* XWFilterAnimator+XWBarSwipe.m in Sources */,
 				AC538C4E1D34984400314774 /* GPFariData.m in Sources */,
 				ACDA28661D191AEB00BE1579 /* UIView+RoundedCorner.m in Sources */,
@@ -2651,6 +2687,7 @@
 				AC2925A71D02B1F200726E51 /* GPHomController.m in Sources */,
 				ACDEF4201D2376F600B23C43 /* MLTextAttachment.m in Sources */,
 				AC0EA3431D0708D10041D14E /* HYBMoveTransition.m in Sources */,
+				ACF172D91D372E6A00D5E9A1 /* GPSettingCell.m in Sources */,
 				AC2925761D015B0400726E51 /* GPAutoFooter.m in Sources */,
 				AC0EA3421D0708D10041D14E /* HYBModalTransition.m in Sources */,
 				AC2925BA1D02CFE200726E51 /* GPAdvanceCell.m in Sources */,
@@ -2696,6 +2733,7 @@
 				AC2925831D02A8BA00726E51 /* YZDisplayViewController.m in Sources */,
 				ACB2E0EF1CF8278A00D3F5EA /* GPNewFeatureController.m in Sources */,
 				ACDE67171CED61F500FC47DD /* GPHttpTool.m in Sources */,
+				ACF172D61D372D9D00D5E9A1 /* GPSettingItem.m in Sources */,
 				AC3299931D34E6D5003CADDC /* GPFariTopicBestCell.m in Sources */,
 				ACDEF41D1D2376F600B23C43 /* NSMutableAttributedString+MLLabel.m in Sources */,
 				ACDEF42C1D23ADFE00B23C43 /* GPNavTitleView.m in Sources */,
@@ -2716,6 +2754,7 @@
 				AC1770B31D2CA1F100EDFBC8 /* LXReorderableCollectionViewFlowLayout.m in Sources */,
 				AC29259E1D02B0C800726E51 /* GPFocusController.m in Sources */,
 				AC3825F81D22570500F2866B /* GPThreeController.m in Sources */,
+				AC80BBFC1D37D68E00E98D2A /* GPMyTableViewController.m in Sources */,
 				ACA8D7AC1D1FC2DA0097B8C3 /* XWFilterAnimator+XWPageCurl.m in Sources */,
 				ACDEF41C1D2376F600B23C43 /* NSAttributedString+MLLabel.m in Sources */,
 				AC7A9CFD1CF2E9AE001A9550 /* GPSlideShopData.m in Sources */,
@@ -2727,6 +2766,7 @@
 				ACA8D7971D1FC2DA0097B8C3 /* XWInteractiveTransition.m in Sources */,
 				ACDEF41B1D2376F600B23C43 /* MLEmojiLabel.m in Sources */,
 				AC32997A1D34DA8A003CADDC /* GPFariBestData.m in Sources */,
+				ACF172D31D372D2C00D5E9A1 /* GPSettingGroup.m in Sources */,
 				ACA8D7B11D1FC2DA0097B8C3 /* XWMagicMoveAnimator.m in Sources */,
 				ACA27EF31D337F5A009AF1A1 /* GPHandParam.m in Sources */,
 				ACDEF4221D2376F600B23C43 /* NSString+MLExpression.m in Sources */,

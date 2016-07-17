@@ -2,11 +2,12 @@
 //  GPMyTableViewController.m
 //  GPHandMade
 //
-//  Created by dandan on 16/5/10.
+//  Created by dandan on 16/7/14.
 //  Copyright © 2016年 dandan. All rights reserved.
 //
 
 #import "GPMyTableViewController.h"
+#import "GPMyHeadView.h"
 
 @interface GPMyTableViewController ()
 
@@ -17,80 +18,75 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    [self setUpGroup0];
     
-    // Configure the cell...
+    [self setUpGroup1];
     
-    return cell;
+    [self setUpGroup2];
 }
-*/
+// 第0组
+- (void)setUpGroup0
+{
+    // 创建组模型
+    GPSettingGroup *group = [[GPSettingGroup alloc] init];
+    group.items = [NSMutableArray array];
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    group.header = @"消息通知";
+    NSArray *zeroSection = @[@"评论",@"回复",@"@我",@"私信",@"手工圈"];
+    for (int i = 0; i < zeroSection.count; i ++) {
+        // 创建行模型
+        GPSettingItem *item = [GPSettingArrowItem itemWithTitle:zeroSection[i]];
+        item.operation = ^(NSIndexPath *indexPath){
+            [self openUrl:Blog];
+        };
+        [group.items addObject:item];
+    }
+    [self.groups addObject:group];
+    
 }
-*/
+- (void)setUpGroup1
+{
+    // 创建组模型
+    GPSettingGroup *group = [[GPSettingGroup alloc] init];
+    group.items = [NSMutableArray array];
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    group.header = @"订单";
+    NSArray *oneSection = @[@"市集订单",@"教程订单",@"线下课订单",@"我的优惠券"];
+    for (int i = 0; i < oneSection.count; i ++) {
+        // 创建行模型
+        GPSettingItem *item = [GPSettingArrowItem itemWithTitle:oneSection[i]];
+        item.operation = ^(NSIndexPath *indexPath){
+            [self openUrl:Github];
+        };
+        [group.items addObject:item];
+    }
+    [self.groups addObject:group];
+
+    
 }
-*/
+- (void)setUpGroup2
+{
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    // 创建组模型
+    GPSettingGroup *group = [[GPSettingGroup alloc] init];
+    group.items = [NSMutableArray array];
+    group.header = @"个人设置";
+    NSArray *theerSection = @[@"个人资料",@"等级与积分",@"修改密码",@"清除缓存",@"帮助中心",@"新消息通知",@"意见反馈",@"关于手功课",@"关于手工课微信",@"喜欢手工课"];
+    for (int i = 0; i < theerSection.count; i ++) {
+        // 创建行模型
+        GPSettingItem *item = [GPSettingArrowItem itemWithTitle:theerSection[i]];
+        item.operation = ^(NSIndexPath *indexPath){
+            [self openUrl:Blog];
+        };
+        [group.items addObject:item];
+    }
+    [self.groups addObject:group];
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+#pragma mark - 内部方法
+- (void)openUrl:(NSString *)urlStr
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
 }
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

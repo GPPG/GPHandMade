@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GPMyHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="vxA-1O-VP2">
+                    <rect key="frame" x="15" y="18" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="q6r-1O-CCx"/>
+                        <constraint firstAttribute="height" constant="60" id="za0-ww-dlz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nV3-hg-wbH">
+                    <rect key="frame" x="85" y="0.0" width="316" height="96"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="我的主页">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nV3-hg-wbH" secondAttribute="bottom" id="1mj-5v-W0B"/>
+                <constraint firstItem="nV3-hg-wbH" firstAttribute="leading" secondItem="vxA-1O-VP2" secondAttribute="trailing" constant="10" id="FrS-n4-ZeX"/>
+                <constraint firstItem="vxA-1O-VP2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="N4R-Xi-eqa"/>
+                <constraint firstItem="nV3-hg-wbH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QDq-uu-gLn"/>
+                <constraint firstItem="vxA-1O-VP2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="ZHB-3i-Xtk"/>
+                <constraint firstAttribute="trailing" secondItem="nV3-hg-wbH" secondAttribute="trailing" id="e8O-00-gha"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="b" destination="nV3-hg-wbH" id="pja-1X-ksQ"/>
+            </connections>
+            <point key="canvasLocation" x="380.5" y="311"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="01" width="266" height="200"/>
+    </resources>
+</document>
