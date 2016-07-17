@@ -161,7 +161,6 @@
 		ACA27EE71D337B37009AF1A1 /* GPHandCommentData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EE61D337B37009AF1A1 /* GPHandCommentData.m */; };
 		ACA27EEA1D337BB2009AF1A1 /* GPHandlaudData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EE91D337BB2009AF1A1 /* GPHandlaudData.m */; };
 		ACA27EED1D337D86009AF1A1 /* GPHttpBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EEC1D337D86009AF1A1 /* GPHttpBase.m */; };
-		ACA27EF01D337E00009AF1A1 /* HMStatusTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EEF1D337E00009AF1A1 /* HMStatusTool.m */; };
 		ACA27EF31D337F5A009AF1A1 /* GPHandParam.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA27EF21D337F5A009AF1A1 /* GPHandParam.m */; };
 		ACA27EF51D3391A7009AF1A1 /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = ACA27EF41D3391A7009AF1A1 /* json.json */; };
 		ACA8D7171D1BCB6D0097B8C3 /* GPDaData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D7161D1BCB6D0097B8C3 /* GPDaData.m */; };
@@ -584,8 +583,6 @@
 		ACA27EE91D337BB2009AF1A1 /* GPHandlaudData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandlaudData.m; sourceTree = "<group>"; };
 		ACA27EEB1D337D86009AF1A1 /* GPHttpBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHttpBase.h; sourceTree = "<group>"; };
 		ACA27EEC1D337D86009AF1A1 /* GPHttpBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHttpBase.m; sourceTree = "<group>"; };
-		ACA27EEE1D337E00009AF1A1 /* HMStatusTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMStatusTool.h; sourceTree = "<group>"; };
-		ACA27EEF1D337E00009AF1A1 /* HMStatusTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMStatusTool.m; sourceTree = "<group>"; };
 		ACA27EF11D337F5A009AF1A1 /* GPHandParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPHandParam.h; sourceTree = "<group>"; };
 		ACA27EF21D337F5A009AF1A1 /* GPHandParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPHandParam.m; sourceTree = "<group>"; };
 		ACA27EF41D3391A7009AF1A1 /* json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json.json; sourceTree = "<group>"; };
@@ -1491,8 +1488,6 @@
 		AC4E72C51CE18A6300E92406 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				ACA27EEE1D337E00009AF1A1 /* HMStatusTool.h */,
-				ACA27EEF1D337E00009AF1A1 /* HMStatusTool.m */,
 				AC2A1AAB1D2F69590039096B /* NSDictionary+LOG.m */,
 				AC2925BC1D02E7E600726E51 /* GPGuideTool.h */,
 				AC2925BD1D02E7E700726E51 /* GPGuideTool.m */,
@@ -2715,7 +2710,6 @@
 				AC2925C51D0436D600726E51 /* GPSectionHeadView.m in Sources */,
 				AC29259B1D02B0A400726E51 /* GPFeaturedController.m in Sources */,
 				AC38261D1D22623000F2866B /* GPTopListData.m in Sources */,
-				ACA27EF01D337E00009AF1A1 /* HMStatusTool.m in Sources */,
 				ACDA28531D179A9700BE1579 /* GPTimeLineEventCell.m in Sources */,
 				ACD5854E1CFBF31200F7942D /* GPAppraiseData.m in Sources */,
 				ACA27EED1D337D86009AF1A1 /* GPHttpBase.m in Sources */,

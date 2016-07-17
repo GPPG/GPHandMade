@@ -9,6 +9,7 @@
 #import "GPMyTableViewController.h"
 #import "GPMyHeadView.h"
 
+
 @interface GPMyTableViewController ()
 
 @end
@@ -17,13 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+    [self setupHeadView];
+
     [self setUpGroup0];
     
     [self setUpGroup1];
     
     [self setUpGroup2];
+}
+
+- (void)setupHeadView
+{
+    GPMyHeadView *headView = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([GPMyHeadView class]) owner:nil options:nil].lastObject;
+    headView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 70);
+    self.tableView.tableHeaderView = headView;
+    headView.BtnClick = ^{
+    };
 }
 // 第0组
 - (void)setUpGroup0
