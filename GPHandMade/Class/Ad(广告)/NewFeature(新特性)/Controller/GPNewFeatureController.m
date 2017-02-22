@@ -90,6 +90,5 @@ static NSString * const reuseIdentifier = @"featureCell";
         anim.duration = 1;
         [[UIApplication sharedApplication].keyWindow.layer addAnimation:anim forKey:nil];
     }
-    
 }
 @end

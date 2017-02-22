@@ -182,7 +182,7 @@ static NSString * const fairHeadID = @"FairHeadView";
 }
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    GPFairSectionHeadView *headView = headView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:fairHeadID forIndexPath:indexPath];
+    GPFairSectionHeadView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:fairHeadID forIndexPath:indexPath];
     
     if (indexPath.section == 1) {
         headView.titleStr = @"每日特价";
@@ -193,15 +193,7 @@ static NSString * const fairHeadID = @"FairHeadView";
     }
     return headView;
 }
--(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    CGSize size = CGSizeZero;
-    if (section == 1) {
-        size = CGSizeMake(SCREEN_WIDTH, GPTitlesViewH);
-    }else if (section == 2){
-        size = CGSizeMake(SCREEN_WIDTH, GPTitlesViewH);
-    }
-    return size;
-}
+
 
 #pragma mark - UICollectionView 布局
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -223,7 +215,15 @@ static NSString * const fairHeadID = @"FairHeadView";
     }
     return size;
 }
-
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+    CGSize size = CGSizeZero;
+    if (section == 1) {
+        size = CGSizeMake(SCREEN_WIDTH, GPTitlesViewH);
+    }else if (section == 2){
+        size = CGSizeMake(SCREEN_WIDTH, GPTitlesViewH);
+    }
+    return size;
+}
 #pragma mark - UICollectionView 代理
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {

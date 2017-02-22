@@ -1466,6 +1466,7 @@
 				AC4E72C31CE18A6300E92406 /* GPTabBarController.m */,
 				AC7A9CE21CF04F17001A9550 /* GPWebViewController.h */,
 				AC7A9CE31CF04F17001A9550 /* GPWebViewController.m */,
+				AC7A9CE51CF04F48001A9550 /* GPWebViewController.storyboard */,
 				ACF172CE1D372CD000D5E9A1 /* GPSettingController.h */,
 				ACF172CF1D372CD000D5E9A1 /* GPSettingController.m */,
 			);
@@ -1510,7 +1511,6 @@
 		AC4E72C61CE18A6300E92406 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC7A9CE51CF04F48001A9550 /* GPWebViewController.storyboard */,
 				ACF172D71D372E6A00D5E9A1 /* GPSettingCell.h */,
 				ACF172D81D372E6A00D5E9A1 /* GPSettingCell.m */,
 			);
@@ -2906,7 +2906,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GPYY.com.GPHandMade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -2923,7 +2923,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GPYY.com.GPHandMade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

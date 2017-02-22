@@ -73,47 +73,7 @@ static NSString * const GPSectionHead = @"HotSectionCell";
     // 注册 cell
     [self regisCell];
 }
-#pragma mark - 懒加载
-- (NSMutableArray *)dataSlideArray
-{
-    if (!_dataSlideArray) {
-        
-        _dataSlideArray = [[NSMutableArray alloc] init];
-    }
-    return _dataSlideArray;
-}
-- (NSMutableArray *)dataHotArray
-{
-    if (!_dataHotArray) {
-        
-        _dataHotArray = [[NSMutableArray alloc] init];
-    }
-    return _dataHotArray;
-}
-- (NSMutableArray *)dataSlideS
-{
-    if (!_dataSlideS) {
-        
-        _dataSlideS = [[NSMutableArray alloc] init];
-    }
-    return _dataSlideS;
-}
-- (NSMutableArray *)dataAdvanceArray
-{
-    if (!_dataAdvanceArray) {
-        
-        _dataAdvanceArray = [[NSMutableArray alloc] init];
-    }
-    return _dataAdvanceArray;
-}
-- (NSMutableArray *)dataNavigationArray
-{
-    if (!_dataNavigationArray) {
-        
-        _dataNavigationArray = [[NSMutableArray alloc] init];
-    }
-    return _dataNavigationArray;
-}
+
 #pragma mark - 初始化方法
 - (instancetype)init
 {
@@ -389,5 +349,46 @@ static NSString * const GPSectionHead = @"HotSectionCell";
     cell.layer.shadowOffset = CGSizeMake(0, 0);
     [UIView commitAnimations];
     
+}
+#pragma mark - 懒加载
+- (NSMutableArray *)dataSlideArray
+{
+    if (!_dataSlideArray) {
+        
+        _dataSlideArray = [[NSMutableArray alloc] init];
+    }
+    return _dataSlideArray;
+}
+- (NSMutableArray *)dataHotArray
+{
+    if (!_dataHotArray) {
+        
+        _dataHotArray = [[NSMutableArray alloc] init];
+    }
+    return _dataHotArray;
+}
+- (NSMutableArray *)dataSlideS
+{
+    if (!_dataSlideS) {
+        
+        _dataSlideS = [[NSMutableArray alloc] init];
+    }
+    return _dataSlideS;
+}
+- (NSMutableArray *)dataAdvanceArray
+{
+    if (!_dataAdvanceArray) {
+        
+        _dataAdvanceArray = [[NSMutableArray alloc] init];
+    }
+    return _dataAdvanceArray;
+}
+- (NSMutableArray *)dataNavigationArray
+{
+    if (!_dataNavigationArray) {
+        
+        _dataNavigationArray = [[NSMutableArray alloc] init];
+    }
+    return _dataNavigationArray;
 }
 @end

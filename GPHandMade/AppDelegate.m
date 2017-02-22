@@ -54,6 +54,5 @@
     textAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     textAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:18];
     [appearance setTitleTextAttributes:textAttrs];
-
 }
 @end

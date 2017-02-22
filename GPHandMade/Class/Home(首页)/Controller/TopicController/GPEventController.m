@@ -40,6 +40,11 @@ static NSString * const EventId = @"eventCell";
     [self regisCell];
     [self loadData];
 }
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+}
 - (void)regisCell
 {
     self.tableView.rowHeight = SCREEN_HEIGHT * 0.35;
