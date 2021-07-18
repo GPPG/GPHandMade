@@ -25,7 +25,10 @@
     }
     return _titleArray;
 }
-
+- (void)dddd{
+    
+    
+}
 #pragma mark - 初始化
 - (instancetype)initWithFrame:(CGRect)frame block:(NavTitleClickBlock)block
 {
